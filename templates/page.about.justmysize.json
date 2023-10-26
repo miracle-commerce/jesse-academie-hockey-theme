@@ -1,0 +1,347 @@
+{
+  "sections": {
+    "9119bc7e-3c9d-4c29-a587-ba5437f21a4a": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--18721240121639__9119bc7e-3c9d-4c29-a587-ba5437f21a4a-1683116101efc8a1c4-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Discover The New You Today",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__9119bc7e-3c9d-4c29-a587-ba5437f21a4a-1683116101efc8a1c4-1"
+      ],
+      "settings": {
+        "image": "",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "full_width": true,
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "template-header": {
+      "type": "template-header",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "overlay_opacity": 30,
+        "display_description": true
+      }
+    },
+    "22a8e16d-5b19-465a-a785-7c860127c97f": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "20d03166-afcb-4824-979a-310cb0267d30": {
+      "type": "rich-text",
+      "blocks": {
+        "0858b0ef-ad13-4e86-817b-68c14b6dca34": {
+          "type": "image",
+          "settings": {
+            "image": ""
+          }
+        },
+        "4c7d33e2-c628-4237-a974-f00d01b32b20": {
+          "type": "space",
+          "settings": {
+            "height": 22
+          }
+        },
+        "template--18721240121639__20d03166-afcb-4824-979a-310cb0267d30-16831901687b2d3f90-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "WELCOME TO OUR STORE"
+          }
+        },
+        "template--18721240121639__20d03166-afcb-4824-979a-310cb0267d30-16831901687b2d3f90-1": {
+          "type": "heading",
+          "settings": {
+            "text": "We believe that everyone deserves to feel confident and beautiful. That's why we offer a wide range of sizes and styles to accommodate all body types and fashion preferences. Our friendly and knowledgeable staff are always on hand to help you find the perfect outfit or accessory to suit your needs.",
+            "size": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "0858b0ef-ad13-4e86-817b-68c14b6dca34",
+        "4c7d33e2-c628-4237-a974-f00d01b32b20",
+        "template--18721240121639__20d03166-afcb-4824-979a-310cb0267d30-16831901687b2d3f90-0",
+        "template--18721240121639__20d03166-afcb-4824-979a-310cb0267d30-16831901687b2d3f90-1"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "0beb6a99-1044-4518-828f-9dbaf91fb21c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Wear the best"
+          }
+        },
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Quality & Fit",
+            "heading_size": "h3"
+          }
+        },
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We also offer a wide range of accessories, including jewelry, bags, and shoes, to help you complete your look. Our accessories are carefully selected to complement our clothing collections, ensuring that you always look your best.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-0",
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-1",
+        "template--18721240121639__0beb6a99-1044-4518-828f-9dbaf91fb21c-1683116880a763751b-2"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "",
+        "video_autoplay": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "full_width": true,
+        "color_bg": "#f2f2f2",
+        "color_text": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "f21c77b0-6139-4bdb-9426-1d7cd343b382": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-0": {
+          "type": "text",
+          "settings": {
+            "text": "NEVER OUT OF STYLE",
+            "link": ""
+          }
+        },
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-1": {
+          "type": "text",
+          "settings": {
+            "text": "SIMPLY ELEGANT",
+            "link": ""
+          }
+        },
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-2": {
+          "type": "text",
+          "settings": {
+            "text": "A TRENDSETTER",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-0",
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-1",
+        "template--18721240121639__f21c77b0-6139-4bdb-9426-1d7cd343b382-1683118790cb6f880e-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 72,
+        "outline_text": false,
+        "image_size": "large",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#a46b5d",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "c4e18af6-e29b-44fa-b99a-b3c83f2cab0a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Fashion of Freedom"
+          }
+        },
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Commitment",
+            "heading_size": "h3"
+          }
+        },
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We understand that fashion is more than just clothing. It's a way to express yourself and showcase your individuality. That's why our team of fashion experts curates our collections to ensure that they offer something for everyone.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-0",
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-1",
+        "template--18721240121639__c4e18af6-e29b-44fa-b99a-b3c83f2cab0a-1683117240e73239f0-2"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "",
+        "video_autoplay": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "full_width": true,
+        "color_bg": "#f2f2f2",
+        "color_text": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "983aa190-a302-47e1-ad78-32742a05bd31": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-0": {
+          "type": "quote",
+          "settings": {
+            "stars": "4.5",
+            "text": "How can you live the high life if you do not wear the high heels?",
+            "author": "Sonia Rykiel",
+            "retina": true
+          }
+        },
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-1": {
+          "type": "quote",
+          "settings": {
+            "stars": "5",
+            "text": "The best things in life are free. The second best are very expensive.",
+            "author": "Coco Chanel",
+            "retina": true
+          }
+        },
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-2": {
+          "type": "quote",
+          "settings": {
+            "stars": "4",
+            "text": "Style is something each of us already has, all we need to do is find it.",
+            "author": "Diane von Furstenberg",
+            "retina": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-0",
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-1",
+        "template--18721240121639__983aa190-a302-47e1-ad78-32742a05bd31-1683121395c5de30b5-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "size": "medium",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5979d2b8-35a0-4401-8b8d-b3abb85883ff": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "It’s Fashion Impact",
+        "text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "video": "",
+        "button_text": "WATCH THE VIDEO",
+        "overlay_opacity": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "56b0dffa-1bf9-46da-8465-b36694de9936": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-0": {
+          "type": "column",
+          "settings": {
+            "title": "Our Impact",
+            "heading_size": "h4",
+            "text": "<p>We understand that fashion is more than just clothing. It's a way to express yourself and showcase your individuality. That's why our team of fashion experts curates our collections to ensure that they offer something for everyone.<\/p>",
+            "link_label": "Learn more",
+            "link": ""
+          }
+        },
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-1": {
+          "type": "column",
+          "settings": {
+            "title": "Our Dream",
+            "heading_size": "h4",
+            "text": "<p>Whether you're looking for a chic and sophisticated outfit for a business meeting or a playful and trendy outfit for a night out with friends, we have you covered. Our collections are constantly updated to reflect the latest fashion trends.<\/p>",
+            "link_label": "Learn more",
+            "link": ""
+          }
+        },
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-2": {
+          "type": "column",
+          "settings": {
+            "title": "Our Philosophy",
+            "heading_size": "h4",
+            "text": "<p>We also offer a wide range of accessories, including jewelry, bags, and shoes, to help you complete your look. Our accessories are carefully selected to complement our clothing collections, ensuring that you always look your best.<\/p>",
+            "link_label": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-0",
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-1",
+        "template--18721240121639__56b0dffa-1bf9-46da-8465-b36694de9936-168312141795a0eeed-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "text_alignment": "left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "9119bc7e-3c9d-4c29-a587-ba5437f21a4a",
+    "template-header",
+    "22a8e16d-5b19-465a-a785-7c860127c97f",
+    "20d03166-afcb-4824-979a-310cb0267d30",
+    "0beb6a99-1044-4518-828f-9dbaf91fb21c",
+    "f21c77b0-6139-4bdb-9426-1d7cd343b382",
+    "c4e18af6-e29b-44fa-b99a-b3c83f2cab0a",
+    "983aa190-a302-47e1-ad78-32742a05bd31",
+    "5979d2b8-35a0-4401-8b8d-b3abb85883ff",
+    "56b0dffa-1bf9-46da-8465-b36694de9936"
+  ]
+}

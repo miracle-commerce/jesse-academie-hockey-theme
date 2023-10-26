@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+.logo-list__logo {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+/*------------------------------------------------------------------
+Utilities
+*/
+.logo-list {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .logo-list {
+      padding-left: 40px;
+      padding-right: 40px; } }
+
+.logo-list {
+  max-width: 1080px; }
+  .logo-list__inner {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    pointer-events: none; }
+    @media only screen and (min-width: 768px) {
+      .logo-list__inner {
+        grid-gap: 40px;
+        grid-template-columns: repeat(var(--logo-columns), minmax(100px, 200px)); } }
+    .logo-list__inner:hover > * {
+      opacity: 0.6; }
+      .logo-list__inner:hover > *:hover {
+        opacity: 1; }
+  .logo-list__logo {
+    text-align: center;
+    pointer-events: all; }
+    .logo-list__logo a {
+      display: block; }
+    .logo-list__logo .placeholder_svg_tag {
+      border-radius: 50%;
+      background: var(--color-accent3);
+      fill: var(--color-accent2); }

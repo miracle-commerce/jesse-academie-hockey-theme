@@ -1,0 +1,406 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true
+          }
+        },
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18": {
+          "type": "popup",
+          "settings": {
+            "text": "Sizing guide",
+            "icon": "ruler",
+            "page": "sizing-guide"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "55da0587-5936-4a13-a042-eb96ec75df15": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "MATERIALS",
+            "content": "<p>Talk about fine lines and great curves. That’s the beauty of the Darcy sofa—made to suit your appreciation for clean, contemporary style. A striking flared frame, comfy pillow top armrests and an ultra-soft upholstery that holds up to everyday living complete this fashion statement.<\/p>",
+            "page": ""
+          }
+        },
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING & RETURNS",
+            "content": "<p>All furniture is thoroughly inspected at several key points in our preparation and delivery process to make sure it's received in good condition. If you have chosen to pick up your order from one of our showrooms, <strong>we encourage you to inspect your item before you take possession.<\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "bf5d90f9-3dff-4a80-a3c5-8459ac5900ec": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "CARE GUIDE",
+            "content": "<p>Regular<em>care<\/em>. Use a slightly damp, soft and lint-free cloth for regular dust removal. Always clean in the direction of the grain.<\/p>",
+            "page": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "variant_picker",
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18",
+        "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "55da0587-5936-4a13-a042-eb96ec75df15",
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4",
+        "bf5d90f9-3dff-4a80-a3c5-8459ac5900ec",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "show_taxes_included": true,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "165244975926451db4": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "RUN FASTER & PUSH THE LIMITS",
+        "text": "",
+        "video": "",
+        "button_text": "WATCH THE VIDEO",
+        "overlay_opacity": 25,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165245196754f5c235": {
+      "type": "rich-text",
+      "blocks": {
+        "1652451967dd37db35-1": {
+          "type": "heading",
+          "settings": {
+            "text": "BRING POWER TO YOUR STEPS",
+            "size": "h3"
+          }
+        },
+        "1652451967dd37db35-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Before I was not so proud to make fashion. My family thought fashion wasn't very interesting. So I hid that. I didn't want to be a fashion designer, and for a good half of my career I didn't like it. I always wanted to do other things.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "1652451967dd37db35-1",
+        "1652451967dd37db35-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16524478238f6de7c7": {
+      "type": "gallery",
+      "blocks": {
+        "1652447823b433c464-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false
+          }
+        },
+        "8c01912c-7e70-451f-b97e-e61f65681bc7": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false
+          }
+        }
+      },
+      "block_order": [
+        "1652447823b433c464-1",
+        "8c01912c-7e70-451f-b97e-e61f65681bc7"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 2,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "medium",
+        "heading_size": "h4",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16524533326e934140": {
+      "type": "multicolumn",
+      "blocks": {
+        "165245333214ba42e6-0": {
+          "type": "column",
+          "settings": {
+            "title": "Memory Foam",
+            "heading_size": "h4",
+            "text": "<p>Insole has a memory foam pad that will over time provide personalised comfort.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165245333214ba42e6-1": {
+          "type": "column",
+          "settings": {
+            "title": "Toe Protection",
+            "heading_size": "h4",
+            "text": "<p>Thicker material covers the toes for protection from bumps and knocks.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165245333214ba42e6-2": {
+          "type": "column",
+          "settings": {
+            "title": "Lightweight",
+            "heading_size": "h4",
+            "text": "<p>Material on the upper contributes by keeping the weight of the shoe down.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "86d044ea-759e-44d6-a5f7-73a4dfe4db64": {
+          "type": "column",
+          "settings": {
+            "title": "Bungee Laces",
+            "heading_size": "h4",
+            "text": "<p>The laces are elasticated and don't need fastening.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "381a6c74-50c2-461f-b5d2-853c59e8a303": {
+          "type": "column",
+          "settings": {
+            "title": "Breathable Upper",
+            "heading_size": "h4",
+            "text": "<p>Air can flow in and out of the shoe with ease.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ce29456f-6144-44c0-b934-1068bca6205c": {
+          "type": "column",
+          "settings": {
+            "title": "Heel Walls",
+            "heading_size": "h4",
+            "text": "<p>The rearfoot is held in a firm and upright position by sturdy walls.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c51c79bc-ccb0-4b2b-bda8-cfbac0b7b335": {
+          "type": "column",
+          "settings": {
+            "title": "Shock Absorbing",
+            "heading_size": "h4",
+            "text": "<p>The firm EVA will prevent shocks from reaching the sole of the foot.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c7a2fe56-4925-47fd-a24a-a1c6ad6cdbcc": {
+          "type": "column",
+          "settings": {
+            "title": "Strong Traction",
+            "heading_size": "h4",
+            "text": "<p>Forms a solid bond with a wide range of surfaces for traction.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165245333214ba42e6-0",
+        "165245333214ba42e6-1",
+        "165245333214ba42e6-2",
+        "86d044ea-759e-44d6-a5f7-73a4dfe4db64",
+        "381a6c74-50c2-461f-b5d2-853c59e8a303",
+        "ce29456f-6144-44c0-b934-1068bca6205c",
+        "c51c79bc-ccb0-4b2b-bda8-cfbac0b7b335",
+        "c7a2fe56-4925-47fd-a24a-a1c6ad6cdbcc"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "mobile_swipe": false,
+        "text_alignment": "left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652454308ccca72c3": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16524543088214d127-0": {
+          "type": "text",
+          "settings": {
+            "text": "BEST DEALS ON BRAND NAME SHOES & FOOTWEAR.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16524543088214d127-0"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "30s",
+        "text_size": 58,
+        "outline_text": false,
+        "color_bg": "#1a1a1a",
+        "color_text": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652454339b6c673f3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1652454339ded25d7d-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Which countries do you ship to?",
+            "content": "<p>We ship to over 50 countries around the world, and are adding more all the time. Should you not find your country of residence on the list at the bottom of the page, please use contact form.<\/p>",
+            "page": ""
+          }
+        },
+        "1652454339ded25d7d-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How much will shipping cost?",
+            "content": "<p>We want you to focus on your running. So for most countries we cover the shipping costs, as well as any customs charges involved. Shipping costs will occur if you order from India, Indonesia, Israel or Malaysia.<\/p>",
+            "page": ""
+          }
+        },
+        "1652454339ded25d7d-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I care for my running shoes?",
+            "content": "<p>Running shoes support your feet and are comfortable to wear, so it’s easy to see why so many people choose to wear running trainers for all of their day-to-day activities. We suggest that if you want your running trainers to stay comfortable and supportive on your runs, only wear them out running.<\/p>",
+            "page": ""
+          }
+        },
+        "1652454339ded25d7d-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I know which size I need?",
+            "content": "<p>The average shoe size in the world has changed a lot over the decades. Here’s how the evolution of the average woman’s shoe size looked: at the beginning of the 20th century, the average size was 35, in 1950, it was 36, in 1970, it was 37, and today, the average size of a woman’s shoe is 39. Men’s shoe sizes have also changed a lot. Years ago, the most common sizes among men were 39-40 but today, the average shoe size of a man is 43.<\/p>",
+            "page": ""
+          }
+        },
+        "1652454339ded25d7d-4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What do I do if the item I want is out of stock in my size?",
+            "content": "<p>Although we try to have a stock level that will keep up with expected demand, certain items that are highly popular can sometimes run out of stock. Unfortunately we will not be able to provide timelines for when a specific item will be available again. As stocks continuously change and new products are always being added, please continue to check in to see if we have restocked your desired item or another style like it.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652454339ded25d7d-0",
+        "1652454339ded25d7d-1",
+        "1652454339ded25d7d-2",
+        "1652454339ded25d7d-3",
+        "1652454339ded25d7d-4"
+      ],
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "description": "<p>Find answers to some of the most common questions.<\/p>",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1647163011d29de758": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "165244975926451db4",
+    "165245196754f5c235",
+    "16524478238f6de7c7",
+    "16524533326e934140",
+    "1652454308ccca72c3",
+    "1652454339b6c673f3",
+    "1647163011d29de758",
+    "product-recommendations"
+  ]
+}

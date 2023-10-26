@@ -1,0 +1,298 @@
+{
+  "sections": {
+    "template-header": {
+      "type": "template-header",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "overlay_opacity": 30
+      }
+    },
+    "16533011312453e455": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "1653301130107fbd53-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "1653301130107fbd53-1": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR STORY",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "1653301130107fbd53-0",
+        "1653301130107fbd53-1"
+      ],
+      "settings": {
+        "image": "",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "left",
+        "full_width": true,
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652120914ae452f7a": {
+      "type": "rich-text",
+      "blocks": {
+        "daced6cb-4788-4070-aea8-a97958d73d72": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR MISSION"
+          }
+        },
+        "43faa7bd-8bfd-4a52-b0e2-096b43de8fef": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cardio nothing but net penalty hitter what a hit, yellow card goalie yellow card what a hit pitcher baseball. Forward pack corner scrummage, puck penalty slam dunk loose ball puck awww ref red card. Loose ball strike 3 youre out shes on fire drop goal red card puck nothing but net sin bin.<\/p>",
+            "size": "text-size-small"
+          }
+        }
+      },
+      "block_order": [
+        "daced6cb-4788-4070-aea8-a97958d73d72",
+        "43faa7bd-8bfd-4a52-b0e2-096b43de8fef"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1653303726bf4f8678": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16533032967fb2066b": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "1653303296566fa723-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Premium Leather",
+            "content": "Powerful, elegant designs that give off the subtle but unmistakable message of success. Multiple different types and shades are available in these durable, beautifully crafted wallets. Optimized storage and pocket space.",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1653303296566fa723-1": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Fits Perfectly",
+            "content": "When you purchase a Perfect Fit branded item, you are supporting USA manufacturing jobs in a rural community.  The leather cell phone case is a great way to securely carry your phone on your duty belt.",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1653303296566fa723-0",
+        "1653303296566fa723-1"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "full_width": false,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16533037278de7b42b": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "",
+        "text": "",
+        "video": "",
+        "button_text": "",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16533042676d7534e0": {
+      "type": "featured-collection",
+      "blocks": {
+        "1653304267d106bb8a-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "printed-cases",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 4,
+            "show_view_all": true,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "1653304267d106bb8a-0"
+      ],
+      "settings": {
+        "heading": "NEW ARRIVALS",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16521220290865e5fa": {
+      "type": "testimonials",
+      "blocks": {
+        "1652122029b7e1e204-0": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "Outstanding customer service. We purchased 7 items for our office, including chairs, filing cabinets, &amp; a bench.",
+            "author": "Testimonial author",
+            "retina": true
+          }
+        },
+        "1652122029b7e1e204-1": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "Outstanding customer service. We purchased 7 items for our office, including chairs, filing cabinets, &amp; a bench.",
+            "author": "Testimonial author",
+            "retina": true
+          }
+        },
+        "1652122029b7e1e204-2": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "Outstanding customer service. We purchased 7 items for our office, including chairs, filing cabinets, &amp; a bench.",
+            "author": "Testimonial author",
+            "retina": true
+          }
+        }
+      },
+      "block_order": [
+        "1652122029b7e1e204-0",
+        "1652122029b7e1e204-1",
+        "1652122029b7e1e204-2"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "description": "<p>We take pride in our work and our customer testimonials reflect that.<\/p>",
+        "size": "small",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#223a56",
+        "color_text": "#f6f6f0",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16533064214bd5bd66": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 55,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "165330438226d1dafa": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1653304382041f8805-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "heading": "FREE SHIPPING",
+            "text": "<p>With free shipping, qualifying online orders can be shipped to your home at no cost.<\/p>"
+          }
+        },
+        "1653304382041f8805-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "box",
+            "heading": "EASY RETURNS",
+            "text": "<p>Items can be returned within 15 working days from the delivery of your order.<\/p>"
+          }
+        },
+        "1653304382041f8805-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "heart",
+            "heading": "GIFT PACKAGE",
+            "text": "<p>Customize any curated gift<em> <\/em>boxor create your own.<\/p>"
+          }
+        },
+        "ef67a2d3-0db6-4625-beaf-489b793f6071": {
+          "type": "icon",
+          "settings": {
+            "icon": "clipboard",
+            "heading": "ONE YEAR WARRANTY",
+            "text": "<p>One year from the date you purchased the product.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1653304382041f8805-0",
+        "1653304382041f8805-1",
+        "1653304382041f8805-2",
+        "ef67a2d3-0db6-4625-beaf-489b793f6071"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "medium",
+        "heading_size": "small",
+        "mobile_swipe": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#223a56",
+        "color_text": "#223a56",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165330638937e55ee0": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 60,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    }
+  },
+  "order": [
+    "template-header",
+    "16533011312453e455",
+    "1652120914ae452f7a",
+    "1653303726bf4f8678",
+    "16533032967fb2066b",
+    "16533037278de7b42b",
+    "16533042676d7534e0",
+    "16521220290865e5fa",
+    "16533064214bd5bd66",
+    "165330438226d1dafa",
+    "165330638937e55ee0"
+  ]
+}

@@ -1,0 +1,89 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.page-header {
+  text-align: center;
+  min-height: 250px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .page-header {
+      padding: 60px; } }
+  .page-header__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 5; }
+    @media only screen and (min-width: 768px) {
+      .page-header__inner {
+        padding: 0 40px; } }
+    .page-header__inner > *:last-child {
+      margin-bottom: 0; }
+  .page-header .searchform {
+    display: inline-block;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 35px; }
+  .page-header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; }
+    .page-header__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .page-header__bg:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      pointer-events: none;
+      background: rgba(var(--color-overlay-rgb), var(--overlay-opacity)); }
+  .page-header.page-header__has-bg {
+    position: relative;
+    color: #fff;
+    background-color: var(--color-accent);
+    min-height: 300px; }
+    .page-header.page-header__has-bg h1 {
+      color: inherit; }
+    .page-header.page-header__has-bg p a {
+      color: #fff;
+      text-decoration: underline; }
+  .page-header--subcollections .text-button {
+    margin: 0 5px; }
+  .page-header--wrapper .row:not(.full-width-row-full) .page-header__bg {
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+    width: calc(100% + 25px); }
+    @media only screen and (min-width: 768px) {
+      .page-header--wrapper .row:not(.full-width-row-full) .page-header__bg {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
+  .page-header.my-account-header {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 40px; }
+    .page-header.my-account-header p {
+      font-size: 15px; }
+      .page-header.my-account-header p svg {
+        width: auto;
+        height: 14px;
+        margin-right: 5px;
+        vertical-align: middle; }
+      .page-header.my-account-header p a {
+        font-weight: 500; }

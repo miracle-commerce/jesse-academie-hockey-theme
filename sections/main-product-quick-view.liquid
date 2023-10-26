@@ -1,0 +1,369 @@
+{%- liquid
+	assign hide_variants = section.settings.hide_variants
+	assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
+	assign featured_media = product.selected_or_first_available_variant.featured_media
+
+	assign sizes = '320x0,640x0,960x0'
+
+-%}
+<div class="side-panel product-drawer active" id="Product-Drawer">
+	<div class="side-panel-inner">
+		<div class="side-panel-header">
+			<div>
+				<h4>{{ 'products.product.product_drawer.select_options' | t }}</h4>
+				<side-panel-close class="side-panel-close">{{ 'general.close' | t }}</side-panel-close>
+			</div>
+		</div>
+		<div class="side-panel-content" id="Product-Drawer-Content">
+			{{ 'product.css' | asset_url | stylesheet_tag }}
+			<div class="thb-product-detail product">
+			  <div id="MediaGallery-{{ section.id }}">
+		      <product-slider id="Product-Quick-Slider" class="product-quick-images product-images" data-hide-variants="{{ hide_variants }}">
+						{%- if featured_media != null -%}
+                {%- render 'product-media', product: product, section: section, forloop: false, media: featured_media, sizes: sizes, variant_images: variant_images, hide_variants: hide_variants -%}
+	            {%- endif -%}
+		        {%- for media in product.media -%}
+							{%- unless media.id == featured_media.id -%}
+                {%- render 'product-media', product: product, section: section, forloop: forloop, media: media, sizes: sizes, variant_images: variant_images, hide_variants: hide_variants -%}
+	            {%- endunless -%}
+		        {%- endfor -%}
+		      </product-slider>
+					<div class="product-quick-images__scrollbar">
+						<div></div>
+					</div>
+			  </div>
+				<div id="ProductInfo-{{ section.id }}">
+					{% render 'product-information', product: product, section: section, update_url: false, pickup: false, hide_variants: hide_variants %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	{% schema %}
+	{
+	  "name": "Product",
+	  "tag": "section",
+	  "class": "product-section",
+		"settings": [
+			{
+				"type": "checkbox",
+				"id": "show_taxes_included",
+				"default": true,
+				"label": "Show tax and shipping information",
+				"info": "Tax and shipping information will be displayed if [taxes are included in the price](https://help.shopify.com/en/manual/taxes/location#include-taxes-in-product-prices) or [shipping policy](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos#add-or-generate-store-policies) is added"
+			},
+			{
+				"type": "header",
+				"content": "Media"
+			},
+			{
+				"type": "paragraph",
+				"content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+			},
+			{
+				"type": "checkbox",
+				"id": "hide_variants",
+				"default": false,
+				"label": "Hide unselected variants’ media",
+				"info": "Media for the unselected variants will be hidden."
+			}
+		],
+	  "blocks": [
+			{
+				"type": "@app"
+			},
+			{
+	      "type": "text",
+	      "name": "Text",
+	      "settings": [
+	        {
+	          "type": "text",
+	          "id": "text",
+	          "default": "Text block",
+	          "label": "Text"
+	        },
+	        {
+	          "type": "select",
+	          "id": "text_style",
+	          "options": [
+	            {
+	              "value": "style_body",
+	              "label": "Body"
+	            },
+	            {
+	              "value": "subheading",
+	              "label": "Subheading"
+	            },
+	            {
+	              "value": "style_vendor",
+	              "label": "Vendor"
+	            }
+	          ],
+	          "default": "style_vendor",
+	          "label": "Text Style"
+	        }
+	      ]
+	    },
+	    {
+	      "type": "title",
+	      "name": "Title",
+	      "limit": 1,
+				"settings": [
+					{
+						"type": "paragraph",
+						"content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-collection-show-product-rating)"
+					}
+				]
+	    },
+			{
+	      "type": "variant_picker",
+	      "name": "Variant picker",
+	      "limit": 1,
+	      "settings": [
+	        {
+	          "type": "select",
+	          "id": "picker_type",
+	          "options": [
+	            {
+	              "value": "dropdown",
+	              "label": "Dropdown"
+	            },
+	            {
+	              "value": "button",
+	              "label": "Block"
+	            }
+	          ],
+	          "default": "button",
+	          "label": "Type"
+	        },
+					{
+						"type": "checkbox",
+						"id": "color_picker",
+						"default": true,
+						"label": "Enable color swatches"
+					},
+					{
+						"type": "checkbox",
+						"id": "variant_is_disabled",
+						"default": true,
+						"label": "Show availability in selectors",
+						"info": "When an option is selected, unavailable variants will be crossed-out."
+					}
+	      ]
+	    },
+			{
+	      "type": "buy_buttons",
+	      "name": "Buy buttons",
+	      "limit": 1,
+				"settings": [
+					{
+						"type": "checkbox",
+						"id": "show_quantity_selector",
+						"default": true,
+						"label": "Show quantity selector"
+					},
+	        {
+	          "type": "checkbox",
+	          "id": "show_dynamic_checkout",
+	          "default": true,
+	          "label": "Show dynamic checkout buttons",
+	          "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+	        }
+	      ]
+	    },
+	    {
+	      "type": "description",
+	      "name": "Description",
+	      "limit": 1
+	    },
+			{
+	      "type": "custom_liquid",
+	      "name": "Custom liquid",
+	      "settings": [
+	        {
+	          "type": "liquid",
+	          "id": "custom_liquid",
+	          "label": "Custom liquid",
+	          "info": "Add app snippets or other Liquid code to create advanced customizations."
+	        }
+	      ]
+	    },
+			{
+				"type": "collapsible_tab",
+				"name": "Collapsible row",
+				"settings": [
+						{
+						"type": "text",
+						"id": "heading",
+						"default": "Collapsible row",
+						"info": "Include a heading that explains the content.",
+						"label": "Heading"
+					},
+					{
+						"type": "checkbox",
+						"id": "open",
+						"default": false,
+						"label": "Open by default"
+					},
+					{
+						"type": "richtext",
+						"id": "content",
+						"label": "Row content"
+					},
+					{
+						"type": "page",
+						"id": "page",
+						"label": "Row content from page"
+					},
+					{
+						"type": "liquid",
+						"id": "custom_liquid",
+						"label": "Custom liquid",
+						"info": "Add app snippets or other Liquid code to create advanced customizations. For product description, you can use {{ product.description }}"
+					}
+				]
+			},
+			{
+	      "type": "custom_option",
+	      "name": "Line item property",
+	      "settings": [
+					{
+						"type": "paragraph",
+						"content": "Line item properties are used to collect customization information for an item added to the cart."
+					},
+					{
+	          "type": "select",
+	          "id": "type",
+	          "label": "Type",
+	          "default": "text",
+	          "options": [
+	            {
+	              "label": "Text",
+	              "value": "text"
+	            },
+	            {
+	              "label": "Textarea",
+	              "value": "textarea"
+	            },
+	            {
+	              "label": "Checkbox",
+	              "value": "checkbox"
+	            },
+	            {
+	              "label": "Multiple options",
+	              "value": "multiple"
+	            }
+	          ]
+	        },
+	        {
+	          "type": "text",
+	          "id": "label",
+	          "label": "Label",
+	          "default": "Custom option"
+	        },
+	        {
+	          "type": "checkbox",
+	          "id": "text_required",
+	          "label": "Required",
+	          "info": "Only works with 'Add to cart' button",
+	          "default": false
+	        },
+					{
+	          "type": "header",
+	          "content": "Text",
+						"info": "Requires line item property type to be Text or Textarea."
+	        },
+					{
+	          "type": "text",
+	          "id": "text_placeholder",
+	          "label": "Placeholder",
+	          "default": "Enter your text here"
+	        },
+	        {
+	          "type": "header",
+	          "content": "Checkbox",
+						"info": "Requires line item property type to be Checkbox."
+	        },
+	        {
+	          "type": "text",
+	          "id": "checkbox_checked_value",
+	          "label": "Checked value",
+	          "default": "Yes"
+	        },
+	        {
+	          "type": "text",
+	          "id": "checkbox_unchecked_value",
+	          "label": "Unchecked value",
+	          "default": "No"
+	        },
+	        {
+	          "type": "header",
+	          "content": "Multiple options",
+						"info": "Requires line item property type to be Multiple options."
+	        },
+	        {
+	          "type": "select",
+	          "id": "multiple_style",
+	          "label": "Style",
+	          "default": "dropdown",
+	          "options": [
+	            {
+	              "label": "Dropdown",
+	              "value": "dropdown"
+	            },
+	            {
+	              "label": "Radio",
+	              "value": "radio"
+	            }
+	          ]
+	        },
+	        {
+	          "type": "textarea",
+	          "id": "multiple_options",
+	          "label": "Options",
+	          "default": "Option 1\nOption 2\nOption 3",
+	          "info": "One option on each line"
+	        }
+	      ]
+	    },
+			{
+	      "type": "sku",
+	      "name": "SKU",
+	      "settings": [
+					{
+						"type": "select",
+						"id": "sku_style",
+						"options": [
+							{
+								"value": "style_body",
+								"label": "Body"
+							},
+							{
+								"value": "subheading",
+								"label": "Subheading"
+							},
+							{
+								"value": "style_vendor",
+								"label": "Vendor"
+							}
+						],
+						"default": "style_vendor",
+						"label": "SKU style"
+					}
+	      ]
+	    },
+			{
+				"type": "product_link",
+				"name": "Product link",
+				"settings": [
+					{
+						"type": "paragraph",
+						"content": "Use this to direct users to product page"
+					}
+				]
+			}
+	  ]
+	}
+{% endschema %}

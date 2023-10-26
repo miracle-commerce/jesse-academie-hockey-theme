@@ -1,0 +1,481 @@
+{
+  "sections": {
+    "16479477632637c9a7": {
+      "type": "slideshow",
+      "blocks": {
+        "164794776393e76b8e-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "subheading": "STAND OUT",
+            "heading": "Impress Them With Your Outfit",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": false
+          }
+        },
+        "164794776393e76b8e-1": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "subheading": "INSPIRE OTHERS",
+            "heading": "Clothes That You Will Feel Too",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Dresses",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": false
+          }
+        },
+        "164794776393e76b8e-2": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "subheading": "For the boss in you",
+            "heading": "The Possibilities Are Endless",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": false
+          }
+        }
+      },
+      "block_order": [
+        "164794776393e76b8e-0",
+        "164794776393e76b8e-1",
+        "164794776393e76b8e-2"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-750",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "content_size": "medium",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "49bec7bc-2819-4c75-92e9-bb9bf60d0310": {
+      "type": "featured-collection",
+      "blocks": {
+        "template--18721239728423__49bec7bc-2819-4c75-92e9-bb9bf60d0310-1682510855eb12b336-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottoms",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 4,
+            "show_view_all": true,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__49bec7bc-2819-4c75-92e9-bb9bf60d0310-1682510855eb12b336-0"
+      ],
+      "settings": {
+        "heading": "Dress like you’re already famous",
+        "description": "",
+        "full_width": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16db2b8b-73ee-49cf-a717-8302c16c2d72": {
+      "type": "gallery",
+      "blocks": {
+        "template--18721239728423__16db2b8b-73ee-49cf-a717-8302c16c2d72-16825111715761fff2-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Reveal Your Inner Glow & Stay Beautiful",
+            "text": "Elegance is not the prerogative of those who have just escaped from adolescence, but of those who have already taken possession of their future.",
+            "link_label": "SHOP COLLECTION",
+            "link": "",
+            "use_text_button": true,
+            "block_link": ""
+          }
+        },
+        "template--18721239728423__16db2b8b-73ee-49cf-a717-8302c16c2d72-16825111715761fff2-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__16db2b8b-73ee-49cf-a717-8302c16c2d72-16825111715761fff2-0",
+        "template--18721239728423__16db2b8b-73ee-49cf-a717-8302c16c2d72-16825111715761fff2-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 2,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "large",
+        "heading_size": "h2",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "c8823f78-b669-4765-ae58-dc8a47239bf7": {
+      "type": "featured-collection",
+      "blocks": {
+        "template--18721239728423__c8823f78-b669-4765-ae58-dc8a47239bf7-16825120382750dfdf-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 4,
+            "show_view_all": true,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__c8823f78-b669-4765-ae58-dc8a47239bf7-16825120382750dfdf-0"
+      ],
+      "settings": {
+        "heading": "For your authentic self",
+        "description": "",
+        "full_width": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "2b7002c1-6517-40d2-b763-821b4d1f5e77": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 45,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "fa82dc62-c769-4ddd-82fd-627d704c3a60": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "heading": "Feel Pretty",
+        "text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "video": "",
+        "button_text": "WATCH THE VIDEO",
+        "overlay_opacity": 15,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "31e95757-8b60-4540-80e0-5ef1b1205fe4": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Go Traditional"
+          }
+        },
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Make People Fall In -Love With Your Clothes",
+            "heading_size": "h3"
+          }
+        },
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The only way to do something in depth is to work hard. I do not have one theme for each season, I just try to make beautiful clothes all year round. I've always thought of the T-shirt as the Alpha and Omega of the fashion alphabet. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-0",
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-1",
+        "template--18721239728423__31e95757-8b60-4540-80e0-5ef1b1205fe4-168320725931e09b80-2"
+      ],
+      "settings": {
+        "image": "",
+        "image_ratio": "adapt",
+        "image_2": "",
+        "image_ratio_2": "adapt",
+        "image_3": "",
+        "image_ratio_3": "adapt",
+        "layout": "text_first",
+        "content_alignment": "text-left",
+        "content_position": "middle",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "f7a37113-51f6-4c0d-aaea-6c614d583caa": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 45,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "e82c9728-d30c-4dd1-87d0-ab5bf6308b19": {
+      "type": "gallery",
+      "blocks": {
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Loungewear",
+            "text": "",
+            "link_label": "Discover Collection",
+            "link": "",
+            "use_text_button": true,
+            "block_link": ""
+          }
+        },
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Under the sun",
+            "text": "",
+            "link_label": "Discover Collection",
+            "link": "",
+            "use_text_button": true,
+            "block_link": ""
+          }
+        },
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-2": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Drip in class",
+            "text": "",
+            "link_label": "Discover Collection",
+            "link": "",
+            "use_text_button": true,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-1",
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-0",
+        "template--18721239728423__e82c9728-d30c-4dd1-87d0-ab5bf6308b19-168251242351fe695b-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 3,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "medium",
+        "heading_size": "h3",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "0c1efcc8-a540-41a3-9be4-605d862d5e7d": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-0": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "DRESSES",
+            "link": ""
+          }
+        },
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-1": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "TOPS",
+            "link": ""
+          }
+        },
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-2": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "BOTTOMS",
+            "link": ""
+          }
+        },
+        "09f988a0-e259-497f-bb21-11fd463d981f": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "KNITWEAR",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-0",
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-1",
+        "template--18721239728423__0c1efcc8-a540-41a3-9be4-605d862d5e7d-16825120663faefa47-2",
+        "09f988a0-e259-497f-bb21-11fd463d981f"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 100,
+        "outline_text": false,
+        "image_size": "medium",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#aeaeae",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "aa1e911d-4c5c-40cb-bae5-33bb6981ca12": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 0,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "3cd78dca-2d5b-46f5-957c-a1280a87805e": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest News",
+        "description": "<p>Keep up to date with all the latest news.<\/p>",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "square",
+        "show_image": true,
+        "use_shapes": true,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": false,
+        "button_outline": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "ed26f68d-2812-41a0-aaee-e9acfa72c34a": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "3dda67ea-0299-4c7c-84ba-ba2f41e59b98": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-1": {
+          "type": "heading",
+          "settings": {
+            "text": "We Got The Best That You Can<br>Wear A Dress",
+            "heading_size": "h3"
+          }
+        },
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "46aacfc2-019d-47ef-9d35-bae5efa09ee4": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Story",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-0",
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-1",
+        "template--18721239728423__3dda67ea-0299-4c7c-84ba-ba2f41e59b98-16830339366f0d557c-2",
+        "46aacfc2-019d-47ef-9d35-bae5efa09ee4"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "full_width": true,
+        "color_bg": "#3e3d3d",
+        "color_text": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "16479477632637c9a7",
+    "49bec7bc-2819-4c75-92e9-bb9bf60d0310",
+    "16db2b8b-73ee-49cf-a717-8302c16c2d72",
+    "c8823f78-b669-4765-ae58-dc8a47239bf7",
+    "2b7002c1-6517-40d2-b763-821b4d1f5e77",
+    "fa82dc62-c769-4ddd-82fd-627d704c3a60",
+    "31e95757-8b60-4540-80e0-5ef1b1205fe4",
+    "f7a37113-51f6-4c0d-aaea-6c614d583caa",
+    "e82c9728-d30c-4dd1-87d0-ab5bf6308b19",
+    "0c1efcc8-a540-41a3-9be4-605d862d5e7d",
+    "aa1e911d-4c5c-40cb-bae5-33bb6981ca12",
+    "3cd78dca-2d5b-46f5-957c-a1280a87805e",
+    "ed26f68d-2812-41a0-aaee-e9acfa72c34a",
+    "3dda67ea-0299-4c7c-84ba-ba2f41e59b98"
+  ]
+}

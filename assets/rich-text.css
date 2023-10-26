@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.rich-text {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .rich-text {
+      padding-left: 40px;
+      padding-right: 40px; } }
+
+.rich-text__inner {
+  max-width: 620px;
+  margin: 0 auto; }
+  .rich-text__inner img,
+  .rich-text__inner .thb-placeholder {
+    margin-bottom: 30px; }
+  .rich-text__inner .thb-placeholder {
+    display: inline-block;
+    width: 120px;
+    height: 120px; }
+
+.rich-text .rte {
+  margin-bottom: 35px; }
+  .rich-text .rte p:last-child {
+    margin-bottom: 0; }
+
+.rich-text.text-position-left .rich-text__inner {
+  margin-left: 0; }
+
+.rich-text.text-position-right .rich-text__inner {
+  margin-right: 0; }
+
+.rich-text.text-width-small .rich-text__inner {
+  max-width: 400px; }
+
+.rich-text.text-width-large .rich-text__inner {
+  max-width: 800px; }

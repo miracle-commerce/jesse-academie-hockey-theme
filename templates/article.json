@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-article": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "tags": {
+          "type": "tags",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "content",
+        "tags",
+        "share"
+      ],
+      "settings": {
+        "article_show_date": true,
+        "article_show_author": true,
+        "article_show_nav": true
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-article"
+  ]
+}

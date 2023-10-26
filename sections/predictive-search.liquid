@@ -1,0 +1,60 @@
+{%- if predictive_search.performed -%}
+	{%- liquid
+		assign predictive_search_products = predictive_search.resources.products
+		assign predictive_search_articles = predictive_search.resources.articles
+		assign predictive_search_queries = predictive_search.resources.queries
+		-%}
+  <div id="predictive-search-results">
+		<div class="search-categories">
+			{%- if predictive_search_products.size != 0 -%}
+			<a href="#predictive-results-product" class="active">{{ 'sections.header.products' | t }}</a>
+			{%- endif -%}
+			{%- if predictive_search_articles.size != 0 -%}
+			<a href="#predictive-results-article" class="{%- if predictive_search_products.size == 0 -%}active{%- endif -%}">{{ 'sections.header.articles' | t }}</a>
+			{%- endif -%}
+			{%- if predictive_search_queries.size > 0 -%}
+			<a href="#predictive-results-suggestions" class="{%- if predictive_search_products.size == 0 and predictive_search_articles.size == 0 -%}active{%- endif -%}">{{ 'sections.header.suggestions' | t }}</a>
+			{%- endif -%}
+		</div>
+		<scroll-shadow>
+			<div class="search-results-container">
+				{%- if predictive_search_products.size != 0 -%}
+				<div class="search-results active" id="predictive-results-product">
+					{%- for predictive_product in predictive_search_products -%}
+						{% render 'product-card-small', product_small: predictive_product, predictive_search: predictive_search %}
+		      {%- endfor -%}
+				</div>
+				{%- endif -%}
+				{%- if predictive_search_articles.size != 0 -%}
+				<div class="search-results{% if predictive_search_products.size == 0 %} active{% endif -%}" id="predictive-results-article">
+					{%- for predictive_article in predictive_search_articles -%}
+						<div class="product-cart-item">
+							<div class="product-cart-item-image">
+								{% if predictive_article.image %}
+									{%- render 'responsive-image', image: predictive_article.image, sizes: '150x0' -%}
+								{% else %}
+									<div class="thb-placeholder" style="width: 75px; height:75px;">
+										{{ 'image' | placeholder_svg_tag }}
+									</div>
+								{% endif %}
+							</div>
+							<div>
+								<a href="{{ predictive_article.url }}" title="{{ predictive_article.title | escape }}" class="cart-product-link">{{ predictive_article.title | highlight: predictive_search.terms }}</a>
+							</div>
+						</div>
+		      {%- endfor -%}
+				</div>
+				{%- endif -%}
+				{%- if predictive_search_queries.size > 0 -%}
+				<div class="search-results search-results--suggestions{% if predictive_search_products.size == 0 and predictive_search_articles.size == 0 %} active{% endif -%}" id="predictive-results-suggestions">
+					<ul>
+						{%- for query in predictive_search_queries -%}
+					    <li><a href="{{ query.url }}" class="predictive-search__item link link--text" tabindex="-1">{{ query.styled_text }}</a></li>
+					  {%- endfor -%}
+					</ul>
+				</div>
+				{%- endif -%}
+			</div>
+		</scroll-shadow>
+	</div>
+{%- endif -%}

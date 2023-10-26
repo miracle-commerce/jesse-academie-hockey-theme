@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.email-signup--inner {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .email-signup--inner {
+      padding-left: 40px;
+      padding-right: 40px; } }
+
+.email-signup {
+  color: var(--color-accent);
+  background-color: var(--bg-body);
+  background-size: cover; }
+  .email-signup .signup-container {
+    max-width: 510px;
+    margin: 0 auto; }

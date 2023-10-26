@@ -1,0 +1,132 @@
+{%- liquid
+	assign show_subcollections = false
+	assign full_width = section.settings.full_width
+	assign overlay_opacity = section.settings.overlay_opacity
+	assign display_description = section.settings.display_description
+	assign bg_image = false
+
+	if template contains 'collection'
+		assign show_subcollections = section.settings.show_subcollections
+		assign bg_image = collection.featured_image
+		assign heading = collection.title
+		assign description = '<p>' | append: collection.description | append: '</p>'
+		assign collection_handle = collection.handle
+	elsif template == 'search'
+		assign heading = 'search.heading' | t
+		capture description
+			assign search_phrase = search.terms | replace: '*', ''
+			if '' != search_phrase
+				echo '<p>'
+				echo 'search.results_found' | t: count: search.results_count, key: search_phrase
+				echo '</p>'
+			endif
+		endcapture
+	elsif template contains 'page'
+		assign bg_image = section.settings.bg_image
+		assign heading = page.title
+		if display_description
+			assign description = '<p>' | append: page_description | append: '</p>'
+		endif
+	endif
+-%}
+{{ 'page-header.css' | asset_url | stylesheet_tag }}
+<div class="page-header--wrapper">
+	<div class="row{% if full_width %} full-width-row-full{% endif %}">
+		<div class="small-12 columns">
+			<div class="page-header {% if bg_image %}page-header__has-bg{% endif %}">
+				{% if bg_image %}
+				<div class="page-header__bg" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.00 }}">
+					{% assign small_width = bg_image.src.height | times: '375' | divided_by: bg_image.src.width %}
+					{% assign master_width = bg_image.src.width | append: 'x' | append: bg_image.src.height %}
+					{% assign width = '375x' | append: small_width | append: ',' | append: master_width %}
+					{%- render 'responsive-image', image: bg_image, sizes: width -%}
+				</div>
+				{% endif %}
+				<div class="page-header__inner">
+					<h1 class="thb-shop-title">{{ heading }}</h1>
+					{% if template == 'search' %}
+						<form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
+							<fieldset>
+								<input type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
+								<button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
+							</fieldset>
+						</form>
+					{% endif %}
+					{{ description }}
+					{%- if show_subcollections and linklists[collection_handle] != empty -%}
+						<div class="page-header--subcollections">
+							{%- for link in linklists[collection_handle].links -%}
+								{%- assign link_collection = collections[link.handle] -%}
+								{%- if link_collection != blank -%}
+									<a href="{{ link_collection.url }}" title="{{ link_collection.title | escape }}" class="template-header--subcollection text-button{% if bg_image %} white{% endif %}">
+										{{ link_collection.title }}
+									</a>
+								{%- endif -%}
+							{%- endfor -%}
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Template header",
+    "settings": [
+			{
+	      "type": "checkbox",
+	      "id": "full_width",
+	      "label": "Make section full width",
+	      "default": false
+	    },
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 30
+			},
+			{
+				"type": "header",
+				"content": "Catalog page"
+			},
+			{
+				"type": "paragraph",
+				"content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
+			},
+			{
+				"type": "header",
+				"content": "Collections",
+				"info": "These settings are only used on collection pages."
+			},
+			{
+	      "type": "checkbox",
+	      "id": "show_subcollections",
+	      "default": true,
+	      "label": "Show subcollections",
+				"info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-add-sub-category-links-inside-template-header-habitat/)"
+	    },
+			{
+        "type": "header",
+        "content": "Pages"
+      },
+			{
+	      "type": "checkbox",
+	      "id": "display_description",
+	      "label": "Show description text",
+	      "default": true,
+				"info": "Displays the page SEO description text under page title. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/pages#edit-the-search-engine-listing-for-a-webpage)"
+	    },
+			{
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background image",
+	      "info": "Changes the image on pages."
+      }
+    ]
+  }
+{% endschema %}

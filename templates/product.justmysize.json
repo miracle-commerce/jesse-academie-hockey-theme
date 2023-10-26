@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true
+          }
+        },
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18": {
+          "type": "popup",
+          "settings": {
+            "text": "Sizing guide",
+            "icon": "ruler",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "d536fc83-ceed-4365-9ba5-628c64e65695": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "product_list_limit": 10
+          }
+        },
+        "55da0587-5936-4a13-a042-eb96ec75df15": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "MATERIALS",
+            "open": false,
+            "content": "<p>Talk about fine lines and great curves. That’s the beauty of the Darcy sofa—made to suit your appreciation for clean, contemporary style. A striking flared frame, comfy pillow top armrests and an ultra-soft upholstery that holds up to everyday living complete this fashion statement.<\/p>",
+            "page": ""
+          }
+        },
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "CARE GUIDE",
+            "open": false,
+            "content": "<p>Regular<em>care<\/em>. Use a slightly damp, soft and lint-free cloth for regular dust removal. Always clean in the direction of the grain.<\/p>",
+            "page": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "variant_picker",
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18",
+        "buy_buttons",
+        "d536fc83-ceed-4365-9ba5-628c64e65695",
+        "55da0587-5936-4a13-a042-eb96ec75df15",
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_taxes_included": true,
+        "thumbnail_position": "left",
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "6efe9abd-bf6a-457d-8408-57d6d137e728": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 45,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "940a4c9d-f3a3-40fc-9774-0d91f45d91f0": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "template--18721240187175__940a4c9d-f3a3-40fc-9774-0d91f45d91f0-168318373330433d2b-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "A New Revolutionary & New Perspective",
+            "content": "Whether you're looking for a chic and sophisticated outfit for a business meeting or a playful and trendy outfit for a night out with friends, we have you covered. Our collections are constantly updated to reflect the latest fashion trends, so you can stay on top of your style game.",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "template--18721240187175__940a4c9d-f3a3-40fc-9774-0d91f45d91f0-168318373330433d2b-1": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Forget The Rules, Start Making Rules",
+            "content": "We also offer a wide range of accessories, including jewelry, bags, and shoes, to help you complete your look. Our accessories are carefully selected to complement our clothing collections, ensuring that you always look your best.",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "34867135-2354-45dc-9845-6f07f9029555": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Complement Your Flawless Beauty",
+            "content": "At our fashion store, we believe that everyone deserves to feel confident and beautiful. That's why we offer a wide range of sizes and styles to accommodate all body types and fashion preferences.",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240187175__940a4c9d-f3a3-40fc-9774-0d91f45d91f0-168318373330433d2b-0",
+        "template--18721240187175__940a4c9d-f3a3-40fc-9774-0d91f45d91f0-168318373330433d2b-1",
+        "34867135-2354-45dc-9845-6f07f9029555"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-650",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "f15ba0bb-917f-4373-b14c-3e038de190b9": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-0": {
+          "type": "column",
+          "settings": {
+            "title": "High Quality",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-1": {
+          "type": "column",
+          "settings": {
+            "title": "Feel Confident",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-2": {
+          "type": "column",
+          "settings": {
+            "title": "Latest Trends",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-0",
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-1",
+        "template--18721240187175__f15ba0bb-917f-4373-b14c-3e038de190b9-1683183650db46f465-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "text_alignment": "left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "7f87e616-71d6-4fd5-bf46-adc44b0bc9b6": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "full_width": false,
+        "video": "",
+        "video_autoplay": true,
+        "aspect_ratio": "16-9",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "d6707f62-ba6c-407c-99da-e6efb7244289": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18721240187175__d6707f62-ba6c-407c-99da-e6efb7244289-1683188083f8c9fe69-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We understand that fashion is more than just clothing. It's a way to express yourself and showcase your individuality. That's why our team of fashion experts curates our collections to ensure that they offer something for everyone.<\/p>",
+            "size": "text-size-large"
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240187175__d6707f62-ba6c-407c-99da-e6efb7244289-1683188083f8c9fe69-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "b04b564c-7793-4396-b60c-1eb7e09ef05d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "d93e5ea5-d973-4bf8-9a6c-3e677985935e": {
+      "type": "gallery",
+      "blocks": {
+        "template--18721240187175__d93e5ea5-d973-4bf8-9a6c-3e677985935e-168318813665533832-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--18721240187175__d93e5ea5-d973-4bf8-9a6c-3e677985935e-168318813665533832-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18721240187175__d93e5ea5-d973-4bf8-9a6c-3e677985935e-168318813665533832-0",
+        "template--18721240187175__d93e5ea5-d973-4bf8-9a6c-3e677985935e-168318813665533832-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 2,
+        "full_width": false,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "center",
+        "column_spacing": "small",
+        "heading_size": "h4",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "6efe9abd-bf6a-457d-8408-57d6d137e728",
+    "940a4c9d-f3a3-40fc-9774-0d91f45d91f0",
+    "f15ba0bb-917f-4373-b14c-3e038de190b9",
+    "7f87e616-71d6-4fd5-bf46-adc44b0bc9b6",
+    "d6707f62-ba6c-407c-99da-e6efb7244289",
+    "b04b564c-7793-4396-b60c-1eb7e09ef05d",
+    "d93e5ea5-d973-4bf8-9a6c-3e677985935e",
+    "product-recommendations"
+  ]
+}

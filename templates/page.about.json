@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "template-header": {
+      "type": "template-header",
+      "settings": {
+        "full_width": true,
+        "overlay_opacity": 30
+      }
+    },
+    "1652120914ae452f7a": {
+      "type": "rich-text",
+      "blocks": {
+        "1652120914012681b9-1": {
+          "type": "heading",
+          "settings": {
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "1652120914012681b9-1"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165346409355bacb50": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 60,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16521210505e7fc635": {
+      "type": "image-with-text",
+      "blocks": {
+        "16521210505eeb74be-0": {
+          "type": "subheading",
+          "settings": {
+          }
+        },
+        "16521210505eeb74be-1": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "16521210505eeb74be-2": {
+          "type": "text",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16521210505eeb74be-0",
+        "16521210505eeb74be-1",
+        "16521210505eeb74be-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16521213835e1258e7": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "165212138302dd3fa3-0": {
+          "type": "slide",
+          "settings": {
+          }
+        },
+        "165212138302dd3fa3-1": {
+          "type": "slide",
+          "settings": {
+          }
+        },
+        "165212138302dd3fa3-2": {
+          "type": "slide",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "165212138302dd3fa3-0",
+        "165212138302dd3fa3-1",
+        "165212138302dd3fa3-2"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652121675f491b0b5": {
+      "type": "multicolumn",
+      "blocks": {
+        "1652121675ec6df428-0": {
+          "type": "column",
+          "settings": {
+          }
+        },
+        "1652121675ec6df428-1": {
+          "type": "column",
+          "settings": {
+          }
+        },
+        "1652121675ec6df428-2": {
+          "type": "column",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1652121675ec6df428-0",
+        "1652121675ec6df428-1",
+        "1652121675ec6df428-2"
+      ],
+      "settings": {
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "mobile_swipe": false,
+        "text_alignment": "left",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16521220290865e5fa": {
+      "type": "testimonials",
+      "blocks": {
+        "1652122029b7e1e204-0": {
+          "type": "quote",
+          "settings": {
+          }
+        },
+        "1652122029b7e1e204-1": {
+          "type": "quote",
+          "settings": {
+          }
+        },
+        "1652122029b7e1e204-2": {
+          "type": "quote",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1652122029b7e1e204-0",
+        "1652122029b7e1e204-1",
+        "1652122029b7e1e204-2"
+      ],
+      "settings": {
+        "size": "medium",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#103a3a",
+        "color_text": "#f6f6f0",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "template-header",
+    "1652120914ae452f7a",
+    "165346409355bacb50",
+    "16521210505e7fc635",
+    "16521213835e1258e7",
+    "1652121675f491b0b5",
+    "16521220290865e5fa"
+  ]
+}

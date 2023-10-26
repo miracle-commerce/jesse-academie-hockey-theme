@@ -1,0 +1,231 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true
+          }
+        },
+        "14fa7f8a-f119-4a0f-88ea-519432cacf5b": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "55da0587-5936-4a13-a042-eb96ec75df15": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Détails du cours",
+            "open": false,
+            "content": "<p>{{ product.metafields.custom.d_tails_du_cours | metafield_tag }}<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "7b68f09d-7bb5-4832-960a-c5db2fa053a1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dates des cours",
+            "open": false,
+            "content": "<p>{{ product.metafields.custom.date_des_cours | metafield_tag }}<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "4a6fc147-d8b0-4769-9b6a-afc4c0634f83": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Guide des Catégories",
+            "open": false,
+            "content": "<ul><li>M7 (MAGH) - 2017-2018<\/li><li>M9 (Novice) - 2015-2016<\/li><li>M11 (Atome) - 2013-2014<\/li><li>M13 (Peewee) - 2011-2012<\/li><li>M15 (Bantam) - 2009-2010<\/li><li>M18 (Midget) - 2006-2008<\/li><\/ul>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Politiques d'annulation",
+            "open": false,
+            "content": "<p>Toute demande d’annulation doit être transmise par courriel au <a href=\"https:\/\/ahjb.ca\/policies\/info@ahjb.ca\" target=\"_blank\">info@ahjb.ca<\/a><\/p><p><br\/>En cas d’annulation, les frais suivants seront chargés sans aucune exception et sont établis selon le type d’activité réservé ;<br\/><\/p><p>PROGRAMMES DE DÉVELOPPEMENT<br\/>- Annulation 30 jours et plus du début de l’activité : 100$* non remboursable (frais administratifs), la balance sera remboursée ou mise en crédit au dossier.<br\/>- Annulation 29 et moins du début de l’activité : 100% non remboursable.<br\/>*300$ de frais administratifs dans le cas du Summum du développement ou Summum Élite<\/p><p><br\/>CAMPS D’ÉTÉ, TEMPS DES FÊTES, RELÂCHE SCOLAIRE ET CAMPS NON STANDARDS (2, 3 OU 5 JOURS)<br\/>- Annulation 30 jours et plus du début de l’activité : 100$* non remboursable (frais<br\/>administratifs), la balance sera remboursée ou mise en crédit au dossier.<br\/>- Annulation 29 et moins du début de l’activité : 100% non remboursable.<br\/>*300$ de frais administratifs dans le cas d’un camp Summum à 30 jours et plus du début de l'activité.<\/p><p><br\/>SÉANCES SUR GLACE SYNTHÉTIQUE<br\/>- Annulation ou modification d&#39;une session : Tous les changements en ligne ou par téléphone (déplacement ou annulation d’une séance) doivent être effectués 24h à l’avance et avant 12h le vendredi pour les séances du samedi matin et du lundi suivant.<br\/>- Absence : Si l’absence de votre enfant n’est pas signalée dans les délais ci-haut mentionnés, il<br\/>sera impossible de reprendre la séance.<\/p><p><br\/>LIGUE 3VS3 CAPTODOR<br\/>- Annulation 30 jours et plus du début de l’activité : 100$ non remboursable (frais administratifs), la balance sera remboursée ou mise en crédit au dossier.<br\/>- Annulation 29 jours et moins du début de l’activité : 100% non remboursable.<br\/>En cas d’annulation pour une inscription en tant qu'équipe, les frais suivants seront chargés sans aucune exception ;<br\/>- Annulation 30 jours et plus du début de l’activité : 100$\/joueur non remboursable (frais administratifs), la balance sera remboursée ou mise en crédit au dossier.<br\/>- Annulation de 29 jours et moins du début de l’activité : 100% non remboursable.<br\/><br\/>Si vous êtes éligible à un remboursement, ce dernier sera effectué selon le mode de paiement original dans les meilleurs délais.<br\/>AUCUN remboursement ou crédit ne sera effectué pour une arrivée tardive ou un départ prématuré, peu importe la raison.<br\/>L'Académie de hockey Joël Bouchard se réserve le droit de remplacer un participant n'ayant pas effectué le paiement final avant la date mentionnée sans en avoir avisé la direction de l’AHJB au préalable et n’ayant pas donné suite à notre suivi de paiement. Il est de votre responsabilité de vous assurer que toutes activités auxquelles votre enfant est inscrit sont payées en totalité avant la date requise soit trente (30) jours avant le début des activités.<br\/>L'Académie de hockey Joël Bouchard se réserve le droit de renvoyer sans remboursement tout participant pour raison de vol, d’indiscipline ou autres raisons valables.<br\/>La direction de l'Académie de hockey Joël Bouchard se réserve le droit d';annuler ou de modifier les<br\/>dates fixées pour une raison majeure.<br\/><br\/>PROGRAMME DE DÉVELOPPEMENT SCOLAIRE ET ÉQUIPES COMPÉTITIVES FAUCONS AST<br\/>Les frais d'inscription et d&#39;administration de 395$ sont non remboursables.<br\/>Aucun remboursement ou crédit ne sera effectué pour une absence de courte ou longue durée et ce, peu importe la raison (maladie, blessure, etc.).<br\/>L'Académie de hockey Joël Bouchard se réserve le droit de renvoyer sans remboursement tout participant pour raison de vol, d’indiscipline ou autres raisons valables.<br\/>La direction de l'Académie de hockey Joël Bouchard se réserve le droit d'annuler ou de modifier les dates fixées pour une raison majeure.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "variant_picker",
+        "14fa7f8a-f119-4a0f-88ea-519432cacf5b",
+        "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "55da0587-5936-4a13-a042-eb96ec75df15",
+        "7b68f09d-7bb5-4832-960a-c5db2fa053a1",
+        "4a6fc147-d8b0-4769-9b6a-afc4c0634f83",
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_taxes_included": true,
+        "thumbnail_position": "left",
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "165218968641d20354": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "16521896868136c131-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Summum du Développement",
+            "heading_size": "h3"
+          }
+        },
+        "16521896868136c131-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Un programme intensif qui permet de se développer rapidement!<\/p>"
+          }
+        },
+        "faa4abfb-7312-407c-b884-5775f8294cec": {
+          "type": "button",
+          "settings": {
+            "button_text": "INSCRIPTION",
+            "button_link": "shopify:\/\/pages\/summum-du-developpement"
+          }
+        }
+      },
+      "block_order": [
+        "16521896868136c131-1",
+        "16521896868136c131-2",
+        "faa4abfb-7312-407c-b884-5775f8294cec"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Header_-_Product_Page_Players.jpg",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "full_width": true,
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652093734c99de6a0": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1652093734b8475903-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "star",
+            "heading": "Enseignements de Qualité",
+            "text": "<p>Un programme hockey haut niveau pour développer les compétences des joueurs.<\/p>"
+          }
+        },
+        "1652093734b8475903-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "fire",
+            "heading": "Entraineurs Spécialisés",
+            "text": "<p>Des entraîneurs compétents guident les joueurs et les aident à progresser dans leur jeu.<\/p>"
+          }
+        },
+        "1652093734b8475903-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "Environnements Professionels",
+            "text": "<p>Des installations de pointe fournissent un environnement propice à l'apprentissage et à la pratique.<\/p>"
+          }
+        },
+        "aab8f32a-3017-43d1-b9e0-f8011455ef5d": {
+          "type": "icon",
+          "settings": {
+            "icon": "clipboard",
+            "heading": "Programmes Complets",
+            "text": "<p>L'Académie offre un programme de développement complet couvrant tous les aspects du jeu.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1652093734b8475903-0",
+        "1652093734b8475903-1",
+        "1652093734b8475903-2",
+        "aab8f32a-3017-43d1-b9e0-f8011455ef5d"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "large",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "#d82028",
+        "color_heading": "#ffffff",
+        "color_text": "#ececec",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Nos Programmes de Perfectionnement",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "165218968641d20354",
+    "1652093734c99de6a0",
+    "product-recommendations"
+  ]
+}

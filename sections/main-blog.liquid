@@ -1,0 +1,91 @@
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+{% liquid
+	assign post_limit = section.settings.post_limit | plus: 0
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+	assign image_ratio = section.settings.image_ratio
+	assign show_image = section.settings.show_image
+	assign use_shapes = section.settings.use_shapes
+%}
+{%- paginate blog.articles by post_limit -%}
+<div class="section-spacing-bottom">
+	<div class="row large-spacing">
+		{% for article in blog.articles %}
+			<div class="small-12 medium-4 columns">
+				{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, show_image: show_image, index: forloop.index0, use_shapes: use_shapes, image_ratio: image_ratio %}
+			</div>
+		{% endfor %}
+	</div>
+	{%- render 'pagination', paginate: paginate, pagination_type: 'paginated' -%}
+</div>
+{%- endpaginate -%}
+
+{% schema %}
+  {
+		"name": "Blog posts",
+	  "class": "blog-section",
+    "settings": [
+			{
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+					{
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ],
+        "default": "square",
+        "label": "Image ratio"
+      },
+      {
+        "type": "range",
+        "id": "post_limit",
+        "min": 3,
+        "max": 24,
+        "step": 1,
+        "label": "Blog posts per page",
+        "default": 9
+      },
+			{
+				"type": "checkbox",
+				"id": "show_image",
+				"default": true,
+				"label": "Show featured image"
+			},
+			{
+				"type": "checkbox",
+				"id": "use_shapes",
+				"default": true,
+				"label": "Use shapes"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_date",
+				"default": true,
+				"label": "Show date"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_excerpt",
+				"default": true,
+				"label": "Show excerpt"
+			},
+	    {
+	      "type": "paragraph",
+	      "content": "Change excerpts by editing your blog posts. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+	    }
+    ]
+  }
+{% endschema %}

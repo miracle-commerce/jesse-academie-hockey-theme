@@ -1,0 +1,80 @@
+{% if section.settings.announcement_bar %}
+	{%- liquid
+		assign show_announcement_bar = true
+		if section.settings.announcement_bar_homepage_only
+			if template == 'index'
+				assign show_announcement_bar = true
+			else
+				assign show_announcement_bar = false
+			endif
+		endif
+	-%}
+	{% if show_announcement_bar %}
+		{{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
+		{% liquid
+			assign show_language_switcher = section.settings.show_language_switcher
+			assign show_currency_switcher = section.settings.show_currency_switcher
+			assign announcement_bar_text = section.settings.announcement_bar_text
+			assign announcement_bar_link = section.settings.announcement_bar_link
+		%}
+		<div class="announcement-bar">
+			<div class="announcement-bar--inner">
+				<div></div>
+				<div class="announcement-bar--text">
+					<p>{{ announcement_bar_text }}</p>
+					{%- if announcement_bar_link != blank -%}
+					<a href="{{ announcement_bar_link | escape }}" class="announcement-bar--link" aria-label="{{ announcement_bar_text | escape }}"></a>
+					{%- endif -%}
+				</div>
+				<div class="no-js-hidden">
+					{% render 'localization', id: 'AnnouncementBarLocalization', show_language_switcher: show_language_switcher, show_currency_switcher: show_currency_switcher %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+{% endif %}
+{% schema %}
+{
+	"name": "Announcement bar",
+	"class": "announcement-bar-section",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "announcement_bar",
+			"label": "Enable announcement bar",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "announcement_bar_homepage_only",
+			"label": "Show on home page only",
+			"default": false
+		},
+		{
+			"type": "text",
+			"id": "announcement_bar_text",
+			"label": "Text",
+			"default": "Welcome to our store"
+		},
+		{
+			"id": "announcement_bar_link",
+			"type": "url",
+			"label": "Link"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_language_switcher",
+			"label": "Enable language switcher",
+			"default": true,
+			"info": "To add a language, go to your [language settings](/admin/settings/languages)."
+		},
+		{
+			"type": "checkbox",
+			"id": "show_currency_switcher",
+			"label": "Enable currency switcher",
+			"default": true,
+			"info": "To add a country/region, go to your [payment settings](/admin/settings/payments)."
+		}
+	]
+}
+{% endschema %}

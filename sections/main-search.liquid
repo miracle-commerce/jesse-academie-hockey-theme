@@ -1,0 +1,194 @@
+{{ 'product-grid.css' | asset_url | stylesheet_tag }}
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+{%- liquid
+	assign full_width = section.settings.full_width
+	assign enable_filtering = section.settings.enable_filtering
+	assign enable_sorting = section.settings.enable_sorting
+	assign show_counts = section.settings.show_counts
+	assign filter_color_swatches = section.settings.filter_color_swatches
+	assign pagination_type = section.settings.pagination_type
+
+	assign products_per_page = section.settings.products_per_page
+	assign columns_desktop = section.settings.columns_desktop
+
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+	assign image_ratio = section.settings.image_ratio
+	assign show_image = section.settings.show_image
+	assign use_shapes = section.settings.use_shapes
+-%}
+{%- if search.performed -%}
+	<div class="collection-container section-spacing-bottom collection-container--full-width-{{ full_width }}">
+		{% render 'facets', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting, show_counts: show_counts, filter_color_swatches: filter_color_swatches %}
+		{{ 'facets.css' | asset_url | stylesheet_tag }}
+		{{ 'nouislider.js' | asset_url | script_tag }}
+		<script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+		<div id="ProductGridContainer">
+			{%- if search.results.size == 0 -%}
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="collection-empty">
+							{% render 'svg-icons' with 'thb-no-products' %}
+	            <p>
+	              {{ 'search.no_results' | t: terms: search.terms }}
+	            </p>
+						</div>
+					</div>
+				</div>
+			{%- else -%}
+				{%- paginate search.results by products_per_page -%}
+					
+					<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }}">
+						{%- for item in search.results -%}
+							<li class="column">
+								{%- case item.object_type -%}
+									{%- when 'product' -%}
+										{% render 'product-card', product_card_product: item %}
+									{%- when 'article' -%}
+										{% render 'blog-post', article: item, show_date: show_date, show_excerpt: show_excerpt, show_image: show_image, index: forloop.index0, use_shapes: use_shapes, image_ratio: image_ratio %}
+									{%- when 'page' -%}
+										{% render 'blog-post', article: item, show_date: false, show_excerpt: true, show_image: false %}
+								{%- endcase -%}
+							</li>
+						{%- endfor -%}
+					</ul>
+					{% render 'pagination', paginate: paginate, pagination_type: pagination_type, id: section.id %}
+				{%- endpaginate -%}
+			{%- endif -%}
+		</div>
+	</div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Product grid",
+    "settings": [
+			{
+        "type": "range",
+        "id": "products_per_page",
+        "min": 2,
+        "max": 24,
+        "step": 1,
+        "label": "Number of products",
+        "default": 12
+      },
+			{
+        "type": "range",
+        "id": "columns_desktop",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "label": "Number of columns on desktop",
+        "default": 4
+      },
+			{
+	      "type": "select",
+	      "id": "pagination_type",
+	      "options": [
+	        {
+	          "value": "paginated",
+	          "label": "Paginated"
+	        },
+	        {
+	          "value": "loadmore",
+	          "label": "Click to load"
+	        },
+	        {
+	          "value": "infinite",
+	          "label": "Infinite"
+	        }
+	      ],
+	      "default": "paginated",
+	      "label": "Pagination",
+	      "info": "Choose how additional pages of products are navigated."
+	    },
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"default": false,
+				"label": "Make section full width"
+			},
+	    {
+	      "type": "header",
+	      "content": "Filtering and sorting"
+	    },
+	    {
+	      "type": "checkbox",
+	      "id": "enable_filtering",
+	      "default": true,
+	      "label": "Enable filtering",
+	      "info": "Customize [filters](/admin/menus)"
+	    },
+	    {
+	      "type": "checkbox",
+	      "id": "enable_sorting",
+	      "default": true,
+	      "label": "Enable sorting"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "show_counts",
+	      "default": true,
+	      "label": "Show filter values count"
+	    },
+			{
+				"type": "checkbox",
+				"id": "filter_color_swatches",
+				"default": true,
+				"label": "Show color swatches"
+			},
+			{
+	      "type": "header",
+	      "content": "Blog card"
+	    },
+			{
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+					{
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ],
+        "default": "square",
+        "label": "Image ratio"
+      },
+			{
+				"type": "checkbox",
+				"id": "show_image",
+				"default": true,
+				"label": "Show featured image"
+			},
+			{
+				"type": "checkbox",
+				"id": "use_shapes",
+				"default": true,
+				"label": "Use shapes"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_date",
+				"default": true,
+				"label": "Show date"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_excerpt",
+				"default": false,
+				"label": "Show excerpt"
+			}
+    ]
+  }
+{% endschema %}

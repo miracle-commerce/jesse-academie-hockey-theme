@@ -1,0 +1,413 @@
+{
+  "sections": {
+    "template-header": {
+      "type": "template-header",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "overlay_opacity": 30,
+        "display_description": true
+      }
+    },
+    "3eac8f2d-79f7-46ff-a9d3-2b05a4324c55": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "heading": "Our Story",
+        "text": "",
+        "video": "",
+        "button_text": "",
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "44591651-9ded-46de-9d9e-d5b49f3d07a3": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 35,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "a58d48c8-89cd-4ef3-97bb-8c92444701f9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769565098281__a58d48c8-89cd-4ef3-97bb-8c92444701f9-16684111441d496680-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Rugs With Amount",
+            "size": "h3"
+          }
+        },
+        "template--16769565098281__a58d48c8-89cd-4ef3-97bb-8c92444701f9-16684111441d496680-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have an expanding portfolio that includes assisting in rug selections for residential as well as commercial projects. We provide a wide selection of on trend elegant styles, quality materials and vibrant colours in a variety of sizes, all guaranteed to add style, texture.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__a58d48c8-89cd-4ef3-97bb-8c92444701f9-16684111441d496680-1",
+        "template--16769565098281__a58d48c8-89cd-4ef3-97bb-8c92444701f9-16684111441d496680-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "2de833b4-ad01-4886-9e52-c1c0482d15e0": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 25,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "51c6d71e-d62a-4a02-88a7-368b09bb4cb8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Cleaning",
+            "heading_size": "h4",
+            "text": "<p>For minor spills, use a damp cloth with cold water and liquid detergent.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Color",
+            "heading_size": "h4",
+            "text": "<p>Use a white towel to dab the cleaning agent on a small area of the rug.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Odor",
+            "heading_size": "h4",
+            "text": "<p>Do not worry about it, the odor will be go away in couple of days .<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-0",
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-1",
+        "template--16769565098281__51c6d71e-d62a-4a02-88a7-368b09bb4cb8-1668425503031689ee-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "mobile_swipe": false,
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "63f19bba-db6e-43b4-94f0-7b38720780ea": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "aed933e6-6757-46b3-afd2-6ca697bd5a46": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "full_width": true,
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "59a74dc4-f32b-4764-a3cf-d777f9b06e50": {
+      "type": "countdown-banner",
+      "settings": {
+        "section_layout": "horizontal",
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-auto",
+        "full_width": true,
+        "subheading": "",
+        "heading": "Christmas Sale",
+        "heading_size": "h3",
+        "content": "",
+        "content_size": "medium",
+        "button_text": "Shop Now",
+        "button_link": "",
+        "timer_year": 2023,
+        "timer_month": "01",
+        "timer_day": "01",
+        "timer_hour": "00",
+        "timer_minute": "00",
+        "color_bg": "#c24141",
+        "color_text": "#ffffff",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "66a1dc97-2a0f-416f-809b-51b538b714ad": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "20e5450e-63ce-411e-8130-b0ba14cc5d43": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769565098281__20e5450e-63ce-411e-8130-b0ba14cc5d43-16684255036f006873-1": {
+          "type": "heading",
+          "settings": {
+            "text": "A classic that feels fresh & funky, checkerboard is a trend that’s not going away anytime soon.",
+            "size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__20e5450e-63ce-411e-8130-b0ba14cc5d43-16684255036f006873-1"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "96f66718-f3d0-49c6-bfe5-485c3d3fe032": {
+      "type": "gallery",
+      "blocks": {
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-2": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-0",
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-1",
+        "template--16769565098281__96f66718-f3d0-49c6-bfe5-485c3d3fe032-1668411907d5a64454-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 3,
+        "full_width": true,
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "large",
+        "heading_size": "h4",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "754561b6-611b-479e-89a0-1f5f62d06a62": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 60,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "6051b459-ad7e-40e0-bdb3-c20f012c653a": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-0": {
+          "type": "logo",
+          "settings": {
+            "image": "",
+            "link": ""
+          }
+        },
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-1": {
+          "type": "logo",
+          "settings": {
+            "image": "",
+            "link": ""
+          }
+        },
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-2": {
+          "type": "logo",
+          "settings": {
+            "image": "",
+            "link": ""
+          }
+        },
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-3": {
+          "type": "logo",
+          "settings": {
+            "image": "",
+            "link": ""
+          }
+        },
+        "26e1dab5-6c0d-4040-b2dd-9050ff04feaf": {
+          "type": "logo",
+          "settings": {
+            "image": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-0",
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-1",
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-2",
+        "template--16769565098281__6051b459-ad7e-40e0-bdb3-c20f012c653a-1668425503d8e61334-3",
+        "26e1dab5-6c0d-4040-b2dd-9050ff04feaf"
+      ],
+      "settings": {
+        "heading": "As Featured In",
+        "description": "",
+        "columns": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "b0cae15a-22fc-4004-a272-be3d6b92594e": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "0453c800-d82a-4464-bf8d-f6dcace1e225": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--16769565098281__0453c800-d82a-4464-bf8d-f6dcace1e225-166842623783cd46ef-0": {
+          "type": "text",
+          "settings": {
+            "text": "A QUEENLY RUG JUST FOR YOU",
+            "link": ""
+          }
+        },
+        "template--16769565098281__0453c800-d82a-4464-bf8d-f6dcace1e225-166842623783cd46ef-1": {
+          "type": "text",
+          "settings": {
+            "text": "LET OUR RUGS TELL YOUR STORY",
+            "link": ""
+          }
+        },
+        "b9a37a4c-e0fa-4074-8f07-2101f17c9232": {
+          "type": "text",
+          "settings": {
+            "text": "THE BEST RUG IN TOWN",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565098281__0453c800-d82a-4464-bf8d-f6dcace1e225-166842623783cd46ef-0",
+        "template--16769565098281__0453c800-d82a-4464-bf8d-f6dcace1e225-166842623783cd46ef-1",
+        "b9a37a4c-e0fa-4074-8f07-2101f17c9232"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 46,
+        "outline_text": false,
+        "color_bg": "#ede8e6",
+        "color_text": "#8c695d",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "8da9adc5-bc9d-4ac9-922a-2d2399026926": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 0,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    }
+  },
+  "order": [
+    "template-header",
+    "3eac8f2d-79f7-46ff-a9d3-2b05a4324c55",
+    "44591651-9ded-46de-9d9e-d5b49f3d07a3",
+    "a58d48c8-89cd-4ef3-97bb-8c92444701f9",
+    "2de833b4-ad01-4886-9e52-c1c0482d15e0",
+    "51c6d71e-d62a-4a02-88a7-368b09bb4cb8",
+    "63f19bba-db6e-43b4-94f0-7b38720780ea",
+    "aed933e6-6757-46b3-afd2-6ca697bd5a46",
+    "59a74dc4-f32b-4764-a3cf-d777f9b06e50",
+    "66a1dc97-2a0f-416f-809b-51b538b714ad",
+    "20e5450e-63ce-411e-8130-b0ba14cc5d43",
+    "96f66718-f3d0-49c6-bfe5-485c3d3fe032",
+    "754561b6-611b-479e-89a0-1f5f62d06a62",
+    "6051b459-ad7e-40e0-bdb3-c20f012c653a",
+    "b0cae15a-22fc-4004-a272-be3d6b92594e",
+    "0453c800-d82a-4464-bf8d-f6dcace1e225",
+    "8da9adc5-bc9d-4ac9-922a-2d2399026926"
+  ]
+}

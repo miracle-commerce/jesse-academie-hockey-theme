@@ -1,0 +1,72 @@
+{
+  "type": "header",
+  "name": "Footer group",
+  "sections": {
+    "footer-top-bar": {
+      "type": "footer-top-bar",
+      "settings": {
+        "footer_top_bar": true,
+        "text": "JOIGNEZ-VOUS À NOUS AUJOURD'HUI",
+        "button_text": "INSCRIPTION",
+        "button_link": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "e312376b-a445-445a-9569-5acad4ff6c59": {
+          "type": "text",
+          "settings": {
+            "column_size": "small",
+            "title": "",
+            "image": "shopify:\/\/shop_images\/Emblem_-_Site_bottom.png",
+            "retina": true,
+            "text": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "75d720e0-729c-4abd-a67b-1e08782d6852": {
+          "type": "menu",
+          "settings": {
+            "column_size": "medium",
+            "title": "NAVIGATION",
+            "menu": "footer"
+          }
+        },
+        "b4a487aa-4195-4ed2-88bc-723db31735ae": {
+          "type": "social",
+          "settings": {
+            "column_size": "small",
+            "title": "SUIVEZ-NOUS"
+          }
+        },
+        "d0ae22e0-140c-4576-b3f9-ad82e5e6f83f": {
+          "type": "signup",
+          "settings": {
+            "column_size": "medium",
+            "title": "INSCRIVEZ-VOUS À NOTRE INFOLETTRE",
+            "text": "<p>Restez à l'affût des nouvelles dates d'inscription de camps et des promotions.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e312376b-a445-445a-9569-5acad4ff6c59",
+        "75d720e0-729c-4abd-a67b-1e08782d6852",
+        "b4a487aa-4195-4ed2-88bc-723db31735ae",
+        "d0ae22e0-140c-4576-b3f9-ad82e5e6f83f"
+      ],
+      "settings": {
+        "copyright_text": "Propulsé par ETTCO. Tous droits réservées.",
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
+        "show_payment_icons": false,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer-top-bar",
+    "footer"
+  ]
+}

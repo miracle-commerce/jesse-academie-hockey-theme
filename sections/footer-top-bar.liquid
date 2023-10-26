@@ -1,0 +1,51 @@
+{%- liquid
+	assign text = section.settings.text
+	assign button_link = section.settings.button_link
+	assign button_text = section.settings.button_text
+	assign footer_top_bar = section.settings.footer_top_bar
+-%}
+{%- if footer_top_bar -%}
+{{ 'footer-top-bar.css' | asset_url | stylesheet_tag }}
+<aside class="footer-top-bar">
+	<div class="row">
+		<div class="small-12 columns">
+			<p>{{ text }}</p>
+			{% if button_text != blank %}
+				<a class="button outline footer-bar-button" href="{{ button_link }}" role="button" title="{{ button_text | escape }}">{{ button_text }}</a>
+			{% endif %}
+		</div>
+	</div>
+</aside>
+{%- endif -%}
+
+{% schema %}
+  {
+		"name": "Footer top bar",
+		"settings": [
+			{
+				"type": "checkbox",
+				"id": "footer_top_bar",
+				"label": "Enable footer top bar",
+				"default": true
+			},
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Add a call to action text here."
+      },
+			{
+				"id": "button_text",
+				"type": "text",
+				"label": "Button label",
+				"default": "Explore",
+				"info": "Leave the label blank to hide the button."
+			},
+			{
+				"id": "button_link",
+				"type": "url",
+				"label": "Button link"
+			}
+		]
+  }
+{% endschema %}

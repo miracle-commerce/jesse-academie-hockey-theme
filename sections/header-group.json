@@ -1,0 +1,62 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "announcement_bar": true,
+        "announcement_bar_homepage_only": false,
+        "announcement_bar_text": "LES INSCRIPTIONS SONT OUVERTES",
+        "announcement_bar_link": "",
+        "show_language_switcher": false,
+        "show_currency_switcher": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "089a5b92-6af4-4e13-aa83-3060bb2c993f": {
+          "type": "megamenu",
+          "settings": {
+            "position": "1",
+            "promo_1_image": "shopify:\/\/shop_images\/Menu_-_Centre_d_Excellence_Rousseau.png",
+            "promo_1_heading": "Centre d'Excéllence Sports Rousseau Boisbriand",
+            "promo_1_content": "",
+            "promo_1_link": "shopify:\/\/pages\/camp-noel-2023-et-jour-de-lan-2024",
+            "promo_2_image": "shopify:\/\/shop_images\/Menu_-_Complexe_Bell.png",
+            "promo_2_heading": "Complexe CN Brossard",
+            "promo_2_content": "",
+            "promo_2_link": "shopify:\/\/pages\/camp-de-noel-brossard-27-28-29-decembre",
+            "promo_3_heading": "",
+            "promo_3_content": "",
+            "promo_3_link": "",
+            "promo_4_heading": "",
+            "promo_4_content": "",
+            "promo_4_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "089a5b92-6af4-4e13-aa83-3060bb2c993f"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/AHJB-logo_113943d8-14ae-454e-b582-6ee3450ad453.png",
+        "logo_height_range": 76,
+        "logo_height_range_mobile": 30,
+        "style": "style1",
+        "header_shadow": "header--shadow-none",
+        "menu": "main-menu",
+        "mobile_secondary_menu": "",
+        "show_language_switcher": true,
+        "show_currency_switcher": true,
+        "predictive_search_enabled": true,
+        "search_menu": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

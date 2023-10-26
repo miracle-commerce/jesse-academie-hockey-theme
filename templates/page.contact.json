@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "1652081672ff9b3c2c": {
+      "type": "map",
+      "blocks": {
+        "16520816724be18f71-0": {
+          "type": "pin",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16520816724be18f71-0"
+      ],
+      "settings": {
+        "googlemaps_api_key": "",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "map_type": "roadmap",
+        "map_style_select": "night",
+        "map_zoom": 14,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652268757b7c53383": {
+      "type": "contact-form",
+      "blocks": {
+        "165226875777ee1cd4-0": {
+          "type": "text",
+          "settings": {
+          }
+        },
+        "165226875777ee1cd4-1": {
+          "type": "text",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "165226875777ee1cd4-0",
+        "165226875777ee1cd4-1"
+      ],
+      "settings": {
+        "heading": "Contact us",
+        "description": "",
+        "show_phone_number": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "1652081672ff9b3c2c",
+    "1652268757b7c53383"
+  ]
+}

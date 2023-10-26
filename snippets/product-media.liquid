@@ -1,0 +1,88 @@
+{%- liquid
+	assign image_set = false
+  assign image_set_group = ''
+  if media.alt contains '#'
+    assign image_set_full = media.alt | split: '#' | last
+    if image_set_full contains '_'
+      assign image_set = true
+      assign image_set_group = image_set_full | split: '_' | first
+    endif
+  endif
+
+  assign is_active = false
+  if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1
+    assign is_active = true
+  elsif product.selected_or_first_available_variant.featured_media.id == media.id
+    assign is_active = true
+  elsif variant_images contains media.src and product.selected_or_first_available_variant.featured_media.id != media.id
+    assign is_active = false
+  endif
+  
+  unless variant_images contains media.src
+    assign is_active = true
+  endunless
+
+  unless hide_variants
+    assign is_active = true
+  endunless
+-%}
+<div
+  id="Slide-{{ section.id }}-{{ media.id }}"
+  class="product-images__slide{% if is_active %} is-active{% endif %}{% if variant_images contains media.src %} product-images__slide-item--variant{% endif %}"
+  data-media-id="{{ section.id }}-{{ media.id }}"
+  {% if image_set %}
+    data-set-name="{{ image_set_group }}"
+    data-group="{{ image_set_full }}"
+  {% endif %}
+>
+  {%- liquid
+    capture media_index
+      if media.media_type == 'image'
+        increment image_index
+      endif
+    endcapture
+  -%}
+  {%- case media.media_type -%}
+    {% when 'image' %}
+      <div class="product-single__media product-single__media-image" id="Slide-Thumbnails-{{ section.id }}-{{ media.id }}">
+        {%- if section.settings.lightbox != blank -%}
+        <a
+          href="{{ media.src | image_url }}"
+          class="product-single__media-zoom"
+          data-msrc="{{- media.src | image_url: width: 20 -}}"
+          data-h="{{ media.height }}"
+          data-w="{{ media.width }}"
+          target="_blank"
+          tabindex="-1"
+        >{% render 'svg-icons' with 'zoom' %}</a>
+        {%- endif -%}
+        {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
+      </div>
+    {% when 'external_video' %}
+      <div class="product-single__media product-single__media-external-video" data-provider="{{ media.host }}" data-media-id="{{ media.id }}" id="Slide-Thumbnails-{{ section.id }}-{{ media.id }}" style="--aspect-ratio: {{ media.aspect_ratio }}">
+        {{ media | external_video_tag: loading: "lazy", loop: section.settings.enable_video_looping, muted: "1" }}
+      </div>
+    {% when 'video' %}
+      <div class="product-single__media product-single__media-native-video" data-media-id="{{ media.id }}" style="--aspect-ratio: {{ media.aspect_ratio }}" id="Slide-Thumbnails-{{ section.id }}-{{ media.id }}">
+        {{ media | video_tag: controls: true, loading: "lazy", loop: section.settings.enable_video_looping, image_size: '580x' }}
+      </div>
+    {% when 'model' %}
+      <product-model class="product-single__media product-single__media-model" style="padding-top: 100%" data-media-id="{{ media.id }}" id="Slide-Thumbnails-{{ section.id }}-{{ media.id }}">
+        {{ media | model_viewer_tag }}
+      </product-model>
+      <button
+        class="button product__xr-button"
+        type="button"
+        data-shopify-xr
+        aria-label="{{ 'products.product.xr_button_label' | t }}"
+        data-shopify-model3d-id="{{ media.id }}"
+        data-shopify-xr-hidden
+        data-shopify-title="{{ product.title | escape }}"
+        >
+        <span>
+          {% render 'svg-icons' with 'thb-icon-3d-model' %}
+          {{ 'products.product.xr_button' | t }}
+        </span>
+      </button>
+  {% endcase %}
+</div>

@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "609815c7-4882-4174-87c6-fa5b3ed00ef1": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16150498869399__609815c7-4882-4174-87c6-fa5b3ed00ef1-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Header_-_Mon_Dossier.jpg",
+            "subheading": "Bienvenue dans la nouvelle zone",
+            "heading": "Mon Dossier",
+            "content": "Assurez vous de mettre vos informations de joueur à jour avant une inscription.",
+            "slide_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "accent2",
+            "button_outline": false,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16150498869399__609815c7-4882-4174-87c6-fa5b3ed00ef1-slide-1"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "content_size": "medium",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "d560c362-9cc8-416e-9784-2476d4a15ecc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16150498869399__d560c362-9cc8-416e-9784-2476d4a15ecc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Enregistrez-vous à Mon Dossier ici",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "template--16150498869399__d560c362-9cc8-416e-9784-2476d4a15ecc-heading-1"
+      ],
+      "settings": {
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "main-register": {
+      "type": "main-register",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "609815c7-4882-4174-87c6-fa5b3ed00ef1",
+    "d560c362-9cc8-416e-9784-2476d4a15ecc",
+    "main-register"
+  ]
+}

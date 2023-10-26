@@ -1,0 +1,480 @@
+{% liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign product = section.settings.product
+	assign first_3d_model = product.media | where: "media_type", "model" | first
+
+	assign hide_variants = section.settings.hide_variants
+	assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
+	assign featured_media = product.selected_or_first_available_variant.featured_media
+
+	assign sizes = '375x0,580x0,1160x0'
+
+	if full_width
+		assign sizes = sizes | append: ',1600x'
+	endif
+%}
+{{ 'featured-product.css' | asset_url | stylesheet_tag }}
+{%- if first_3d_model -%}
+  <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
+  <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'product-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+<div class="thb-product-detail product section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	{% render 'section-header', section_heading: section_heading, section_description: section_description %}
+  <div class="row align-center">
+		{% if product.media.size > 0 %}
+		<div class="small-12 large-7 columns">
+			<div class="product-gallery-sticky">
+	      <div class="product-gallery-container thumbnails-{{ section.settings.thumbnail_position }}" id="MediaGallery-{{ section.id }}">
+					<div class="product-image-container">
+	          <product-slider id="Product-Slider" class="product-images" data-hide-variants="{{ hide_variants }}">
+							{%- if featured_media != null -%}
+                {%- render 'product-media', product: product, section: section, forloop: false, media: featured_media, sizes: sizes, variant_images: variant_images, hide_variants: hide_variants -%}
+	            {%- endif -%}
+	            {%- for media in product.media -%}
+								{%- unless media.id == featured_media.id -%}
+	              {%- render 'product-media', product: product, section: section, forloop: forloop, media: media, sizes: sizes, variant_images: variant_images, hide_variants: hide_variants -%}
+								{%- endunless -%}
+	            {%- endfor -%}
+							{%- if product.media.size > 1 -%}
+							<div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+							<div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+							{%- endif -%}
+	          </product-slider>
+					</div>
+					<scroll-shadow>
+						<div id="Product-Thumbnails" class="product-thumbnail-container" data-hide-variants="{{ hide_variants }}">
+							{%- if featured_media != null -%}
+                {%- render 'product-thumbnail', product: product, media: featured_media, forloop: false, variant_images: variant_images, hide_variants: hide_variants -%}
+							{%- endif -%}
+							{%- for media in product.media -%}
+								{%- unless media.id == featured_media.id -%}
+                  {%- render 'product-thumbnail', product: product, media: media, forloop: forloop, variant_images: variant_images, hide_variants: hide_variants -%}
+								{%- endunless -%}
+							{%- endfor -%}
+						</div>
+					</scroll-shadow>
+	      </div>
+			</div>
+    </div>
+		{% endif %}
+    <div class="small-12 large-5 columns product-information">
+			<div id="ProductInfo-{{ section.id }}">
+				{% render 'product-information', product: product, section: section, update_url: false, pickup: false, hide_variants: hide_variants %}
+			</div>
+    </div>
+  </div>
+</div>
+{%- if section.settings.lightbox != blank -%}
+{% render 'photoswipe' %}
+<link rel="stylesheet" href="{{ 'photoswipe.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+<script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
+
+{%- if first_3d_model -%}
+  <script type="application/json" id="ProductJSON-{{ product.id }}">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+
+  <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Featured product",
+  "tag": "section",
+  "class": "product-section",
+	"settings": [
+		{
+			"type": "text",
+			"id": "heading",
+			"label": "Heading",
+			"default": "Featured product"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Description",
+			"default": "<p>Add a short description for this featured product</p>"
+		},
+		{
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+		{
+			"type": "checkbox",
+			"id": "show_taxes_included",
+			"default": true,
+			"label": "Show taxes included"
+		},
+		{
+			"type": "header",
+			"content": "Media"
+		},
+		{
+			"type": "paragraph",
+			"content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+		},
+		{
+			"type": "select",
+			"id": "thumbnail_position",
+			"options": [
+				{
+					"value": "left",
+					"label": "Left"
+				},
+				{
+					"value": "bottom",
+					"label": "Bottom"
+				}
+			],
+			"default": "left",
+			"label": "Thumbnail position"
+		},
+		{
+      "type": "checkbox",
+      "id": "hide_variants",
+      "default": false,
+      "label": "Hide unselected variants’ media",
+			"info": "Media for the unselected variants will be hidden."
+    },
+		{
+			"type": "checkbox",
+			"id": "lightbox",
+			"default": true,
+			"label": "Enable image zoom"
+		},
+		{
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "default": false,
+      "label": "Enable video looping"
+    },
+		{
+      "type": "header",
+      "content": "Spacing"
+    },
+		{
+			"type": "checkbox",
+			"id": "disable_top_spacing",
+			"default": false,
+			"label": "Remove top spacing"
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_bottom_spacing",
+			"default": false,
+			"label": "Remove bottom spacing"
+		}
+  ],
+  "blocks": [
+		{
+			"type": "@app"
+		},
+		{
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "style_body",
+              "label": "Body"
+            },
+            {
+              "value": "subheading",
+              "label": "Subheading"
+            },
+            {
+              "value": "style_vendor",
+              "label": "Vendor"
+            }
+          ],
+          "default": "style_vendor",
+          "label": "Text Style"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+			"settings": [
+				{
+					"type": "checkbox",
+					"id": "show_products_rating",
+					"default": true,
+					"label": "Show product rating",
+					"info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-collection-show-product-rating)"
+				}
+			]
+    },
+		{
+      "type": "variant_picker",
+      "name": "Variant picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "dropdown",
+              "label": "Dropdown"
+            },
+            {
+              "value": "button",
+              "label": "Block"
+            }
+          ],
+          "default": "button",
+          "label": "Type"
+        },
+				{
+					"type": "checkbox",
+					"id": "color_picker",
+					"default": true,
+					"label": "Enable color swatches",
+					"info": "[Learn more about color swatches.](https://documentation.fuelthemes.net/kb/how-do-i-set-up-product-variant-swatches/)"
+				},
+				{
+					"type": "checkbox",
+					"id": "variant_is_disabled",
+					"default": true,
+					"label": "Show availability in selectors",
+					"info": "When an option is selected, unavailable variants will be crossed-out."
+				}
+      ]
+    },
+		{
+      "type": "buy_buttons",
+      "name": "Product form",
+      "limit": 1,
+			"settings": [
+				{
+					"type": "checkbox",
+					"id": "show_quantity_selector",
+					"default": true,
+					"label": "Show quantity selector"
+				},
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": true,
+          "label": "Show dynamic checkout buttons",
+          "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+		{
+      "type": "custom_liquid",
+      "name": "Custom liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom liquid",
+          "info": "Add app snippets or other Liquid code to create advanced customizations."
+        }
+      ]
+    },
+		{
+			"type": "collapsible_tab",
+			"name": "Collapsible row",
+			"settings": [
+					{
+					"type": "text",
+					"id": "heading",
+					"default": "Collapsible row",
+					"info": "Include a heading that explains the content.",
+					"label": "Heading"
+				},
+				{
+					"type": "checkbox",
+					"id": "open",
+					"default": false,
+					"label": "Open by default"
+				},
+				{
+					"type": "richtext",
+					"id": "content",
+					"label": "Row content"
+				},
+				{
+					"type": "page",
+					"id": "page",
+					"label": "Row content from page"
+				},
+				{
+					"type": "liquid",
+					"id": "custom_liquid",
+					"label": "Custom liquid",
+					"info": "Add app snippets or other Liquid code to create advanced customizations. For product description, you can use {{ product.description }}"
+				}
+			]
+		},
+		{
+      "type": "custom_option",
+      "name": "Line item property",
+      "settings": [
+				{
+					"type": "paragraph",
+					"content": "Line item properties are used to collect customization information for an item added to the cart."
+				},
+				{
+          "type": "select",
+          "id": "type",
+          "label": "Type",
+          "default": "text",
+          "options": [
+            {
+              "label": "Text",
+              "value": "text"
+            },
+            {
+              "label": "Textarea",
+              "value": "textarea"
+            },
+            {
+              "label": "Checkbox",
+              "value": "checkbox"
+            },
+            {
+              "label": "Multiple options",
+              "value": "multiple"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Custom option"
+        },
+        {
+          "type": "checkbox",
+          "id": "text_required",
+          "label": "Required",
+          "info": "Only works with 'Add to cart' button",
+          "default": false
+        },
+				{
+          "type": "header",
+          "content": "Text",
+					"info": "Requires line item property type to be Text or Textarea."
+        },
+				{
+          "type": "text",
+          "id": "text_placeholder",
+          "label": "Placeholder",
+          "default": "Enter your text here"
+        },
+        {
+          "type": "header",
+          "content": "Checkbox",
+					"info": "Requires line item property type to be Checkbox."
+        },
+        {
+          "type": "text",
+          "id": "checkbox_checked_value",
+          "label": "Checked value",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "checkbox_unchecked_value",
+          "label": "Unchecked value",
+          "default": "No"
+        },
+        {
+          "type": "header",
+          "content": "Multiple options",
+					"info": "Requires line item property type to be Multiple options."
+        },
+        {
+          "type": "select",
+          "id": "multiple_style",
+          "label": "Style",
+          "default": "dropdown",
+          "options": [
+            {
+              "label": "Dropdown",
+              "value": "dropdown"
+            },
+            {
+              "label": "Radio",
+              "value": "radio"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "multiple_options",
+          "label": "Options",
+          "default": "Option 1\nOption 2\nOption 3",
+          "info": "One option on each line"
+        }
+      ]
+    },
+		{
+      "type": "sku",
+      "name": "SKU",
+      "settings": [
+				{
+					"type": "select",
+					"id": "sku_style",
+					"options": [
+						{
+							"value": "style_body",
+							"label": "Body"
+						},
+						{
+							"value": "subheading",
+							"label": "Subheading"
+						},
+						{
+							"value": "style_vendor",
+							"label": "Vendor"
+						}
+					],
+					"default": "style_vendor",
+					"label": "SKU style"
+				}
+      ]
+    }
+  ],
+	"presets": [
+		{
+			"name": "Featured product",
+			"blocks": [
+				{
+					"type": "title"
+				},
+				{
+					"type": "variant_picker"
+				},
+				{
+					"type": "buy_buttons"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

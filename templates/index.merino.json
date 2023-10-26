@@ -1,0 +1,493 @@
+{
+  "sections": {
+    "8cc6ca5f-db92-4547-91a9-05ad327a17ac": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero1.jpg",
+            "heading": "Make Yourself Comfortable At Home With Rugs",
+            "content": "Everywhere we looked for a rug — whether in person or online — there was a general lack of transparency, unreasonable prices, and poor-quality replicas. With a can-do spirit, we immersed ourselves in a product we grew to deeply love.",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/large-rugs"
+          }
+        },
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero02.jpg",
+            "heading": "Where Do You Want Carpet To Go Today?",
+            "content": "Our online rug collections cater to all tastes. We provide a wide selection of on trend elegant styles, quality materials and vibrant colours in a variety of sizes, all guaranteed to add style, texture, character and comfort.",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/medium-rugs"
+          }
+        },
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HERO-3.jpg",
+            "heading": "Break Me Off A Piece Of That Carpet",
+            "content": "We are Rug Nation, a Toronto based rug retailer that sells machine woven as well as hand woven quality area rugs guaranteed to make any space look captivating.",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-0",
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-1",
+        "template--16769565950249__8cc6ca5f-db92-4547-91a9-05ad327a17ac-166798338127124e4a-2"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-650",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "c40f0fd4-6edf-4307-81b0-caff9ce02bda": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "68f7d8a6-333d-4353-bea2-7e185ce95f80": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon01.png",
+            "heading": "Free & Fast Shipping",
+            "text": "<p>These graphic throw blankets are an easy and affordable way.<\/p>"
+          }
+        },
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon2.png",
+            "heading": "Lowest Price Commitment",
+            "text": "<p>These graphic throw blankets are an easy and affordable way.<\/p>"
+          }
+        },
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon3.png",
+            "heading": "Easy Returns",
+            "text": "<p>These graphic throw blankets are an easy and affordable way.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-0",
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-1",
+        "template--16769565950249__68f7d8a6-333d-4353-bea2-7e185ce95f80-1667994095a592e016-2"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "medium",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#755a51",
+        "color_text": "#755a51",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "8dd6f0ff-0b3a-49e7-97e7-45b6b4a0c446": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 80,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "5907da1a-5949-4a4b-9bd9-e67b7d4fbbeb": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "c89e50b4-25a1-4577-9e50-297ef396ed89": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Shop by Size",
+        "description": "<p>Add a short description for your collections<\/p>",
+        "collection_list": [
+          "small-rugs",
+          "medium-rugs",
+          "large-rugs",
+          "x-large-rugs"
+        ],
+        "image_ratio": "square",
+        "layout": "grid",
+        "style": "style2",
+        "content_alignment": "text-center",
+        "columns_desktop": 4,
+        "overlay_opacity": 30,
+        "carousel_dots": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "3767a956-d86e-4a6a-81fe-c3c04b70a2b7": {
+      "type": "countdown-banner",
+      "settings": {
+        "section_layout": "horizontal",
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-auto",
+        "full_width": false,
+        "bg_image": "shopify:\/\/shop_images\/countdown-bg.png",
+        "subheading": "",
+        "heading": "Black Friday Sale",
+        "heading_size": "h3",
+        "content": "",
+        "content_size": "medium",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "timer_year": 2023,
+        "timer_month": "04",
+        "timer_day": "08",
+        "timer_hour": "00",
+        "timer_minute": "00",
+        "color_bg": "#994949",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "b0400558-c0ea-4da7-8693-2a0bd00164e4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769565950249__b0400558-c0ea-4da7-8693-2a0bd00164e4-166799710312c7dfc2-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR BESTSELLER PRODUCTS"
+          }
+        },
+        "template--16769565950249__b0400558-c0ea-4da7-8693-2a0bd00164e4-166799710312c7dfc2-1": {
+          "type": "heading",
+          "settings": {
+            "text": "A classic that feels fresh & funky, checkerboard is a trend that’s not going away anytime soon.",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__b0400558-c0ea-4da7-8693-2a0bd00164e4-166799710312c7dfc2-0",
+        "template--16769565950249__b0400558-c0ea-4da7-8693-2a0bd00164e4-166799710312c7dfc2-1"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "10d2d5bf-3c72-44f0-a44a-f08bd08cd7b1": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "4470f2d0-cf7c-4b84-9888-519d0c8fc71b": {
+      "type": "featured-collection",
+      "blocks": {
+        "template--16769565950249__4470f2d0-cf7c-4b84-9888-519d0c8fc71b-166797942943708360-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "display_type": "grid",
+            "product_limit": 6,
+            "columns_desktop": 3,
+            "show_view_all": true,
+            "button_outline": true,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__4470f2d0-cf7c-4b84-9888-519d0c8fc71b-166797942943708360-0"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5ede3919-ca4c-4ed2-8362-34782f36b387": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16769565950249__5ede3919-ca4c-4ed2-8362-34782f36b387-166799771028049f1e-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1.jpg",
+            "subheading": "",
+            "heading": "Your Affordable Rugs In Town. Comfort In Seconds.",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/x-large-rugs",
+            "button_color": "white",
+            "button_outline": false
+          }
+        },
+        "template--16769565950249__5ede3919-ca4c-4ed2-8362-34782f36b387-166799771028049f1e-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide2.jpg",
+            "subheading": "",
+            "heading": "We Don't Make Carpet. We Make Carpet Better.",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "white",
+            "button_outline": false
+          }
+        },
+        "521485ec-fcc7-4914-a17c-87e7fe79257f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide03.jpg",
+            "subheading": "",
+            "heading": "Carpet Will Be For You What You Want It To Be.",
+            "content": "",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "white",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__5ede3919-ca4c-4ed2-8362-34782f36b387-166799771028049f1e-0",
+        "template--16769565950249__5ede3919-ca4c-4ed2-8362-34782f36b387-166799771028049f1e-1",
+        "521485ec-fcc7-4914-a17c-87e7fe79257f"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "content_size": "large",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 50,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "282cf443-21f9-489f-846c-7a857df2f55b": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/forbes-logo.png",
+            "heading": "",
+            "text": "<p>Step Inside Danielle Corona’s Home Office-Meets-Greenhouse<\/p>"
+          }
+        },
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/ideal-home.png",
+            "heading": "",
+            "text": "<p>Step Inside Danielle Corona’s Home Office-Meets-Greenhouse<\/p>"
+          }
+        },
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/thera.png",
+            "heading": "",
+            "text": "<p>Step Inside Danielle Corona’s Home Office-Meets-Greenhouse<\/p>"
+          }
+        },
+        "d02dbf97-1ed4-4c27-ac88-2f7c38d2ca0e": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/esquire.png",
+            "heading": "",
+            "text": "<p>Step Inside Danielle Corona’s Home Office-Meets-Greenhouse<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-0",
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-1",
+        "template--16769565950249__282cf443-21f9-489f-846c-7a857df2f55b-1667997710205867bd-2",
+        "d02dbf97-1ed4-4c27-ac88-2f7c38d2ca0e"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "xlarge",
+        "heading_size": "small",
+        "mobile_swipe": true,
+        "color_bg": "#d9815c",
+        "color_heading": "#ffffff",
+        "color_text": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "86fdbe96-6e8b-431b-8699-76f027a91bfe": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "SINCE 1987"
+          }
+        },
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Rugs With Poetry",
+            "heading_size": "h3"
+          }
+        },
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16fcabd0-f04f-45e7-ae28-7bfd79a2b715": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Story",
+            "button_link": "shopify:\/\/pages\/about"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-0",
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-1",
+        "template--16769565950249__86fdbe96-6e8b-431b-8699-76f027a91bfe-1668000198792fd2fe-2",
+        "16fcabd0-f04f-45e7-ae28-7bfd79a2b715"
+      ],
+      "settings": {
+        "use_video": true,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "full_width": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#393e30",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "82fa41e2-b515-4745-9162-da5d218ad6b5": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 50,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "f1b8cc2f-3a7b-4ec9-81e5-7c5cc26462a4": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 50,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "fa3ccc92-eb45-4b9e-8068-43f4f4b8b4ff": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest News",
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "square",
+        "show_image": true,
+        "use_shapes": true,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "button_outline": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1f24df2a-f388-4bae-85b0-0f261fd9a619": {
+      "type": "email-signup",
+      "settings": {
+        "heading": "Let’s Stay In Touch",
+        "description": "<p>Sign up for our newsletter and receive 10% off your first order!<\/p>",
+        "background_image": "shopify:\/\/shop_images\/newsletterbg.jpg",
+        "color_bg": "#000000",
+        "color_text": "#ffffff",
+        "color_border": "#ffffff",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "8cc6ca5f-db92-4547-91a9-05ad327a17ac",
+    "c40f0fd4-6edf-4307-81b0-caff9ce02bda",
+    "68f7d8a6-333d-4353-bea2-7e185ce95f80",
+    "8dd6f0ff-0b3a-49e7-97e7-45b6b4a0c446",
+    "5907da1a-5949-4a4b-9bd9-e67b7d4fbbeb",
+    "c89e50b4-25a1-4577-9e50-297ef396ed89",
+    "3767a956-d86e-4a6a-81fe-c3c04b70a2b7",
+    "b0400558-c0ea-4da7-8693-2a0bd00164e4",
+    "10d2d5bf-3c72-44f0-a44a-f08bd08cd7b1",
+    "4470f2d0-cf7c-4b84-9888-519d0c8fc71b",
+    "5ede3919-ca4c-4ed2-8362-34782f36b387",
+    "282cf443-21f9-489f-846c-7a857df2f55b",
+    "86fdbe96-6e8b-431b-8699-76f027a91bfe",
+    "82fa41e2-b515-4745-9162-da5d218ad6b5",
+    "f1b8cc2f-3a7b-4ec9-81e5-7c5cc26462a4",
+    "fa3ccc92-eb45-4b9e-8068-43f4f4b8b4ff",
+    "1f24df2a-f388-4bae-85b0-0f261fd9a619"
+  ]
+}

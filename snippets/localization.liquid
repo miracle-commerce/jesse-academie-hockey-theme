@@ -1,0 +1,31 @@
+{%- if show_language_switcher or show_currency_switcher -%}
+<div class="thb-localization-forms">
+	{% form 'localization', id: id %}
+		{%- if show_language_switcher -%}
+		<div class="select">
+			<select name="locale_code" class="thb-language-code resize-select">
+		    {% for language in localization.available_languages %}
+		      <option value="{{ language.iso_code }}" {%- if language == localization.language %} selected="selected"{% endif %}>
+		        {{- language.endonym_name -}}
+		      </option>
+		    {% endfor %}
+		  </select>
+		</div>
+		{%- endif -%}
+		{%- if show_currency_switcher -%}
+		<div class="select">
+			<select name="country_code" class="thb-currency-code resize-select">
+		    {% for country in localization.available_countries %}
+		      <option value="{{ country.currency.iso_code }}" {%- if country == localization.country %} selected="selected"{% endif %}>
+		        {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+		      </option>
+		    {% endfor %}
+		  </select>
+		</div>
+		{%- endif -%}
+		<noscript>
+			<button class="text-button">{{ 'localization.update_country' | t }}</button>
+		</noscript>
+	{% endform %}
+</div>
+{%- endif -%}

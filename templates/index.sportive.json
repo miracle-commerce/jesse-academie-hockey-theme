@@ -1,0 +1,479 @@
+{
+  "sections": {
+    "16479477632637c9a7": {
+      "type": "slideshow",
+      "blocks": {
+        "164794776393e76b8e-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide01.jpg",
+            "subheading": "Add a tagline",
+            "heading": "BACK IN STOCK",
+            "content": "I believe in comfort. If you don't feel comfortable in your clothes, it's hard to think of anything else.",
+            "button_text": "Shop New arrivals",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": false
+          }
+        },
+        "da81418d-b420-4f38-ba66-9d226dfa13cc": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sports-hero3.jpg",
+            "subheading": "Add a tagline",
+            "heading": "SHOP NOW. SAVE BIG.",
+            "content": "Goal ball four take a walk slam dunk, what a hit bowledem sports drop goal bowledem cardio trust our processes ball four take a walk goalie.",
+            "button_text": "Shop Sportswear",
+            "button_link": "",
+            "button_color": "accent2",
+            "button_outline": false
+          }
+        },
+        "c77e517e-31b6-4ee8-8294-d069f633d80b": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sports-hero2.jpg",
+            "subheading": "Add a tagline",
+            "heading": "BE CHIC, BE SPORTY",
+            "content": "Drop goal he shoots he scores bust up the middle goaltender cardio ball four take a walk back line yellow card bowledem. Pitcher game of two halves beep test football.",
+            "button_text": "Shop Women's Shoes",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "164794776393e76b8e-0",
+        "da81418d-b420-4f38-ba66-9d226dfa13cc",
+        "c77e517e-31b6-4ee8-8294-d069f633d80b"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "content_size": "large",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165243992157e22a0d": {
+      "type": "gallery",
+      "blocks": {
+        "165243992189d54a95-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img11.jpg",
+            "title": "PICK YOUR SPORT",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/mens-shoes",
+            "use_text_button": false
+          }
+        },
+        "165243992189d54a95-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img10.jpg",
+            "title": "ENJOY RUNNING",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/womens-outfits",
+            "use_text_button": false
+          }
+        },
+        "165243992189d54a95-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img12.jpg",
+            "title": "MUST-HAVE SHOES",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/womens-shoes",
+            "use_text_button": false
+          }
+        }
+      },
+      "block_order": [
+        "165243992189d54a95-0",
+        "165243992189d54a95-1",
+        "165243992189d54a95-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 3,
+        "full_width": true,
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "column_spacing": "small",
+        "heading_size": "h3",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652439924c0d78720": {
+      "type": "featured-collection",
+      "blocks": {
+        "165243992449a12db2-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-picks",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 4,
+            "show_view_all": true,
+            "button_outline": true,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "165243992449a12db2-0"
+      ],
+      "settings": {
+        "heading": "TOP PICKS",
+        "description": "<p>New arrivals coming in regularly, find the freshest modern styles here.<\/p>",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "165277350165b0449f": {
+      "type": "shop-the-look",
+      "blocks": {
+        "165277350169323d5a-0": {
+          "type": "product",
+          "settings": {
+            "product_handle": "graphic-light-support-sports-bra",
+            "x_position": 43,
+            "y_position": 35,
+            "x_position_mobile": 51,
+            "y_position_mobile": 32
+          }
+        },
+        "f800268a-c635-4d5d-8cfc-2d561ed3008e": {
+          "type": "product",
+          "settings": {
+            "product_handle": "printed-fleece-jogger-pants",
+            "x_position": 31,
+            "y_position": 60,
+            "x_position_mobile": 28,
+            "y_position_mobile": 46
+          }
+        }
+      },
+      "block_order": [
+        "165277350169323d5a-0",
+        "f800268a-c635-4d5d-8cfc-2d561ed3008e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hotspot.webp",
+        "image_mobile": "shopify:\/\/shop_images\/hotspotimg-mobile.jpg",
+        "full_width": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16524410432dbaacaa": {
+      "type": "featured-collection",
+      "blocks": {
+        "1652441043c0c40080-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shoes",
+            "display_type": "grid",
+            "product_limit": 3,
+            "columns_desktop": 3,
+            "show_view_all": true,
+            "button_outline": true,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "1652441043c0c40080-0"
+      ],
+      "settings": {
+        "heading": "MEN'S SHOES",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16524412683f4be52f": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16524412684ec5d19f-0": {
+          "type": "text",
+          "settings": {
+            "text": "FREE SHIPPING ON ALL ORDERS OVER $40",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16524412684ec5d19f-0"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 140,
+        "outline_text": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#e51d1d",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652441272d0a2d3c1": {
+      "type": "featured-collection",
+      "blocks": {
+        "16524412728fcc2265-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-outfits",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 2,
+            "show_view_all": false,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        },
+        "4e5d2667-0ae5-438a-b221-620127378c2c": {
+          "type": "title_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img6_22572388-4912-489a-b1af-1e7e0943f40c.jpg",
+            "title": "WOMEN'S SPORTSWEAR",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "shopify:\/\/collections\/top-picks",
+            "content_position": "bottom-left",
+            "overlay_opacity": 42
+          }
+        }
+      },
+      "block_order": [
+        "16524412728fcc2265-0",
+        "4e5d2667-0ae5-438a-b221-620127378c2c"
+      ],
+      "settings": {
+        "heading": "WOMEN'S OUTFITS",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16524431026620c316": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "165244310268931931-1": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR STORY",
+            "heading_size": "h1"
+          }
+        },
+        "165244310268931931-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165244310268931931-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "ABOUT US",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165244310268931931-1",
+        "165244310268931931-2",
+        "165244310268931931-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img7.jpg",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "full_width": true,
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16524432127337c604": {
+      "type": "rich-text",
+      "blocks": {
+        "16524432120047f897-1": {
+          "type": "heading",
+          "settings": {
+            "text": "FREE IN-STORE PICK UP",
+            "size": "h3"
+          }
+        },
+        "16524432120047f897-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        },
+        "16524432120047f897-3": {
+          "type": "button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "16524432120047f897-1",
+        "16524432120047f897-2",
+        "16524432120047f897-3"
+      ],
+      "settings": {
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652443660600f4eb7": {
+      "type": "multicolumn",
+      "blocks": {
+        "1652443660ac1e0d6f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img8.jpg",
+            "title": "CELEBRATE SOFTNESS",
+            "heading_size": "h4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "SHOP ACCESSORIES",
+            "link": ""
+          }
+        },
+        "1652443660ac1e0d6f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img9.jpg",
+            "title": "CYCLING CLOTHING",
+            "heading_size": "h4",
+            "text": "<p>From tops to sculpting leggings, Decathlon has a full range of clothing designed to streamline your body & wick away moisture.<\/p>",
+            "link_label": "SHOP CYCLING",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652443660ac1e0d6f-0",
+        "1652443660ac1e0d6f-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "mobile_swipe": true,
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "165278073708f0720e": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 10,
+        "border_separator": true,
+        "border_separator_full": false
+      }
+    },
+    "1652446085b6079350": {
+      "type": "logo-list",
+      "blocks": {
+        "1652446085d7bcfb94-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client01_10728085-7e28-4d8f-aafe-417e475d06a1.png",
+            "link": ""
+          }
+        },
+        "1652446085d7bcfb94-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client02_743bc671-4883-41b1-b7d1-139530bd78d7.png",
+            "link": ""
+          }
+        },
+        "1652446085d7bcfb94-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client03_d0b583bd-8852-4f9e-a01d-5322b8bcf980.png",
+            "link": ""
+          }
+        },
+        "1652446085d7bcfb94-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client04_e214f5fd-f86c-4ce5-b696-c655ee1e8b70.png",
+            "link": ""
+          }
+        },
+        "1652446085d7bcfb94-4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client05_83ff724a-c887-4bf1-bc5b-5958e93f7f7a.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652446085d7bcfb94-0",
+        "1652446085d7bcfb94-1",
+        "1652446085d7bcfb94-2",
+        "1652446085d7bcfb94-3",
+        "1652446085d7bcfb94-4"
+      ],
+      "settings": {
+        "heading": "OUR TOP BRANDS",
+        "description": "<p>New arrivals coming in regularly, find the freshest modern styles here.<\/p>",
+        "columns": 5,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "16479477632637c9a7",
+    "165243992157e22a0d",
+    "1652439924c0d78720",
+    "165277350165b0449f",
+    "16524410432dbaacaa",
+    "16524412683f4be52f",
+    "1652441272d0a2d3c1",
+    "16524431026620c316",
+    "16524432127337c604",
+    "1652443660600f4eb7",
+    "165278073708f0720e",
+    "1652446085b6079350"
+  ]
+}

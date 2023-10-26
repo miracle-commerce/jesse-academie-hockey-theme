@@ -1,0 +1,12 @@
+{% if section_heading != blank or section_description != blank %}
+<div class="section-header">
+	{% if section_heading %}
+		<h2 class="h3">{{ section_heading }}</h2>
+		{% endif %}
+		{% if section_description != blank %}
+		<div class="rte">
+			{{ section_description }}
+		</div>
+	{% endif %}
+</div>
+{% endif %}

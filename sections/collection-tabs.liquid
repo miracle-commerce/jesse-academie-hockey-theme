@@ -1,0 +1,163 @@
+{{- 'product-grid.css' | asset_url | stylesheet_tag -}}
+{{- 'collection-tabs.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign columns_desktop = section.settings.columns_desktop
+	assign product_limit = section.settings.product_limit
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign columns_class = 'medium-6 large-4'
+
+	case columns_desktop
+		when 2
+			assign columns_class = 'medium-6'
+		when 3
+			assign columns_class = 'medium-4'
+		when 4
+			assign columns_class = 'medium-6 large-3'
+	endcase
+-%}
+<div class="collection-tabs section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="section-header">
+		{% if section_heading != blank or section_description != blank %}
+		<div class="section-header">
+			{% if section_heading %}
+		    <h2 class="h3">{{ section_heading }}</h2>
+		    {% endif %}
+		    {% if section_description != blank %}
+		    <div class="rte">
+		      {{ section_description }}
+		    </div>
+		  {% endif %}
+		</div>
+		{% endif %}
+		<scroll-shadow>
+			<collection-tabs class="collection-tabs__list" data-target="product-grid-{{ section.id }}">
+				{% for block in section.blocks %}
+					{% if block.settings.collection != blank %}
+						<button type="button" data-collection="{{ block.settings.collection.handle }}" class="collection-tabs__list-link{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.collection.title }}</button>
+					{% else %}
+						<button type="button" data-collection="collection-{{ block.id }}" class="collection-tabs__list-link{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>Collection {{ forloop.index }}</button>
+					{% endif %}
+				{% endfor %}
+			</collection-tabs>
+		</scroll-shadow>
+	</div>
+	<ul id="product-grid-{{ section.id }}" data-id="{{ section.id }}" class="products carousel row small-up-2 medium-up-{{ columns_desktop }}{% if full_width %} full-width-row{% endif %}">
+		{% for block in section.blocks %}
+			{% assign mainloop = forloop %}
+			{% if block.settings.collection != blank %}
+				{%- for product in block.settings.collection.products limit: product_limit -%}
+					<li class="{{ columns_class }} columns{% if mainloop.first == true %} carousel__slide{% endif %}" data-collection="{{ block.settings.collection.handle }}">
+						{% render 'product-card', product_card_product: product %}
+					</li>
+				{%- endfor -%}
+			{% else %}
+				{%- for i in (1..product_limit) -%}
+				<li class="{{ columns_class }} columns{% if mainloop.first == true %} carousel__slide{% endif %}" data-collection="collection-{{ block.id }}">
+					{% render 'product-card' %}
+				</li>
+				{%- endfor -%}
+			{% endif %}
+		{%- endfor -%}
+
+		{%- if product_limit > columns_desktop -%}
+		<div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+		<div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+		{%- endif -%}
+	</ul>
+</div>
+{{- 'collection-tabs.js' | asset_url | script_tag -}}
+{% schema %}
+  {
+    "name": "Collection tabs",
+		"class": "section-collection-tabs",
+		"max_blocks": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Collection Tabs"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for your collections</p>"
+      },
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"default": false,
+				"label": "Make section full width"
+			},
+			{
+	      "type": "range",
+	      "id": "product_limit",
+	      "min": 2,
+	      "max": 16,
+	      "step": 1,
+	      "default": 6,
+	      "label": "Number of products to show"
+	    },
+			{
+	      "type": "range",
+	      "id": "columns_desktop",
+	      "min": 2,
+	      "max": 4,
+	      "step": 1,
+	      "default": 4,
+	      "label": "Number of columns on desktop"
+	    },
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }
+				]
+			}
+		],
+    "presets": [
+      {
+        "name": "Collection tabs",
+				"blocks": [
+					{
+						"type": "collection"
+					},
+					{
+						"type": "collection"
+					},
+					{
+						"type": "collection"
+					}
+				]
+      }
+    ]
+  }
+
+{% endschema %}

@@ -1,0 +1,64 @@
+{{ 'blog-header.css' | asset_url | stylesheet_tag }}
+{% liquid
+	assign heading = section.settings.heading
+	assign show_category_dropdown = section.settings.show_category_dropdown
+	assign show_todays_date = section.settings.show_todays_date
+%}
+<div class="row">
+	<div class="small-12 columns">
+		<div class="blog-header">
+			<div class="blog-header__inner">
+				<h1 class="thb-shop-title">{{ heading }}</h1>
+				{%- if show_todays_date -%}
+				<span class="blog-header__date h4">{{ 'now' | date: "%B %d, %Y" }}</span>
+				{%- endif -%}
+			</div>
+			{% if show_category_dropdown %}
+			<div class="blog-header__tags">
+				<div class="select">
+					<select id="blog-header--tags-select" class="resize-select">
+						<option value="{{ blog.url | escape }}">{{ 'blogs.blog.all' | t }}</option>
+						{% for single_tag in blog.all_tags %}
+							{%- liquid
+								if current_tags contains single_tag
+									assign selected = "selected"
+								else
+									assign selected = ''
+								endif
+							-%}
+							<option value="{{ blog.url | escape }}/tagged/{{ single_tag | handle }}" {{ selected }}>{{ single_tag }}</option>
+						{% endfor %}
+					</select>
+					{{ 'blog.js' | asset_url | script_tag }}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+		"name": "Blog header",
+	  "class": "blog-header-section",
+    "settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "Heading",
+				"default": "Blog posts"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_category_dropdown",
+				"default": true,
+				"label": "Show category dropdown"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_todays_date",
+				"default": true,
+				"label": "Show today's date"
+			}
+    ]
+  }
+{% endschema %}

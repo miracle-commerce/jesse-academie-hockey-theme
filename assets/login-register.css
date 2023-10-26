@@ -1,0 +1,102 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.thb-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    .thb-form-container {
+      padding: 70px 0; } }
+  @media only screen and (min-width: 1068px) {
+    .thb-form-container {
+      padding: 100px 0; } }
+  @media only screen and (min-width: 768px) {
+    .thb-form-container {
+      flex-direction: row;
+      justify-content: space-around; } }
+  .thb-form-container #recover {
+    display: none; }
+    .thb-form-container #recover:target {
+      display: block; }
+      .thb-form-container #recover:target + #login {
+        display: none; }
+  .thb-form-container .thb-login-form,
+  .thb-form-container .thb-register-form {
+    width: 100%;
+    flex: 1;
+    max-width: 640px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 768px) {
+      .thb-form-container .thb-login-form,
+      .thb-form-container .thb-register-form {
+        padding: 0 30px; } }
+    @media only screen and (min-width: 1068px) {
+      .thb-form-container .thb-login-form,
+      .thb-form-container .thb-register-form {
+        padding: 0 60px; } }
+    .thb-form-container .thb-login-form .form-notification,
+    .thb-form-container .thb-register-form .form-notification {
+      margin-bottom: 15px; }
+  .thb-form-container .thb-login-form + .thb-register-form {
+    margin-top: 60px; }
+    @media only screen and (min-width: 768px) {
+      .thb-form-container .thb-login-form + .thb-register-form {
+        margin-top: 0;
+        border-left: 1px solid var(--color-border); } }
+  .thb-form-container h4 {
+    margin-bottom: 10px;
+    text-align: center; }
+  .thb-form-container p {
+    margin-bottom: 30px;
+    text-align: center; }
+  .thb-form-container input {
+    margin-bottom: 10px; }
+  .thb-form-container .center-button {
+    display: block;
+    font-size: 0.8125rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px; }
+  .thb-form-container .button {
+    margin-top: 10px; }
+  .thb-form-container .switch-login-section {
+    border-top: 1px solid var(--color-border);
+    margin-top: 30px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 768px) {
+      .thb-form-container .switch-login-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
+    .thb-form-container .switch-login-section h6 {
+      font-size: 1.25rem; }
+      @media only screen and (min-width: 768px) {
+        .thb-form-container .switch-login-section h6 {
+          margin-bottom: 0; } }
+    .thb-form-container .switch-login-section .text-button {
+      font-size: 0.8125rem;
+      margin-right: auto; }
+      @media only screen and (min-width: 768px) {
+        .thb-form-container .switch-login-section .text-button {
+          margin-right: 0; } }
+
+.account-activate-buttons {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px; }
+  .account-activate-buttons .button {
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .account-activate-buttons {
+      flex-direction: row; } }

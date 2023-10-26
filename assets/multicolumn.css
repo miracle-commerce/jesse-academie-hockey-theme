@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.multicolumn__column {
+  margin-bottom: 40px; }
+
+.multicolumn__image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: var(--ratio-percent);
+  margin-bottom: 28px; }
+  .multicolumn__image.aspect-ratio--portrait {
+    padding-bottom: 125%; }
+  .multicolumn__image.aspect-ratio--square, .multicolumn__image.aspect-ratio--circle {
+    padding-bottom: 100%; }
+  .multicolumn__image.aspect-ratio--circle {
+    border-radius: 50%; }
+  .multicolumn__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.multicolumn h4 {
+  margin-bottom: 8px; }
+
+.multicolumn p {
+  margin-bottom: 12px; }
+
+@media only screen and (max-width: 767px) {
+  .multicolumn.swipe-on-mobile .row {
+    display: grid;
+    grid-gap: 0;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(calc(90vw - 15px), 1fr);
+    overflow-x: auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(90vw - 15px), 1fr));
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; }
+    .multicolumn.swipe-on-mobile .row::-webkit-scrollbar {
+      display: none; }
+    .multicolumn.swipe-on-mobile .row .columns {
+      scroll-snap-align: center;
+      scroll-snap-stop: always; } }
+
+.multicolumn.swipe-on-mobile .multicolumn__column {
+  margin-bottom: 0; }
+
+.multicolumn.text-center .rte {
+  padding: 0 15px; }
+
+@media only screen and (min-width: 768px) {
+  .medium-1\/5 {
+    flex: 0 0 20%;
+    max-width: 20%; } }

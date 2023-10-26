@@ -1,0 +1,21 @@
+{%- liquid
+	assign logo = header_settings.logo
+-%}
+{% render 'header-mobile-toggle', header_settings: header_settings, blocks: blocks %}
+{% if logo %}
+	<a class="logolink" href="{{ routes.root_url }}">
+		<img
+			src="{{ logo | image_url }}"
+			class="logoimg"
+			alt="{{ logo.alt | default: shop.name | escape }}"
+			width="{{ logo.width }}"
+			height="{{ logo.height }}"
+		>
+	</a>
+{% else %}
+	<a class="logolink text-logo" href="{{ routes.root_url }}">
+		{{ shop.name }}
+	</a>
+{% endif %}
+{% render 'header-full-menu', menu: header_settings.menu, blocks: blocks %}
+{% render 'header-secondary-area' %}

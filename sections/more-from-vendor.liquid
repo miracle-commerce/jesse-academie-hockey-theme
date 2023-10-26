@@ -1,0 +1,68 @@
+{{- 'product-grid.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign product_vendor = product.vendor
+	assign product_handle = product.handle
+	assign product_vendor_link = product_vendor | link_to_vendor
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	capture section_heading
+		echo 'sections.more_from_vendor.more_from_html' | t: vendor: product_vendor_link
+	endcapture
+-%}
+<more-from-vendor class="more-from-vendor product-recommendations{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" data-vendor="{{ product_vendor }}" data-product-handle="{{ product_handle }}">
+	<div class="row">
+		<div class="small-12 columns">
+			<h4 class="product-recommendations__heading">{{ section_heading }}</h4>
+		</div>
+	</div>
+	<ul id="product-grid-{{ section.id }}" class="products collection row small-up-1 medium-up-4">
+	</ul>
+</more-from-vendor>
+<script src="{{ 'more-from-vendor.js' | asset_url }}" defer></script>
+{% schema %}
+{
+  "name": "More from vendor",
+	"templates": ["product"],
+  "settings": [
+		{
+			"type": "paragraph",
+			"content": "This section will only appear when your products have the same vendor."
+		},
+		{
+			"type": "checkbox",
+			"id": "full_width",
+			"default": false,
+			"label": "Make section full width"
+		},
+		{
+			"type": "checkbox",
+			"id": "mobile_swipe",
+			"default": true,
+			"label": "Enable swipe on mobile"
+		},
+		{
+      "type": "header",
+      "content": "Spacing"
+    },
+		{
+			"type": "checkbox",
+			"id": "disable_top_spacing",
+			"default": false,
+			"label": "Remove top spacing"
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_bottom_spacing",
+			"default": false,
+			"label": "Remove bottom spacing"
+		}
+  ],
+  "presets": [
+    {
+      "name": "More from vendor"
+    }
+  ]
+}
+{% endschema %}

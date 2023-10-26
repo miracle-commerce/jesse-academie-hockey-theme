@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "de99fa9d-3d3e-43e0-bd5a-65456784ecd7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16150498803863__de99fa9d-3d3e-43e0-bd5a-65456784ecd7-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Header_-_Mon_Dossier.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Header_-_Mon_Dossier.jpg",
+            "subheading": "Bienvenue dans la nouvelle zone",
+            "heading": "Mon Dossier",
+            "content": "Assurez vous de mettre vos informations de joueur à jour avant une inscription.",
+            "slide_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "accent2",
+            "button_outline": false,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16150498803863__de99fa9d-3d3e-43e0-bd5a-65456784ecd7-slide-1"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-auto",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "content_size": "medium",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "main-login": {
+      "type": "main-login",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "de99fa9d-3d3e-43e0-bd5a-65456784ecd7",
+    "main-login"
+  ]
+}

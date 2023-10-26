@@ -1,0 +1,11 @@
+{% comment %}
+Template to ajax-load products from specific vendor
+{% endcomment %}
+{%- layout none -%}
+<div class="collection-vendor-ajax">
+{%- for product in collection.products limit: 4 -%}
+<div class="columns">
+{%- render 'product-card', product_card_product: product -%}
+</div>
+{%- endfor -%}
+</div>

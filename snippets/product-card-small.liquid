@@ -1,0 +1,28 @@
+<div class="product-cart-item">
+	<div class="product-cart-item-image">
+		{% if product_small.featured_image %}
+			{%- render 'responsive-image', image: product_small.featured_image, sizes: '200x0' -%}
+		{% else %}
+			<div class="thb-placeholder" style="width: 75px; height:75px;">
+				{%-
+					liquid
+					capture index
+						cycle '1', '2', '3', '4', '5', '6'
+					endcapture
+				-%}
+				{{ 'product-' | append: index | placeholder_svg_tag }}
+			</div>
+		{% endif %}
+	</div>
+	<div>
+		{%-
+			liquid
+			assign product_title = product_small.title
+			if predictive_search
+				assign product_title = product_title | highlight: predictive_search.terms
+			endif
+		-%}
+		<a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
+		{% render 'product-price', product: product_small %}
+	</div>
+</div>

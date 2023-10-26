@@ -1,0 +1,10 @@
+<free-shipping class="free-shipping" data-cart-total="{{ total }}" data-minimum="{{ free_shipping_minimum }}">
+	<div class="free-shipping--text">
+		{%- assign remaining_amount = total | minus: free_shipping_minimum | abs | money_without_trailing_zeros -%}
+		<div class="free-shipping--text-remaining">{{ 'general.cart_drawer.free_shipping.spend_more_for_free_shipping_html' | t: amount: remaining_amount }}</div>
+		<div class="free-shipping--text-full">{{ 'general.cart_drawer.free_shipping.free_shipping_applied_at_checkout' | t }}</div>
+	</div>
+	<div class="free-shipping--bar">
+		<div class="free-shipping--percentage"></div>
+	</div>
+</free-shipping>

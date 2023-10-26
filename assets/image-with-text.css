@@ -1,0 +1,78 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.image-with-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--bg-body); }
+  @media only screen and (min-width: 768px) {
+    .image-with-text {
+      flex-wrap: nowrap; } }
+  .image-with-text.text_first {
+    flex-direction: row-reverse; }
+  .image-with-text__image {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    padding-bottom: var(--padding-bottom); }
+    .image-with-text__image svg,
+    .image-with-text__image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .image-with-text__image svg {
+      padding: 50px;
+      fill: var(--bg-body, #fff);
+      opacity: 0.5;
+      background: var(--color-accent); }
+    .image-with-text__image-media {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: var(--ratio-percent); }
+      .image-with-text__image-media.aspect-ratio--small {
+        padding-bottom: 75%; }
+      .image-with-text__image-media.aspect-ratio--large {
+        padding-bottom: 100%; }
+      .image-with-text__image-media iframe,
+      .image-with-text__image-media video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+  .image-with-text__content {
+    width: 100%;
+    flex-grow: 1;
+    padding: 25px; }
+    @media only screen and (min-width: 768px) {
+      .image-with-text__content {
+        padding: 45px; } }
+    @media only screen and (min-width: 1068px) {
+      .image-with-text__content {
+        padding: 70px; } }
+    .image-with-text__content .subheading,
+    .image-with-text__content p {
+      color: var(--color-accent); }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-small > .image-with-text__inner {
+      width: 37.5%; } }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-medium > .image-with-text__inner {
+      width: 46%; }
+      .full-width-row-full .image-with-text.grid--image-medium > .image-with-text__inner {
+        width: 50%; } }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-large > .image-with-text__inner {
+      width: 56%; } }

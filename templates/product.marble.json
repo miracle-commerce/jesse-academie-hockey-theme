@@ -1,0 +1,455 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true
+          }
+        },
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18": {
+          "type": "popup",
+          "settings": {
+            "text": "Sizing guide",
+            "icon": "ruler",
+            "page": "sizing-guide"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "55da0587-5936-4a13-a042-eb96ec75df15": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "MATERIALS",
+            "content": "<p>Talk about fine lines and great curves. That’s the beauty of the Darcy sofa—made to suit your appreciation for clean, contemporary style. A striking flared frame, comfy pillow top armrests and an ultra-soft upholstery that holds up to everyday living complete this fashion statement.<\/p>",
+            "page": ""
+          }
+        },
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING & RETURNS",
+            "content": "<p>All furniture is thoroughly inspected at several key points in our preparation and delivery process to make sure it's received in good condition. If you have chosen to pick up your order from one of our showrooms, <strong>we encourage you to inspect your item before you take possession.<\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "bf5d90f9-3dff-4a80-a3c5-8459ac5900ec": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "CARE GUIDE",
+            "content": "<p>Regular<em>care<\/em>. Use a slightly damp, soft and lint-free cloth for regular dust removal. Always clean in the direction of the grain.<\/p>",
+            "page": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "variant_picker",
+        "d8a1f0be-1902-4a39-a70a-a75f44d3ad18",
+        "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "55da0587-5936-4a13-a042-eb96ec75df15",
+        "01d647a2-3859-485c-b22d-62c1e9ca54c4",
+        "bf5d90f9-3dff-4a80-a3c5-8459ac5900ec",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "show_taxes_included": true,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "1652951056377de0e5": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "",
+        "text": "",
+        "video": "",
+        "button_text": "",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "165295269864369dbf": {
+      "type": "rich-text",
+      "blocks": {
+        "1652952698057efd1a-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "IPHONE CASES"
+          }
+        },
+        "1652952698057efd1a-1": {
+          "type": "heading",
+          "settings": {
+            "text": "UNIQUE FEATURES",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "1652952698057efd1a-0",
+        "1652952698057efd1a-1"
+      ],
+      "settings": {
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165295372418035cb5": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652952636a24e0645": {
+      "type": "text-with-icons",
+      "blocks": {
+        "165295263650669fdb-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>9.4ft Drop Protection<\/p>"
+          }
+        },
+        "165295263650669fdb-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>Screen Protection<\/p>"
+          }
+        },
+        "165295263650669fdb-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>0.50 mm Thin<\/p>"
+          }
+        },
+        "2376a6bf-797a-4e07-87e2-c58a624e9100": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>Eco-friendly Standards<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165295263650669fdb-0",
+        "165295263650669fdb-1",
+        "165295263650669fdb-2",
+        "2376a6bf-797a-4e07-87e2-c58a624e9100"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "xlarge",
+        "heading_size": "large",
+        "mobile_swipe": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#103a3a",
+        "color_text": "#103a3a",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652957629532e029d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 70,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16529566527edf70e1": {
+      "type": "text-with-icons",
+      "blocks": {
+        "165295665153ae288d-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>Range Extender<\/p>"
+          }
+        },
+        "165295665153ae288d-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>Earphone Holder<\/p>"
+          }
+        },
+        "40ca9913-9b1c-4f3a-b5bb-7a8761ca4f7e": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "",
+            "text": "<p>33ft Waterproof<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165295665153ae288d-0",
+        "165295665153ae288d-1",
+        "40ca9913-9b1c-4f3a-b5bb-7a8761ca4f7e"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "xlarge",
+        "heading_size": "large",
+        "mobile_swipe": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#103a3a",
+        "color_text": "#103a3a",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165295512182eb22c9": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "16529551219a9ceff5-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Protection from all angles",
+            "content": "Lifted camera ring to protect the camera lens, extra qìtech™ 2.0 covered corner bumpers for 360-degree protection, and finally the raised bezel protects screens when dropped frontward.",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16529551219a9ceff5-0"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652955169a56ecd5f": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "165295516985c87a70-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "heading": "Made of recycled materials",
+            "content": "We have got to change our ethics and our financial system and our whole way of understanding the world. It has to be a world in which people live rather than die; a sustainable world. It could be great. Fashion is about dressing according to what's fashionable.",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165295516985c87a70-0"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16529610768f6168d2": {
+      "type": "rich-text",
+      "blocks": {
+        "165296107679b3bd73-1": {
+          "type": "heading",
+          "settings": {
+            "text": "THE LOOK & FEEL",
+            "size": "h3"
+          }
+        },
+        "165296107679b3bd73-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Being one step ahead of a fashion trend is not so important to me. What matters is to always forge ahead. I am not interested in the past, except as the road to the future. We look our best in subdued colors, sophisticated cuts, and a general air of sleek understatement.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "165296107679b3bd73-1",
+        "165296107679b3bd73-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652961570975a353a": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652963617e1fa2bc6": {
+      "type": "multicolumn",
+      "blocks": {
+        "165296361793c613fd-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Premium Leather",
+            "heading_size": "h4",
+            "text": "<p>Powerful, elegant designs that give off the subtle but unmistakable message of success. Multiple different types and shades are available in these durable, beautifully crafted wallets. Optimized storage and pocket space.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165296361793c613fd-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Fits Perfectly",
+            "heading_size": "h4",
+            "text": "<p>When you purchase a Perfect Fit branded item, you are supporting USA manufacturing jobs in a rural community.  The leather cell phone case is a great way to securely carry your phone on your duty belt. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165296361793c613fd-0",
+        "165296361793c613fd-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "mobile_swipe": true,
+        "text_alignment": "left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652964088b2045e3e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "full_width": true,
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652625504fac80515": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "1652951056377de0e5",
+    "165295269864369dbf",
+    "165295372418035cb5",
+    "1652952636a24e0645",
+    "1652957629532e029d",
+    "16529566527edf70e1",
+    "165295512182eb22c9",
+    "1652955169a56ecd5f",
+    "16529610768f6168d2",
+    "1652961570975a353a",
+    "1652963617e1fa2bc6",
+    "1652964088b2045e3e",
+    "1652625504fac80515",
+    "product-recommendations"
+  ]
+}

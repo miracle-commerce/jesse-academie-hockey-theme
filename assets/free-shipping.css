@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+.free-shipping--percentage {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+/*------------------------------------------------------------------
+Utilities
+*/
+.free-shipping {
+  display: block;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 500; }
+  .free-shipping--text {
+    margin-bottom: 10px; }
+    .free-shipping--text-remaining {
+      display: none; }
+    .free-shipping--text-full {
+      display: block; }
+  .free-shipping--bar {
+    background: var(--color-border);
+    height: 6px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+  .free-shipping--percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(var(--percentage, 0), 1);
+    transform-origin: center left;
+    background: var(--color-accent); }

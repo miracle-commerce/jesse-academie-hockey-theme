@@ -1,0 +1,405 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true
+          }
+        },
+        "1974e2a3-dcae-4728-8714-52c01b17429f": {
+          "type": "inventory_level",
+          "settings": {
+            "show_inventory_notice": "always",
+            "show_inventory_count": "always",
+            "inventory_notice_pulse": true,
+            "inventory_notice_bar": true,
+            "inventory_notice_threshold": 10,
+            "inventory_notice_base": 20
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "7fbb7113-9fda-4f6b-b3cf-5cf740dac39c": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "product_list_limit": 2
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "variant_picker",
+        "1974e2a3-dcae-4728-8714-52c01b17429f",
+        "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "7fbb7113-9fda-4f6b-b3cf-5cf740dac39c",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "show_taxes_included": true,
+        "thumbnail_position": "bottom",
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "60dfe5ce-7786-48b6-a2a9-20c063b8d3f4": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "Rugs as heaven made",
+        "text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "video": "",
+        "button_text": "WATCH THE VIDEO",
+        "overlay_opacity": 10,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "6aa3ceb5-632f-460e-8258-649f451a6b93": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "eaa2f0ac-60f4-4cd2-a361-2efec041768c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "RUG MAKERS SINCE 1928"
+          }
+        },
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Amazing rugs for a lesser price",
+            "size": "h2"
+          }
+        },
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-0",
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-1",
+        "template--16769565360425__eaa2f0ac-60f4-4cd2-a361-2efec041768c-1668667524c49abd76-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "5d93c3ac-dfcb-4e74-9f14-a346b13c7354": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "8ce5ef4d-acfc-482c-aba8-f84e3ab8b824": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Cleaning",
+            "heading_size": "h4",
+            "text": "<p>Modern vaccumm cleaners have high suction power which can pull out treads from the rug. Avoid vaccuming with beater bar.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Color",
+            "heading_size": "h4",
+            "text": "<p>To prevent damage, a rug should be tested for colorfastness before being cleaned with any kind of solution. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "title": "Odor",
+            "heading_size": "h4",
+            "text": "<p>Rugs are tightly packed for shipping, freshly opened rug from a packaging might have a slight odor of dyes and yarn.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-0",
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-1",
+        "template--16769565360425__8ce5ef4d-acfc-482c-aba8-f84e3ab8b824-166866574403038287-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "mobile_swipe": false,
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "961a2eb3-3e21-463f-b06c-247835cfdae9": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "a5698d31-bc57-4e1d-a42f-ad891dddb61b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Natural colors"
+          }
+        },
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Subtle Colors for Big Impact",
+            "heading_size": "h3"
+          }
+        },
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our online rug collections cater to all tastes. We provide a wide selection of on trend elegant styles, quality materials and vibrant colours in a variety of sizes, all guaranteed to add style, texture, character and comfort.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-0",
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-1",
+        "template--16769565360425__a5698d31-bc57-4e1d-a42f-ad891dddb61b-166911156022fa622d-2"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "",
+        "video_autoplay": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "full_width": true,
+        "color_bg": "#e8e2de",
+        "color_text": "#393e30",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "bcd86fe4-2bff-482a-832a-ef1160c40522": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16769565360425__bcd86fe4-2bff-482a-832a-ef1160c40522-1669111570083a6969-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Leveling up your room floor",
+            "size": "h2"
+          }
+        },
+        "template--16769565360425__bcd86fe4-2bff-482a-832a-ef1160c40522-1669111570083a6969-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__bcd86fe4-2bff-482a-832a-ef1160c40522-1669111570083a6969-1",
+        "template--16769565360425__bcd86fe4-2bff-482a-832a-ef1160c40522-1669111570083a6969-2"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "5ac0c437-2712-41c3-8262-0d5142bc77cc": {
+      "type": "before-after-image",
+      "blocks": {
+        "template--16769565360425__5ac0c437-2712-41c3-8262-0d5142bc77cc-1668664808976629f4-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Living room",
+            "heading_size": "h3",
+            "heading_position": "top",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 14
+          }
+        },
+        "template--16769565360425__5ac0c437-2712-41c3-8262-0d5142bc77cc-1668664808976629f4-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Bedroom",
+            "heading_size": "h3",
+            "heading_position": "bottom",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__5ac0c437-2712-41c3-8262-0d5142bc77cc-1668664808976629f4-0",
+        "template--16769565360425__5ac0c437-2712-41c3-8262-0d5142bc77cc-1668664808976629f4-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "full_width": false,
+        "initial_position": 78,
+        "line_color": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "433046e1-7c14-4375-bbd6-82c74bd3c13d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "601e1230-8225-43a6-b2f4-ea68c68ae03c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16769565360425__601e1230-8225-43a6-b2f4-ea68c68ae03c-166911156022fa622d-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Joy Of Floor",
+            "heading_size": "h3"
+          }
+        },
+        "template--16769565360425__601e1230-8225-43a6-b2f4-ea68c68ae03c-166911156022fa622d-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16769565360425__601e1230-8225-43a6-b2f4-ea68c68ae03c-166911156022fa622d-1",
+        "template--16769565360425__601e1230-8225-43a6-b2f4-ea68c68ae03c-166911156022fa622d-2"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "",
+        "video_autoplay": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "full_width": true,
+        "color_bg": "#e8e2de",
+        "color_text": "#393e30",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "60dfe5ce-7786-48b6-a2a9-20c063b8d3f4",
+    "6aa3ceb5-632f-460e-8258-649f451a6b93",
+    "eaa2f0ac-60f4-4cd2-a361-2efec041768c",
+    "5d93c3ac-dfcb-4e74-9f14-a346b13c7354",
+    "8ce5ef4d-acfc-482c-aba8-f84e3ab8b824",
+    "961a2eb3-3e21-463f-b06c-247835cfdae9",
+    "a5698d31-bc57-4e1d-a42f-ad891dddb61b",
+    "bcd86fe4-2bff-482a-832a-ef1160c40522",
+    "5ac0c437-2712-41c3-8262-0d5142bc77cc",
+    "433046e1-7c14-4375-bbd6-82c74bd3c13d",
+    "601e1230-8225-43a6-b2f4-ea68c68ae03c",
+    "product-recommendations"
+  ]
+}

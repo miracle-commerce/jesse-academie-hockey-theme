@@ -1,0 +1,276 @@
+{{ 'rich-text.css' | asset_url | stylesheet_tag }}
+{% liquid
+	assign text_width = section.settings.text_width
+	assign text_position = section.settings.text_position
+	assign text_alignment = section.settings.text_alignment
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+%}
+<div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="rich-text__inner">
+		{% for block in section.blocks %}
+			{%- case block.type -%}
+				{%- when 'image' -%}
+					{%- if block.settings.image != blank -%}
+						{%- liquid
+							assign image = block.settings.image
+							assign master_width = image.src.width | append: 'x' | append: image.src.height
+							render 'responsive-image', image: image, sizes: master_width, retina: true
+						-%}
+					{%- else -%}
+						<div class="thb-placeholder">
+							{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+						</div>
+					{%- endif -%}
+				{%- when 'subheading' -%}
+					<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+				{%- when 'heading' -%}
+					<h3 class="{{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+				{%- when 'text' -%}
+					<div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+				{%- when 'button' -%}
+					{% if block.settings.link_label != blank %}
+						<a class="button{% if block.settings.button_outline %} outline{%- endif -%}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
+					{% endif %}
+				{%- when 'space' -%}
+					 <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+			{%- endcase -%}
+		{% endfor %}
+	</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "settings": [
+			{
+				"type": "select",
+				"id": "text_width",
+				"label": "Content width",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					}
+				],
+				"default": "medium"
+			},
+			{
+				"type": "select",
+				"id": "text_position",
+				"label": "Content position",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "center",
+						"label": "Center"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "center"
+			},
+			{
+				"type": "select",
+				"id": "text_alignment",
+				"label": "Content alignment",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "center",
+						"label": "Center"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "center"
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+			{
+				"type": "image",
+				"name": "Image",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					}
+				]
+			},
+			{
+				"type": "subheading",
+				"name": "Subheading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Subheading for this section"
+					}
+				]
+			},
+			{
+				"type": "heading",
+				"name": "Heading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Talk about your brand"
+					},
+					{
+		        "type": "select",
+		        "id": "size",
+		        "label": "Size",
+		        "options": [
+		          {
+		            "value": "h2",
+		            "label": "Extra Large"
+		          },
+							{
+		            "value": "h3",
+		            "label": "Large"
+		          },
+							{
+		            "value": "h4",
+		            "label": "Medium"
+		          },
+							{
+		            "value": "h5",
+		            "label": "Small"
+		          }
+		        ],
+		        "default": "h3"
+		      }
+				]
+			},
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "richtext",
+						"id": "text",
+						"label": "Content",
+						"default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+					},
+					{
+		        "type": "select",
+		        "id": "size",
+		        "label": "Size",
+		        "options": [
+							{
+		            "value": "text-size-large",
+		            "label": "Large"
+		          },
+							{
+		            "value": "text-size-regular",
+		            "label": "Medium"
+		          },
+							{
+		            "value": "text-size-small",
+		            "label": "Small"
+		          }
+		        ],
+		        "default": "text-size-regular"
+		      }
+        ]
+      },
+			{
+        "type": "button",
+        "name": "Button",
+        "settings": [
+					{
+						"id": "link_label",
+						"type": "text",
+						"label": "Label",
+						"default": "Learn More",
+						"info": "Leave the label blank to hide the button."
+					},
+					{
+						"id": "link",
+						"type": "url",
+						"label": "Link"
+					},
+					{
+						"type": "checkbox",
+						"id": "button_outline",
+						"label": "Use outline button style",
+						"default": false
+					}
+        ]
+      },
+      {
+        "type": "space",
+        "name": "Empty space",
+        "settings": [
+          {
+            "type": "range",
+            "id": "height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Height",
+            "default": 50
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich text",
+				"blocks": [
+					{
+						"type": "subheading"
+					},
+	        {
+	          "type": "heading"
+	        },
+	        {
+	          "type": "text"
+	        },
+	        {
+	          "type": "button"
+	        }
+	      ]
+      }
+    ]
+  }
+{% endschema %}

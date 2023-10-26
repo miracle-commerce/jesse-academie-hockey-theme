@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+Accordion
+*/
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.accordion {
+  display: block;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 25px; }
+  .accordion + .accordion {
+    border-top: 0;
+    margin-top: -25px; }
+  .accordion-container .accordion {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto; }
+    .accordion-container .accordion:last-child {
+      margin-bottom: 0; }
+  .accordion details[open] summary span:after {
+    transform: rotateX(180deg); }
+  .accordion summary {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding: 18px 40px 18px 0;
+    cursor: pointer; }
+    [dir="rtl"] .accordion summary {
+      padding: 18px 0px 18px 40px; }
+    .accordion summary span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .accordion summary span:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 3px 0 3px;
+        border-color: var(--color-accent) transparent transparent transparent; }
+      [dir="rtl"] .accordion summary span {
+        right: auto;
+        left: 0; }
+    .accordion summary::-webkit-details-marker {
+      display: none; }
+  .accordion .accordion__content {
+    padding: 0 0 15px 0;
+    font-size: 0.9375rem; }
+    .accordion .accordion__content > *:last-child {
+      margin-bottom: 0; }
+
+.collapsible-content__inner {
+  max-width: 1060px;
+  margin: 0 auto; }

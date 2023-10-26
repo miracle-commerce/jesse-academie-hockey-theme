@@ -1,0 +1,33 @@
+<link rel="preload" as="style" href="{{ 'app.css' | asset_url }}">
+{% if template == 'product' -%}
+<link rel="preload" as="style" href="{{ 'product.css' | asset_url }}">
+{% liquid
+	if product.selected_or_first_available_variant.featured_media.preview_image
+		assign image = product.selected_or_first_available_variant.featured_media.preview_image
+		render 'responsive-preload', image: image, sizes: '375x0,640x0,960x0'
+	endif
+-%}
+{%- endif %}
+{% if template == 'collection' -%}
+{% liquid
+	if collection.featured_image
+		assign image = collection.featured_image
+		assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+		assign master_width = image.src.width | append: 'x' | append: image.src.height
+		assign sizes = '375x' | append: small_width | append: ',' | append: master_width
+		render 'responsive-preload', image: image, sizes: sizes
+	endif
+-%}
+{%- endif %}
+{% if settings.animations %}
+<link rel="preload" as="script" href="{{ 'animations.min.js' | asset_url }}">
+{% endif %}
+<link rel="preload" as="script" href="{{ 'vendor.min.js' | asset_url }}">
+<link rel="preload" as="script" href="{{ 'app.js' | asset_url }}">
+
+<script>
+window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.expand = 150;
+window.lazySizesConfig.loadMode = 1;
+window.lazySizesConfig.loadHidden = false;
+</script>

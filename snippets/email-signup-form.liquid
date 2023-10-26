@@ -1,0 +1,41 @@
+<div class="signup-container">
+	{% form 'customer', class: 'signup-form' %}
+		<fieldset>
+			<input name="contact[tags]" type="hidden" value="newsletter" />
+			{%- if form.errors -%}
+				<div class="form-notification error" id="Newsletter-error--{{ section.id }}">
+					{% render 'svg-icons' with 'thb-error' %} {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+				</div>
+			{%- endif -%}
+			{%- if form.posted_successfully? -%}
+				<div class="form-notification success" id="Newsletter-success--{{ section.id }}">
+					{% render 'svg-icons' with 'thb-success' %} {{ 'newsletter.success' | t }}
+				</div>
+			{%- endif -%}
+			<label class="field__label" for="NewsletterForm--{{ section.id }}">
+        {{ 'newsletter.label' | t }}
+      </label>
+			<input
+				placeholder="{{ 'sections.signup.enter_your_email' | t }}"
+				type="email"
+				id="NewsletterForm--{{ section.id }}"
+				name="contact[email]"
+				autocorrect="off"
+				autocapitalize="off"
+				autocomplete="email"
+				value="{{ form.email }}"
+				{% if form.errors %}
+					autofocus
+					aria-invalid="true"
+					aria-describedby="Newsletter-error--{{ section.id }}"
+				{% elsif form.posted_successfully? %}
+					aria-describedby="Newsletter-success--{{ section.id }}"
+				{% endif %}
+				placeholder="{{ 'newsletter.placeholder' | t }}"
+				required
+			/>
+			<button class="submit" type="submit" aria-label="{{ 'sections.signup.enter_your_email' | t }}">{% render 'svg-icons' with 'signup-submit' %}</button>
+		</fieldset>
+
+	{% endform %}
+</div>

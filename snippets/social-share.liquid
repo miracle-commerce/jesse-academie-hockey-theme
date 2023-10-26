@@ -1,0 +1,15 @@
+{% assign share_facebook = settings.social_share_facebook %}
+{% assign share_twitter = settings.social_share_twitter %}
+{% assign share_pinterest = settings.social_share_pinterest %}
+<aside class="share-article">
+  {% if share_facebook %}
+  <a href="http://www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="facebook social">{% render 'svg-icons' with 'facebook' %} {{ 'social.alt_text.share_on_facebook' | t }}</a>
+  {% endif %}
+  {% if share_twitter %}
+  <a href="https://twitter.com/intent/tweet?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="twitter social"> {% render 'svg-icons' with 'twitter' %} {{ 'social.alt_text.share_on_twitter' | t }}</a>
+  {% endif %}
+  {% if share_pinterest %}
+  <a href="http://pinterest.com/pin/create/link/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | image_url: width: 1024, height: 1024 }}&amp;description={{ share_title | url_param_escape }}" class="pinterest social" data-pin-no-hover="true">{% render 'svg-icons' with 'pinterest' %} {{ 'social.alt_text.share_on_pinterest' | t }}</a>
+  {% endif %}
+</aside>
+<script src="{{ 'social-share.min.js' | asset_url }}" defer="defer"></script>

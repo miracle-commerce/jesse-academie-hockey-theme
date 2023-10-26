@@ -1,0 +1,44 @@
+{%- if article_show_nav -%}
+<article-navigation class="blog-post-detail--navigation">
+	{%- liquid
+		assign current_found = false
+		assign done = false
+
+		for a in blog.articles
+			if current_found and done == false
+				assign next_article = a
+				assign done = true
+			endif
+			unless done
+				if a.id == article.id
+					assign current_found = true
+				else
+					assign prev_article = a
+				endif
+			endunless
+		endfor
+	-%}
+	{%- if prev_article -%}
+		<a href="{{ prev_article.url }}" class="blog-post-detail--navigation-link navigation-prev">
+			{% render 'svg-icons' with 'thb-post-nav-arrow-left' %}
+			<span>{{ 'blogs.article.previous_article' | t }}</span>
+		</a>
+	{%- else -%}
+		<div></div>
+	{%- endif -%}
+	<div class="blog-post-detail--navigation-current">
+		<div>
+			<span>{{ 'blogs.article.now_reading' | t }}</span> <h6>{{ article.title }}</h6>
+		</div>
+	</div>
+	{%- if next_article -%}
+	  <a href="{{ next_article.url }}" class="blog-post-detail--navigation-link navigation-next">
+	    <span>{{ 'blogs.article.next_article' | t }}</span>
+			{% render 'svg-icons' with 'thb-post-nav-arrow-right' %}
+	  </a>
+	{%- else -%}
+		<div></div>
+	{%- endif -%}
+	<span class="blog-post-detail--navigation-bar" id="progress-bar"></span>
+</article-navigation>
+{%- endif -%}

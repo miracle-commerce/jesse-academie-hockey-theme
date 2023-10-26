@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "sort": "date",
+        "image_ratio": "portrait",
+        "layout": "collage",
+        "style": "style1",
+        "content_alignment": "text-left",
+        "columns_desktop": 3,
+        "collection_list_pagination_num": 17,
+        "overlay_opacity": 30,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

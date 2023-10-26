@@ -1,0 +1,129 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.comments-wrapper {
+  padding-top: 80px;
+  position: relative; }
+  .comments-wrapper:before {
+    content: "*";
+    color: var(--color-accent);
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    font-size: 80px; }
+
+.comments-container {
+  padding-bottom: 60px; }
+  .comments-container h4 {
+    display: block;
+    padding: 0 5%;
+    text-align: center;
+    margin-bottom: 55px; }
+    .comments-container h4 span {
+      font-weight: 400; }
+
+.commentlist {
+  list-style: none;
+  margin: 0;
+  display: block;
+  padding: 0; }
+  .commentlist > .comment:last-child .comment-body {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0; }
+  .commentlist .comment_container {
+    position: relative; }
+  .commentlist .comment-body {
+    position: relative;
+    padding-left: 75px;
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .commentlist .comment-body {
+        min-height: 135px;
+        padding-left: 135px;
+        padding-bottom: 35px; } }
+    .commentlist .comment-body .star-rating {
+      float: right; }
+    .commentlist .comment-body p.meta {
+      margin-bottom: 10px; }
+    .commentlist .comment-body p:last-child {
+      margin-bottom: 0; }
+  .commentlist .comment {
+    margin: 0; }
+    .commentlist .comment:before {
+      display: none !important; }
+    .commentlist .comment .comment-author {
+      display: block;
+      font-size: 0.9375rem;
+      margin-bottom: 10px; }
+      .commentlist .comment .comment-author .fn {
+        display: inline-block;
+        font-weight: 500;
+        font-style: normal;
+        font-size: inherit;
+        color: inherit; }
+        .commentlist .comment .comment-author .fn:before {
+          content: none; }
+    .commentlist .comment .comment-meta {
+      display: inline-block;
+      line-height: 1; }
+    .commentlist .comment .avatar {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%; }
+      @media only screen and (min-width: 768px) {
+        .commentlist .comment .avatar {
+          width: 100px;
+          height: 100px; } }
+    .commentlist .comment .comment-awaiting-moderation {
+      font-size: 0.625rem; }
+    .commentlist .comment p {
+      font-size: 0.875rem;
+      word-break: break-word; }
+    .commentlist .comment .children {
+      list-style: none;
+      margin-left: 10px;
+      margin-bottom: 20px; }
+      @media only screen and (min-width: 768px) {
+        .commentlist .comment .children {
+          margin-left: 109px; } }
+
+.comment-respond {
+  padding-top: 50px; }
+  .comment-respond .comment-reply-title,
+  .comment-respond .comment-notes {
+    text-align: center; }
+  .comment-respond .comment-notes {
+    font-size: 0.9375rem; }
+  .comment-respond .comment-reply-title {
+    margin-bottom: 5px; }
+    .comment-respond .comment-reply-title--container {
+      margin-bottom: 40px; }
+  .comment-respond .form-notification {
+    margin-bottom: 15px; }
+
+.comment-form-fields {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  line-height: 1;
+  grid-column-gap: 20px; }
+  @media only screen and (min-width: 768px) {
+    .comment-form-fields {
+      grid-template-columns: repeat(2, 1fr); }
+      .comment-form-fields .field:nth-child(1) {
+        grid-column-end: span 2; }
+      .comment-form-fields .button {
+        grid-column-end: span 2; } }

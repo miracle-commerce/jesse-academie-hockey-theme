@@ -1,0 +1,128 @@
+{%- liquid
+	assign menu = header_settings.menu
+	assign mobile_secondary_menu = header_settings.mobile_secondary_menu
+	assign show_language_switcher = header_settings.show_language_switcher
+	assign show_currency_switcher = header_settings.show_currency_switcher
+-%}
+
+<nav id="mobile-menu" class="mobile-menu-drawer" role="dialog" tabindex="-1">
+	<div class="mobile-menu-content">
+		{%- if menu -%}
+		<ul class="mobile-menu">
+			{%- for link in header_settings.menu.links -%}
+				{%- liquid
+					assign parent_index = forloop.index
+					assign has_sub_menu = false
+					assign has_mega_menu = false
+					assign mega_menu_block_index = false
+					assign mega_menu_blocks = blocks | where: "type", "megamenu"
+
+					if link.links.size > 0
+						assign has_sub_menu = true
+					endif
+					for block in mega_menu_blocks
+						assign position = block.settings.position | plus: 0
+			    	if position == parent_index
+							assign has_mega_menu = true
+							assign mega_menu_block_index = forloop.index0
+						endif
+					endfor
+				-%}
+			  <li>
+			    {%- if has_sub_menu == true or has_mega_menu == true -%}
+						{%- liquid
+							assign mega_menu_block = mega_menu_blocks[mega_menu_block_index]
+						-%}
+						<details class="link-container">
+							<summary class="parent-link">{{ link.title }}<span></span></summary>
+							<ul class="sub-menu">
+								{%- if link.links.size > 0 -%}
+					        {%- for l in link.links -%}
+										{%- liquid
+											 assign has_sub_menu = false
+									  	if l.links.size > 0
+									    	assign has_sub_menu = true
+											endif
+										-%}
+										<li>
+											{%- if has_sub_menu -%}
+											<details class="link-container">
+												<summary class="parent-link">{{ l.title }}<span class="link-forward">{%- render 'svg-icons' with 'thb-mobile-menu-forward' -%}</span></summary>
+												<ul class="sub-menu" tabindex="-1">
+													{%- for sub_link in l.links -%}
+														{%- liquid
+															assign has_sub_menu = false
+															if sub_link.links.size > 0
+																assign has_sub_menu = true
+															endif
+														-%}
+														<li>
+															<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" role="menuitem">{{ sub_link.title }} {% if has_sub_menu %}<span></span>{%- endif -%}</a>
+														</li>
+													{%- endfor -%}
+												</ul>
+											</details>
+											{%- else -%}
+											<a href="{{ l.url }}" title="{{ l.title | escape }}">{{ l.title }}</a>
+										  {%- endif -%}
+										</li>
+									{%- endfor -%}
+								{%- endif -%}
+								{% if has_mega_menu == true %}
+									{%- if mega_menu_block.settings.promo_1_image -%}
+										{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_1_image, promotion_link: mega_menu_block.settings.promo_1_link, promotion_heading: mega_menu_block.settings.promo_1_heading, promotion_content: mega_menu_block.settings.promo_1_content %}
+									{%- endif -%}
+									{%- if mega_menu_block.settings.promo_2_image -%}
+										{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_2_image, promotion_link: mega_menu_block.settings.promo_2_link, promotion_heading: mega_menu_block.settings.promo_2_heading, promotion_content: mega_menu_block.settings.promo_2_content %}
+									{%- endif -%}
+									{%- if mega_menu_block.settings.promo_3_image -%}
+										{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_3_image, promotion_link: mega_menu_block.settings.promo_3_link, promotion_heading: mega_menu_block.settings.promo_3_heading, promotion_content: mega_menu_block.settings.promo_3_content %}
+									{%- endif -%}
+									{%- if mega_menu_block.settings.promo_4_image -%}
+										{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_4_image, promotion_link: mega_menu_block.settings.promo_4_link, promotion_heading: mega_menu_block.settings.promo_4_heading, promotion_content: mega_menu_block.settings.promo_4_content %}
+									{%- endif -%}
+								{%- endif -%}
+					    </ul>
+						</details>
+					{%- else -%}
+						<div class="link-container">
+							<a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title }}</a>
+						</div>
+			    {%- endif -%}
+			  </li>
+		  {%- endfor -%}
+    </ul>
+		{%- endif -%}
+		{%- if mobile_secondary_menu -%}
+		<ul class="mobile-secondary-menu">
+			{% for link in mobile_secondary_menu.links %}
+			  <li class="{% if link.active %} active{% endif %}">
+			    <a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title }}</a>
+			  </li>
+		  {%- endfor -%}
+    </ul>
+		{%- endif -%}
+		{%- render 'social-links' -%}
+	</div>
+	<div class="thb-mobile-menu-footer">
+		<div class="no-js-hidden">
+			{%- render 'localization', id: 'MobileMenuLocalization', show_language_switcher: show_language_switcher, show_currency_switcher: show_currency_switcher -%}
+		</div>
+		{%- if shop.customer_accounts_enabled -%}
+			{%- if customer -%}
+			  {%- assign profile_link = routes.account_url -%}
+			  {%- capture profile_text -%}
+			    {{ 'sections.header.my_account' | t }}
+			  {%- endcapture -%}
+			{%- else -%}
+			  {%- assign profile_link = routes.account_login_url -%}
+			  {%- capture profile_text -%}
+			    {{ 'sections.header.login' | t }}
+			  {%- endcapture -%}
+			{%- endif -%}
+	    <a class="thb-mobile-account-link" href="{{ profile_link | escape }}" title="{{ profile_text | escape }}">{%- render 'svg-icons' with 'myaccount' %} {{ profile_text }}</a>
+	  {%- endif -%}
+	</div>
+</nav>
+<link rel="stylesheet" href="{{ 'mobile-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'mobile-menu.css' | asset_url | stylesheet_tag }}</noscript>

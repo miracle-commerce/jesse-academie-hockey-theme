@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "template-header": {
+      "type": "template-header",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template-header",
+    "main"
+  ]
+}

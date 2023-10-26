@@ -1,0 +1,611 @@
+{
+  "sections": {
+    "16479477632637c9a7": {
+      "type": "slideshow",
+      "blocks": {
+        "164794776393e76b8e-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/A7308924.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Slider_1.jpg",
+            "subheading": "L'excellence sur glace",
+            "heading": "ÇA COMMENCE ICI",
+            "content": "Là où excellence rencontre la formation de champions.",
+            "slide_link": "",
+            "button_text": "Joignez-vous à nous aujourd'hui",
+            "button_link": "shopify:\/\/pages\/programmes-de-developpement",
+            "button_color": "accent2",
+            "button_outline": false,
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": true
+          }
+        },
+        "164794776393e76b8e-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "content": "Add descriptive text for your slide here.",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "accent2",
+            "button_outline": false,
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": true
+          }
+        },
+        "164794776393e76b8e-2": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "content": "Add descriptive text for your slide here.",
+            "slide_link": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "accent2",
+            "button_outline": false,
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_color_2": "white",
+            "button_outline_2": true
+          }
+        }
+      },
+      "block_order": [
+        "164794776393e76b8e-0",
+        "164794776393e76b8e-1",
+        "164794776393e76b8e-2"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-750",
+        "mobile_height": "mobile-height-500",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "content_size": "medium",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "56e83788-329e-424f-a8ce-57a49089de1d": {
+      "type": "gallery",
+      "blocks": {
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Icons_-_Gardien_68595d09-b30d-414d-8451-50993376c616.jpg",
+            "title": "GARDIENS",
+            "text": "Améliorez vos compétences de gardien, apprenez des techniques avancées, et défendez le filet avec confiance.",
+            "link_label": "CLINIQUES",
+            "link": "shopify:\/\/collections\/gardiens",
+            "use_text_button": false,
+            "block_link": "shopify:\/\/pages\/gardiens-1"
+          }
+        },
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Icons_-_Attaquant.jpg",
+            "title": "ATTAQUANTS",
+            "text": "Apprenez des tactiques avancées, améliorez votre précision de tir et développez vos compétences de maniement de rondelle.",
+            "link_label": "COURS ET FORMATIONS",
+            "link": "shopify:\/\/collections\/attaquants",
+            "use_text_button": false,
+            "block_link": "shopify:\/\/pages\/attaquants"
+          }
+        },
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Icons_-_Defenseur.jpg",
+            "title": "DÉFENSEURS",
+            "text": "Apprenez les stratégies défensives de pointe, perfectionnez vos mises en échec et renforcez votre jeu dans votre propre zone.",
+            "link_label": "COURS ET FORMATIONS",
+            "link": "shopify:\/\/collections\/defenseurs",
+            "use_text_button": false,
+            "block_link": "shopify:\/\/pages\/defenseurs"
+          }
+        }
+      },
+      "block_order": [
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-1",
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-2",
+        "template--16150497984663__56e83788-329e-424f-a8ce-57a49089de1d-image-3"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 3,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h4",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1648022924b3ee204e": {
+      "type": "scrolling-text",
+      "blocks": {
+        "1648022924da4799a5-0": {
+          "type": "text",
+          "settings": {
+            "text": "NOS INSCRIPTIONS SONT OUVERTES",
+            "link": ""
+          }
+        },
+        "1648022924da4799a5-1": {
+          "type": "text",
+          "settings": {
+            "text": "PROGRAMMES BOISBRIAND",
+            "link": ""
+          }
+        },
+        "1648022924da4799a5-2": {
+          "type": "text",
+          "settings": {
+            "text": "LIGUE 3 VS 3",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648022924da4799a5-0",
+        "1648022924da4799a5-1",
+        "1648022924da4799a5-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "30s",
+        "text_size": 30,
+        "outline_text": false,
+        "image_size": "large",
+        "color_bg": "#fae9e9",
+        "color_text": "#e51d1d",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16485749140fa1eff3": {
+      "type": "image-with-text-slideshow",
+      "blocks": {
+        "164857491444a10f62-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Section_About_-_JB.jpg",
+            "heading": "PROGRESSER ET S'AMUSER!",
+            "content": "Depuis 2007, l’Académie de Hockey Joël Bouchard offre plusieurs programmes et camps de développement pour tous les âges et niveaux et à l’année.",
+            "button_text": "Voir les camps",
+            "button_link": ""
+          }
+        },
+        "164857491444a10f62-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "heading": "Slide Heading",
+            "content": "Add a descriptive text here for your slide.",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "164857491444a10f62-2": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "heading": "Slide Heading",
+            "content": "Add a descriptive text here for your slide.",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164857491444a10f62-0",
+        "164857491444a10f62-1",
+        "164857491444a10f62-2"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "a190f31d-b4c9-4495-818a-64777f580624": {
+      "type": "gallery",
+      "blocks": {
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_PML.jpg",
+            "title": "PROGRAMME P-M-L",
+            "text": "Concentration sur le patinage de puissance, le maniement de la rondelle et le lancer!",
+            "link_label": "inscription",
+            "link": "shopify:\/\/collections\/programme-p-m-l",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Summum.jpg",
+            "title": "SUMMUM DU DÉVELOPPEMENT",
+            "text": "Un programme intensif qui permet de se développer rapidement!",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/collections\/programmes-summum-du-developpement",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Summum_Elite_2.jpg",
+            "title": "SUMMUM ÉLITE",
+            "text": "Le programme le plus complet! Un programme intensif pour joueurs élites!",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/collections\/programmes-summum-du-developpement",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "b76f4d92-f7cc-4afa-9724-bb34f69ebf55": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Brigade_Defensive.jpg",
+            "title": "BRIGADE DÉFENSIVE",
+            "text": "Programme spécialisé pour le développement des aptitudes et techniques pour les défenseurs.",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/collections\/brigade-defensive",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "ba161994-e97f-4b45-a82b-4e836d11a431": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Mini_AHJB.jpg",
+            "title": "MINI AHJB",
+            "text": "Progresser et s'amuser cet hiver avec nos entraineurs professionels!",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/products\/mini-ahjb-session-1",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "caf70b30-5ccd-447e-8774-12347a2e918d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Menace_Offensive.jpg",
+            "title": "MENACE OFFENSIVE",
+            "text": "Travailler le maintien de rondelle, la lecture de jeu, le lancer, et beaucoup plus.",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/collections\/menace-offensive",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "5d062f57-2f2b-4a76-956c-828ebfeac8a8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_AGS.jpg",
+            "title": "AGS GLACE SYNTHÉTQUE",
+            "text": "Programme spécialisé pour améliorer le maniement de la rondelle et des lancers.",
+            "link_label": "INSCRIPTION",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "9946a82d-54dd-4cd4-8775-5134e7814a53": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_Gardiens_2.jpg",
+            "title": "CLINIQUE DE GARDIENS",
+            "text": "Un programme spécialisé pour les gardiens de tous âges et niveaux!",
+            "link_label": "INSCRIPTION",
+            "link": "shopify:\/\/collections\/cliniques-de-gardiens",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "824f7e8b-84a2-40ad-acdd-87f388d12e66": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Square_-_Programs_-_AGS_Gardiens.jpg",
+            "title": "CLINIQUE DE GARDIENS AGS",
+            "text": "Sur glace synthétique et axé sur la concentration visuelle avec la rondelle.",
+            "link_label": "INSCRIPTION",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-1",
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-2",
+        "template--16150497984663__a190f31d-b4c9-4495-818a-64777f580624-image-3",
+        "b76f4d92-f7cc-4afa-9724-bb34f69ebf55",
+        "ba161994-e97f-4b45-a82b-4e836d11a431",
+        "caf70b30-5ccd-447e-8774-12347a2e918d",
+        "5d062f57-2f2b-4a76-956c-828ebfeac8a8",
+        "9946a82d-54dd-4cd4-8775-5134e7814a53",
+        "824f7e8b-84a2-40ad-acdd-87f388d12e66"
+      ],
+      "settings": {
+        "heading": "NOS PROGRAMMES DE DÉVELOPPEMENT",
+        "description": "<p>Profitez de nos programmes spécialisés 365 jours par année.<\/p>",
+        "columns_desktop": 3,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "medium",
+        "heading_size": "h4",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1651925359656b69b4": {
+      "type": "featured-product",
+      "blocks": {
+        "165192535962c0e304-0": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true
+          }
+        },
+        "165192535962c0e304-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true
+          }
+        },
+        "165192535962c0e304-2": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "165192535962c0e304-0",
+        "165192535962c0e304-1",
+        "165192535962c0e304-2"
+      ],
+      "settings": {
+        "heading": "POWER SKATING",
+        "description": "<p>Nos cliniques de patinage de puissance vous permettent de devenir un meilleur patineur en vous offrant un entraînement intensif axé sur l'amélioration de votre technique de patinage. <\/p>",
+        "product": "power-skating",
+        "show_taxes_included": true,
+        "thumbnail_position": "left",
+        "hide_variants": false,
+        "lightbox": false,
+        "enable_video_looping": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "164812231521d5c57e": {
+      "type": "testimonials",
+      "blocks": {
+        "1648122315e072ed7b-0": {
+          "type": "quote",
+          "settings": {
+            "stars": "5",
+            "text": "De loin le meilleur camps d'ét. Au Complexe Bell en plus. Super expérience.",
+            "author": "Nathan L.",
+            "retina": true
+          }
+        },
+        "1648122315e072ed7b-1": {
+          "type": "quote",
+          "settings": {
+            "stars": "5",
+            "text": "J'ai adoré mon expérience, l'équipe est professionelle et les entrainements sont exigeants. A+",
+            "author": "Jean-Philippe T.",
+            "retina": true
+          }
+        },
+        "1648122315e072ed7b-2": {
+          "type": "quote",
+          "settings": {
+            "stars": "5",
+            "text": "Je me suis tellement amélioré pendant mon camps d'été avec l'Académie. En plus nous nous sommes entrainé en même temps que les recrues du Canadiens.",
+            "author": "Jacob E.",
+            "retina": true
+          }
+        }
+      },
+      "block_order": [
+        "1648122315e072ed7b-0",
+        "1648122315e072ed7b-1",
+        "1648122315e072ed7b-2"
+      ],
+      "settings": {
+        "heading": "HISTOIRES À SUCCÈS",
+        "description": "<p>Témoignages de nos futurs pros.<\/p>",
+        "size": "small",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#d82028",
+        "color_text": "#ffffff",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1647955648d6a0baee": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "ON VOUS GARDE AU COURANT",
+        "description": "<p>Restez informé sur les dernières nouvelles concernant nos camps, nos cours et nos dates d'inscriptions ici.<\/p>",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "square",
+        "show_image": true,
+        "use_shapes": true,
+        "show_date": true,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_outline": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16480271043d8d1561": {
+      "type": "logo-list",
+      "blocks": {
+        "1648027104defbf125-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/radio-canada-logo-png-transparent_cefbba29-d51c-4dbc-b0d6-a28e0ec96b0e.png",
+            "link": ""
+          }
+        },
+        "1648027104defbf125-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RDS_Logo_Colour.png",
+            "link": ""
+          }
+        },
+        "26a8c943-aeef-48ac-b5a6-b07e0dd90436": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BLEU_fondTransparent_CERTIFIE_160x160_2x_878c2eb1-52a4-47a9-b4dd-d123893cdfab.webp",
+            "link": ""
+          }
+        },
+        "77d73a33-bb57-4995-b4b9-9a7006da00b4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1200px-TVASports.svg_d433a2c8-0dfb-4636-b182-b99a55d90fa4.png",
+            "link": ""
+          }
+        },
+        "97a6d276-e6f1-461b-a83e-99d3aacb5a69": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/le-quotidien-vector-logo.png",
+            "link": ""
+          }
+        },
+        "1648027104defbf125-4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/le-quotidien.png",
+            "link": ""
+          }
+        },
+        "fc7262b7-5399-4722-a317-099df84f7d84": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/98.5FM_logo.svg_9f02e866-08e5-4cea-90a4-e9d2e31ec487.png",
+            "link": ""
+          }
+        },
+        "1648027104defbf125-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JournalMontreal_Logo2013.png",
+            "link": ""
+          }
+        },
+        "daa80cf3-49ca-44b1-9cca-d114ddceefbc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-echodelarivenord_c8747c2e-8fc5-4a66-94fe-a5e214308093.png",
+            "link": ""
+          }
+        },
+        "1648027104defbf125-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo_1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648027104defbf125-0",
+        "1648027104defbf125-1",
+        "26a8c943-aeef-48ac-b5a6-b07e0dd90436",
+        "77d73a33-bb57-4995-b4b9-9a7006da00b4",
+        "97a6d276-e6f1-461b-a83e-99d3aacb5a69",
+        "1648027104defbf125-4",
+        "fc7262b7-5399-4722-a317-099df84f7d84",
+        "1648027104defbf125-2",
+        "daa80cf3-49ca-44b1-9cca-d114ddceefbc",
+        "1648027104defbf125-3"
+      ],
+      "settings": {
+        "heading": "FIERS PARTENAIRES",
+        "description": "<p>L'Académie de Hockey Joël Bouchard est fière de propulser le hockey d'ici.<\/p>",
+        "columns": 5,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1648039210ca70a145": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "",
+        "text": "",
+        "video": "",
+        "video_hosted": "shopify:\/\/files\/videos\/Académie de Hockey Joel Bouchard 2019 - Boisbriand & Brossard (1).mp4",
+        "button_text": "VISIONNER LA CAPSULE",
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "16479477632637c9a7",
+    "56e83788-329e-424f-a8ce-57a49089de1d",
+    "1648022924b3ee204e",
+    "16485749140fa1eff3",
+    "a190f31d-b4c9-4495-818a-64777f580624",
+    "1651925359656b69b4",
+    "164812231521d5c57e",
+    "1647955648d6a0baee",
+    "16480271043d8d1561",
+    "1648039210ca70a145"
+  ]
+}

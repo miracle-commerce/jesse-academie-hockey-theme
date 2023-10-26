@@ -1,0 +1,16 @@
+<li>
+	<div class="mega-menu-promotion">
+		<div class="mega-menu-promotion--image">
+		{%- render 'responsive-image', image: promotion_image, sizes: '670x0' -%}
+		</div>
+		<div class="mega-menu-promotion--content">
+			{%- if promotion_heading -%}
+			<strong>{{ promotion_heading }}</strong>
+			{%- endif -%}
+			{%- if promotion_content -%}
+			<p>{{ promotion_content }}</p>
+			{%- endif -%}
+		</div>
+		{%- if promotion_link != empty -%}<a href="{{ promotion_link }}" class="mega-menu-promotion--link"></a>{%- endif -%}
+	</div>
+</li>

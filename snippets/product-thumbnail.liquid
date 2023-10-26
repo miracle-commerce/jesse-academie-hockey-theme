@@ -1,0 +1,51 @@
+{%- liquid
+  assign image_set = false
+  assign image_set_group = ''
+  if media.alt contains '#'
+    assign image_set_full = media.alt | split: '#' | last
+    if image_set_full contains '_'
+      assign image_set = true
+      assign image_set_group = image_set_full | split: '_' | first
+    endif
+  endif
+
+  assign is_active = false
+  assign is_selected = false
+  if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1
+    assign is_active = true
+    assign is_selected = true
+  elsif product.selected_or_first_available_variant.featured_media.id == media.id
+    assign is_active = true
+    assign is_selected = true
+  elsif variant_images contains media.src and product.selected_or_first_available_variant.featured_media.id != media.id
+    assign is_active = false
+  endif
+
+  unless variant_images contains media.src
+    assign is_active = true
+  endunless
+
+  unless hide_variants
+    assign is_active = true
+  endunless
+-%}
+<div
+  id="Thumb-{{ section.id }}-{{ media.id }}"
+  class="product-thumbnail{% if is_active %} is-active{% endif %}{% if variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if is_selected %} is-initial-selected{% endif %}"
+  {% if image_set %}
+    data-set-name="{{ image_set_group }}"
+    data-group="{{ image_set_full }}"
+  {% endif %}
+>
+  {%- if media.media_type == 'model' -%}
+  <div class="product-thumbnail-icon">
+    {% render 'svg-icons' with 'thb-icon-3d-model' %}
+  </div>
+  {%- endif -%}
+  {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
+  <div class="product-thumbnail-icon">
+    {% render 'svg-icons' with 'thb-icon-play' %}
+  </div>
+  {%- endif -%}
+  {%- render 'responsive-image', image: media.preview_image, sizes: '160x0' -%}
+</div>

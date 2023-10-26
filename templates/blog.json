@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-blog-header": {
+      "type": "main-blog-header",
+      "settings": {
+      }
+    },
+    "main-blog": {
+      "type": "main-blog",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-blog-header",
+    "main-blog"
+  ]
+}

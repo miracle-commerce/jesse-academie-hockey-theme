@@ -1,0 +1,246 @@
+{
+  "sections": {
+    "1653292655c3cb5507": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "heading": "OUR STORY",
+        "text": "I believe in comfort. If you don't feel comfortable in your clothes, it's hard to think of anything else. Even Michelangelo got paid for doing.",
+        "video": "",
+        "button_text": "",
+        "overlay_opacity": 25,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "template-header": {
+      "type": "template-header",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "overlay_opacity": 30
+      }
+    },
+    "1653295196b53947e5": {
+      "type": "rich-text",
+      "blocks": {
+        "16532951962c770faf-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "WELCOME TO SPORTIVE"
+          }
+        },
+        "16532951962c770faf-1": {
+          "type": "heading",
+          "settings": {
+            "text": "ONE STORE. SINCE 1930",
+            "size": "h2"
+          }
+        },
+        "16532951962c770faf-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What started out as a small family business has grown into the largest soccer, baseball and basketball retailer in the world.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "16532951962c770faf-0",
+        "16532951962c770faf-1",
+        "16532951962c770faf-2"
+      ],
+      "settings": {
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1653295635b5a25e81": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 25,
+        "spacer_desktop": 25,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1653295611c34af3b7": {
+      "type": "image-with-text",
+      "blocks": {
+        "16532956111fd7ca35-1": {
+          "type": "heading",
+          "settings": {
+            "text": "CALIFORNIA",
+            "heading_size": "h3"
+          }
+        },
+        "16532956111fd7ca35-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sports bowledem yellow card clutch play, shes on fire rugby was the winner on the day ruck game of two halves alleyoop ball four take a walk shes on fire. Penalty hes on fire soccer hes on fire red card lineout baseball. Striker scrummage theyre going upstairs he shoots he scores, strike 3 youre out baseball drop goal corner trust our processes rolling maul slam dunk.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16532956111fd7ca35-1",
+        "16532956111fd7ca35-2"
+      ],
+      "settings": {
+        "image": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16532961902797512f": {
+      "type": "scrolling-text",
+      "blocks": {
+        "1653296190947eca92-0": {
+          "type": "text",
+          "settings": {
+            "text": "EXPERIENCE SHOPPING LIKE NEVER BEFORE",
+            "link": ""
+          }
+        },
+        "1653296190947eca92-2": {
+          "type": "text",
+          "settings": {
+            "text": "A UNIQUE APPROACH IN SHOPPING",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1653296190947eca92-0",
+        "1653296190947eca92-2"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 140,
+        "outline_text": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#e51d1d",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1653296460edc9a9c4": {
+      "type": "gallery",
+      "blocks": {
+        "16532964607ed8a330-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false
+          }
+        },
+        "16532964607ed8a330-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false
+          }
+        }
+      },
+      "block_order": [
+        "16532964607ed8a330-0",
+        "16532964607ed8a330-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 2,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "landscape",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h4",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165329287612856480": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "BROWSE OUR COLLECTIONS",
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "collection_list": [
+          "mens-shoes",
+          "top-picks",
+          "womens-outfits",
+          "womens-shoes"
+        ],
+        "image_ratio": "portrait",
+        "layout": "grid",
+        "style": "style2",
+        "content_alignment": "text-center",
+        "columns_desktop": 4,
+        "overlay_opacity": 30,
+        "carousel_dots": false,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1653296339384725df": {
+      "type": "map",
+      "blocks": {
+        "1653296339ee30119d-0": {
+          "type": "pin",
+          "settings": {
+            "pin_retina": true,
+            "pin_lat": "33.9787261",
+            "pin_long": "-118.4197832",
+            "pin_title": "",
+            "pin_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "1653296339ee30119d-0"
+      ],
+      "settings": {
+        "googlemaps_api_key": "AIzaSyDJAfB-lPigbvz3birQsXS4oxYHi72SX6M",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "map_type": "roadmap",
+        "map_style_select": "night",
+        "map_zoom": 14,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1653292655c3cb5507",
+    "template-header",
+    "1653295196b53947e5",
+    "1653295635b5a25e81",
+    "1653295611c34af3b7",
+    "16532961902797512f",
+    "1653296460edc9a9c4",
+    "165329287612856480",
+    "1653296339384725df"
+  ]
+}

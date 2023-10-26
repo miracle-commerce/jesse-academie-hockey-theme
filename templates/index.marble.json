@@ -1,0 +1,518 @@
+{
+  "sections": {
+    "16479477632637c9a7": {
+      "type": "slideshow",
+      "blocks": {
+        "164794776393e76b8e-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide01_1.webp",
+            "subheading": "Add a tagline",
+            "heading": "PROTECT PHONE IN STYLE",
+            "content": "",
+            "button_text": "SHOP NEW ARRIVALS",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true
+          }
+        },
+        "478bb03b-8b95-42a0-bc7c-67f426df7b81": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/h02.jpg",
+            "subheading": "Add a tagline",
+            "heading": "EARBUDS CASES & COVERS",
+            "content": "",
+            "button_text": "Shop Earbuds",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true
+          }
+        },
+        "59431e91-28d4-47c7-a6a2-8e42b20df299": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/h04.jpg",
+            "subheading": "Add a tagline",
+            "heading": "GET MORE FROM YOUR PHONE",
+            "content": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "white",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "164794776393e76b8e-0",
+        "478bb03b-8b95-42a0-bc7c-67f426df7b81",
+        "59431e91-28d4-47c7-a6a2-8e42b20df299"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "content_size": "large",
+        "full_width": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "overlay_opacity": 100,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652780475d4c2eacd": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 15,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16524363598d603426": {
+      "type": "text-with-icons",
+      "blocks": {
+        "165243635973a4cfef-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon01.png",
+            "heading": "",
+            "text": "<p>Free delivery for $40+ orders<\/p>"
+          }
+        },
+        "165243635973a4cfef-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon02.png",
+            "heading": "",
+            "text": "<p>Easy returns and refunded<\/p>"
+          }
+        },
+        "165243635973a4cfef-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon03.png",
+            "heading": "",
+            "text": "<p>100% secure payments<\/p>"
+          }
+        },
+        "843da4be-6f75-409e-a9f8-6dc24c8d2fe0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "shopify:\/\/shop_images\/icon04.png",
+            "heading": "",
+            "text": "<p>Free life-time warranty<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165243635973a4cfef-0",
+        "165243635973a4cfef-1",
+        "165243635973a4cfef-2",
+        "843da4be-6f75-409e-a9f8-6dc24c8d2fe0"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "icon_position": "left",
+        "icon_size": "small",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "#ffffff",
+        "color_heading": "#223a56",
+        "color_text": "#223a56",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165278053247e42215": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 30,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "1652437376638bfe9d": {
+      "type": "rich-text",
+      "blocks": {
+        "1652437376896d0a42-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "WELCOME TO MARBLE"
+          }
+        },
+        "1652437376896d0a42-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use premium materials and functional designs to turn your iPhone or Android into an accessory to brag about. There is always the new project, the new opportunity. Attention to detail is of utmost.<\/p>",
+            "size": "text-size-large"
+          }
+        },
+        "1652437376896d0a42-3": {
+          "type": "button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "1652437376896d0a42-0",
+        "1652437376896d0a42-2",
+        "1652437376896d0a42-3"
+      ],
+      "settings": {
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165285688103767cd8": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652437378d0105a02": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "collection_list": [
+          "printed-cases",
+          "wallet-cases",
+          "earbud-cases",
+          "clutches",
+          "phone-strap",
+          "original-cases",
+          "premium-cases"
+        ],
+        "image_ratio": "square",
+        "layout": "carousel",
+        "style": "style1",
+        "content_alignment": "text-left",
+        "columns_desktop": 3,
+        "overlay_opacity": 0,
+        "carousel_dots": false,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652864013217f7824": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16527742840acc9168": {
+      "type": "shop-the-look",
+      "blocks": {
+        "1652774284d1b5edfa-0": {
+          "type": "product",
+          "settings": {
+            "product_handle": "custom-impact-printed-case",
+            "x_position": 24,
+            "y_position": 20,
+            "x_position_mobile": 11,
+            "y_position_mobile": 14
+          }
+        },
+        "9f762437-0a4b-4e8f-99c4-a2c84016e9f7": {
+          "type": "product",
+          "settings": {
+            "product_handle": "midnight-blue-marble-printed-case",
+            "x_position": 22,
+            "y_position": 53,
+            "x_position_mobile": 33,
+            "y_position_mobile": 52
+          }
+        },
+        "03c49dc5-2ba2-4496-8074-f18dd2751fbb": {
+          "type": "product",
+          "settings": {
+            "product_handle": "sapphire-swirl-printed-case",
+            "x_position": 39,
+            "y_position": 54,
+            "x_position_mobile": 33,
+            "y_position_mobile": 20
+          }
+        }
+      },
+      "block_order": [
+        "1652774284d1b5edfa-0",
+        "9f762437-0a4b-4e8f-99c4-a2c84016e9f7",
+        "03c49dc5-2ba2-4496-8074-f18dd2751fbb"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/electronics-hotspot.webp",
+        "image_mobile": "shopify:\/\/shop_images\/look.jpg",
+        "full_width": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16528640612015596c": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 10,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652774286c1559d5b": {
+      "type": "featured-collection",
+      "blocks": {
+        "16527742868ef95bf4-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "wallet-cases",
+            "display_type": "grid",
+            "product_limit": 4,
+            "columns_desktop": 4,
+            "show_view_all": true,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "16527742868ef95bf4-0"
+      ],
+      "settings": {
+        "heading": "NEW ARRIVALS",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652864130e0ce86f8": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 10,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16527744427c3df3ba": {
+      "type": "gallery",
+      "blocks": {
+        "1652774442c15e7303-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-1.webp",
+            "title": "iPHONE 13 SERIES",
+            "text": "New arrivals coming in regularly, find the freshest modern styles here.",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": true
+          }
+        },
+        "1652774442c15e7303-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-2.webp",
+            "title": "OUR STORY",
+            "text": "New arrivals coming in regularly, find the freshest modern styles here.",
+            "link_label": "About Us",
+            "link": "",
+            "use_text_button": true
+          }
+        }
+      },
+      "block_order": [
+        "1652774442c15e7303-0",
+        "1652774442c15e7303-1"
+      ],
+      "settings": {
+        "heading": "",
+        "description": "",
+        "columns_desktop": 2,
+        "full_width": true,
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h4",
+        "overlay_opacity": 70,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652864181d595d0e2": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 10,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652774445b8e8c571": {
+      "type": "featured-collection",
+      "blocks": {
+        "16527744452779c4ba-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "printed-cases",
+            "display_type": "grid",
+            "product_limit": 3,
+            "columns_desktop": 3,
+            "show_view_all": true,
+            "button_outline": false,
+            "mobile_swipe": true
+          }
+        }
+      },
+      "block_order": [
+        "16527744452779c4ba-0"
+      ],
+      "settings": {
+        "heading": "BEST SELLERS",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652864237b717555a": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 10,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1652774574304d336b": {
+      "type": "testimonials",
+      "blocks": {
+        "165277457465407907-0": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "This case fits my phone perfectly & the pictures came out in great quality. They’ll have my business anytime I need a custom case.",
+            "author": "Testimonial author",
+            "image": "shopify:\/\/shop_images\/casemate_89eb562c-e112-45ca-8fd7-76c637179b9c.png",
+            "retina": true
+          }
+        },
+        "165277457465407907-1": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "I love my case! Very good quality and it came out perfect! I’ll definitely be referring my friends and family! Thank you so much!",
+            "author": "Testimonial author",
+            "image": "shopify:\/\/shop_images\/spigen.png",
+            "retina": true
+          }
+        },
+        "165277457465407907-2": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "It is my father's day present for my dad. This case is exactly what he needs to see everyday.",
+            "author": "Testimonial author",
+            "image": "shopify:\/\/shop_images\/casetify.png",
+            "retina": true
+          }
+        }
+      },
+      "block_order": [
+        "165277457465407907-0",
+        "165277457465407907-1",
+        "165277457465407907-2"
+      ],
+      "settings": {
+        "heading": "TESTIMONIALS",
+        "description": "<p>We take pride in our work and our customer testimonials reflect that.<\/p>",
+        "size": "medium",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#f6f6f6",
+        "color_text": "#223a56",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652694539e057011b": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "LATEST NEWS",
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "landscape",
+        "show_image": true,
+        "use_shapes": false,
+        "show_date": true,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_outline": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16527804555e9b28be": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 20,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "1652694395cda8cbfd": {
+      "type": "email-signup",
+      "settings": {
+        "heading": "STAY IN TOUCH",
+        "description": "<p>Add a short description to attract people to join your newsletter.<\/p>",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "16479477632637c9a7",
+    "1652780475d4c2eacd",
+    "16524363598d603426",
+    "165278053247e42215",
+    "1652437376638bfe9d",
+    "165285688103767cd8",
+    "1652437378d0105a02",
+    "1652864013217f7824",
+    "16527742840acc9168",
+    "16528640612015596c",
+    "1652774286c1559d5b",
+    "1652864130e0ce86f8",
+    "16527744427c3df3ba",
+    "1652864181d595d0e2",
+    "1652774445b8e8c571",
+    "1652864237b717555a",
+    "1652774574304d336b",
+    "1652694539e057011b",
+    "16527804555e9b28be",
+    "1652694395cda8cbfd"
+  ]
+}

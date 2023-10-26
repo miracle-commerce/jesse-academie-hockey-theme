@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+Compass Mixins
+*/
+/*------------------------------------------------------------------
+Variables
+*/
+/*------------------------------------------------------------------
+Utilities
+*/
+.footer-top-bar {
+  background: var(--color-footer-bar-bg, var(--color-accent2));
+  padding: 24px 0;
+  color: var(--color-footer-bar-text, var(--color-accent3));
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .footer-top-bar {
+      text-align: left; }
+      [dir="rtl"] .footer-top-bar {
+        text-align: right; } }
+  .footer-top-bar p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.02em; }
+    @media only screen and (min-width: 768px) {
+      .footer-top-bar p {
+        font-size: 1.5rem; } }
+  .footer-top-bar .button.footer-bar-button {
+    justify-self: end;
+    margin-top: 20px;
+    border-color: var(--color-footer-bar-text, var(--color-accent3));
+    color: var(--color-footer-bar-text, var(--color-accent3)); }
+    @media only screen and (min-width: 768px) {
+      .footer-top-bar .button.footer-bar-button {
+        margin-top: 0;
+        white-space: nowrap; } }
+    .footer-top-bar .button.footer-bar-button:hover {
+      background: var(--color-footer-bar-text, var(--color-accent3));
+      color: var(--color-footer-bar-bg, var(--color-accent2)); }
+  @media only screen and (min-width: 768px) {
+    .footer-top-bar .columns {
+      display: grid;
+      align-items: center;
+      grid-template-columns: minmax(auto, 80%) 1fr;
+      grid-column-gap: 30px;
+      justify-content: space-between; } }
