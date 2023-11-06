@@ -102,6 +102,9 @@
     "collection_title": "Name deiner Kategorie"
   },
   "products": {
+    "customer":{
+      "login":"Log in om deze cursus te kopen"
+    },
     "product": {
       "quick_view": "Schnellansicht",
       "out_of_stock": "Ausverkauft",

@@ -1270,3 +1270,12 @@ Utilities
       .product-recommendations.swipe-on-mobile .row .columns {
         scroll-snap-align: center;
         scroll-snap-stop: always; } }
+
+
+.product-title-container{
+  min-height: initial !important;
+}
+
+.product-login-link{
+  text-decoration: underline;
+}

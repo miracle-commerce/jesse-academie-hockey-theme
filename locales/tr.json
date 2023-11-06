@@ -102,6 +102,9 @@
     "collection_title": "Koleksiyonunuzun adı"
   },
   "products": {
+    "customer":{
+      "login":"Please login to purchase this course"
+    },
     "product": {
       "quick_view": "Hızlı görünüm",
       "out_of_stock": "Stokta yok",

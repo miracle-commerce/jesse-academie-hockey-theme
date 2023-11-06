@@ -392,6 +392,12 @@
             "variant_is_disabled": true
           }
         },
+        "ac055090-dd18-49df-be39-0f3571c37010": {
+          "type": "participant_selector",
+          "settings": {
+            "label": "Choisissez votre participant"
+          }
+        },
         "165192535962c0e304-2": {
           "type": "buy_buttons",
           "settings": {
@@ -403,6 +409,7 @@
       "block_order": [
         "165192535962c0e304-0",
         "165192535962c0e304-1",
+        "ac055090-dd18-49df-be39-0f3571c37010",
         "165192535962c0e304-2"
       ],
       "settings": {

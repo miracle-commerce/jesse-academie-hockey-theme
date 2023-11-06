@@ -104,6 +104,9 @@
     "collection_title": "Le nom de votre collection"
   },
   "products": {
+    "customer":{
+      "login":"Veuillez vous connecter pour acheter ce cours"
+    },
     "product": {
       "quick_view": "Aperçu rapide",
       "out_of_stock": "Aucune disponibilité",

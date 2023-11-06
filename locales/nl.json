@@ -102,6 +102,9 @@
     "collection_title": "De naam van je collectie"
   },
   "products": {
+    "customer":{
+      "login":"Please login to purchase this course"
+    },
     "product": {
       "quick_view": "Snelle kijk",
       "out_of_stock": "Niet op voorraad",

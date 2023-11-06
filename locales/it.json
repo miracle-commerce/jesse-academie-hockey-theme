@@ -103,6 +103,9 @@
     "collection_title": "Nome della collezione"
   },
   "products": {
+    "customer":{
+      "login":"Effettua il login per acquistare questo corso"
+    },
     "product": {
       "quick_view": "Occhiata veloce",
       "out_of_stock": "Esaurito",

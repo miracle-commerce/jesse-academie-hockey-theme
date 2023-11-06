@@ -29,9 +29,10 @@
             "variant_is_disabled": true
           }
         },
-        "14fa7f8a-f119-4a0f-88ea-519432cacf5b": {
-          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+        "be214fdc-c0eb-4bb2-bc24-bf1ad106aff5": {
+          "type": "participant_selector",
           "settings": {
+            "label": "Choisissez votre participant"
           }
         },
         "buy_buttons": {
@@ -97,7 +98,7 @@
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
         "variant_picker",
-        "14fa7f8a-f119-4a0f-88ea-519432cacf5b",
+        "be214fdc-c0eb-4bb2-bc24-bf1ad106aff5",
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "55da0587-5936-4a13-a042-eb96ec75df15",

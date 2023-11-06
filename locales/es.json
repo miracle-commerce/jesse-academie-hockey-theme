@@ -102,6 +102,9 @@
     "collection_title": "Nombre de tu colección"
   },
   "products": {
+    "customer":{
+      "login":"Please login to purchase this course"
+    },
     "product": {
       "quick_view": "Vista rápida",
       "out_of_stock": "Agotado",
