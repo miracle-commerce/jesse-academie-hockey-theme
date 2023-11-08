@@ -105,7 +105,8 @@
   },
   "products": {
     "customer":{
-      "login":"Veuillez vous connecter pour acheter ce cours"
+      "login":"Veuillez vous connecter pour acheter ce cours",
+      "add_participant":"Veuillez ajouter des participants sur votre profil."
     },
     "product": {
       "quick_view": "Aperçu rapide",

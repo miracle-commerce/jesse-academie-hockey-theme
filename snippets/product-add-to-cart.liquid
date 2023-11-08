@@ -25,46 +25,50 @@
 			<div class="form-notification error" style="display:none;"></div>
 		  	<div class="add_to_cart_holder">
 				{%- if customer -%}
-					{%- if block.settings.show_quantity_selector -%}
-					<div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
-						<quantity-selector class="quantity">
-							<button class="minus" type="button" aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}">
-								{% render 'svg-icons' with 'minus' %}
-							</button>
-							<input
-								type="number"
-								id="Quantity-{{ section.id }}"
-								name="quantity"
-								class="qty"
-								value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-								data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-								min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-								{% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-								data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-								max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-								{% endif %}
-								step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-								form="{{ product_form_id }}"
-								aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}"
-							>
-							<button class="plus" type="button" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}">{% render 'svg-icons' with 'plus' %}</button>
-						</quantity-selector>
-					</div>
-					{%- endif -%}
-					<button type="submit" name="add" id="AddToCart" class="single_add_to_cart_button button {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
-						<span>
-							{%- if product.selected_or_first_available_variant.available -%}
-							{{ 'products.product.add_to_cart' | t }}
-							{%- else -%}
-							{{ 'products.product.sold_out' | t }}
-							{%- endif -%}
-						</span>
-						<span class="loading-overlay">
-							{% render 'svg-icons' with 'thb-loading' %}
-						</span>
-					</button>
-					{%- if show_dynamic_checkout -%}
-					{{ form | payment_button }}
+					{%- if customer.metafields.customer_fields.nom_complet_du_participant or customer.metafields.customer_fields.nom_complet_du_participant_2 or customer.metafields.customer_fields.nom_complet_du_participant_3 or customer.metafields.customer_fields.nom_complet_du_participant_4 -%}
+						{%- if block.settings.show_quantity_selector -%}
+						<div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
+							<quantity-selector class="quantity">
+								<button class="minus" type="button" aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}">
+									{% render 'svg-icons' with 'minus' %}
+								</button>
+								<input
+									type="number"
+									id="Quantity-{{ section.id }}"
+									name="quantity"
+									class="qty"
+									value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+									data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+									min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+									{% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+									data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+									max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+									{% endif %}
+									step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+									form="{{ product_form_id }}"
+									aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}"
+								>
+								<button class="plus" type="button" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}">{% render 'svg-icons' with 'plus' %}</button>
+							</quantity-selector>
+						</div>
+						{%- endif -%}
+						<button type="submit" name="add" id="AddToCart" class="single_add_to_cart_button button {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+							<span>
+								{%- if product.selected_or_first_available_variant.available -%}
+								{{ 'products.product.add_to_cart' | t }}
+								{%- else -%}
+								{{ 'products.product.sold_out' | t }}
+								{%- endif -%}
+							</span>
+							<span class="loading-overlay">
+								{% render 'svg-icons' with 'thb-loading' %}
+							</span>
+						</button>
+						{%- if show_dynamic_checkout -%}
+						{{ form | payment_button }}
+						{%- endif -%}
+					{%- else -%}
+						<a href="/account" class="product-login-link">{{'products.customer.add_participant' | t}}</a>
 					{%- endif -%}
 				{%- else -%}
 					<a href="/account/login" class="product-login-link">{{'products.customer.login' | t}}</a>

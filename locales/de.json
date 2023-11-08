@@ -103,7 +103,8 @@
   },
   "products": {
     "customer":{
-      "login":"Log in om deze cursus te kopen"
+      "login":"Log in om deze cursus te kopen",
+      "add_participant":"Voeg deelnemers toe aan uw profiel."
     },
     "product": {
       "quick_view": "Schnellansicht",

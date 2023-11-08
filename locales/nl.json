@@ -103,7 +103,8 @@
   },
   "products": {
     "customer":{
-      "login":"Please login to purchase this course"
+      "login":"Please login to purchase this course",
+      "add_participant":"Legg til deltakere på profilen din."
     },
     "product": {
       "quick_view": "Snelle kijk",

@@ -104,7 +104,8 @@
   },
   "products": {
     "customer":{
-      "login":"Effettua il login per acquistare questo corso"
+      "login":"Effettua il login per acquistare questo corso",
+      "add_participant":"Aggiungi partecipanti al tuo profilo."
     },
     "product": {
       "quick_view": "Occhiata veloce",
