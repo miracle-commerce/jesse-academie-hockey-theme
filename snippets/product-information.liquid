@@ -217,27 +217,67 @@
       {%- endif -%}
     {% when 'participant_selector' %}
       {% if customer and customer.metafields.customer_fields.nom_complet_du_participant or customer.metafields.customer_fields.nom_complet_du_participant_2 or customer.metafields.customer_fields.nom_complet_du_participant_3 or customer.metafields.customer_fields.nom_complet_du_participant_4 %}
-        <fieldset class="product-form__input product-information--line-item" {{ block.shopify_attributes}}>
+        <fieldset class="product-form__input product-information--line-item" {{ block.shopify_attributes}} data-participant-field>
           <div class="form__label" for="{{ product_form_id | append: '-custom-' | append: forloop.index}}">{{ block.settings.label | escape }}</div>
           <div class="select">
-            <select name="properties[Participant Name]" id="{{ product_form_id | append: '-custom-' | append: forloop.index}}" form="{{ product_form_id }}">
+            <select name="properties[Participant Name]" id="{{ product_form_id | append: '-custom-' | append: forloop.index}}" form="{{ product_form_id }}" required data-participant-selector>
               <option value="">{{ block.settings.label | escape }}</option>
               {%- if customer.metafields.customer_fields.nom_complet_du_participant -%}
-                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant | metafield_text }}">{{ customer.metafields.customer_fields.nom_complet_du_participant | metafield_text }}</option>
+                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant | metafield_text }}" 
+                  data-birthday="{{customer.metafields.customer_fields.date_de_naissance_du_parti}}"
+                  data-category="{{customer.metafields.customer_fields.catgorie_du_participant}}"
+                  data-position="{{customer.metafields.customer_fields.position_du_partcipant}}">{{ customer.metafields.customer_fields.nom_complet_du_participant | metafield_text }}</option>
               {%- endif -%}
               {%- if customer.metafields.customer_fields.nom_complet_du_participant_2 -%}
-                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_2 | metafield_text }}">{{ customer.metafields.customer_fields.nom_complet_du_participant_2 | metafield_text }}</option>
+                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_2 | metafield_text }}"
+                  data-birthday="{{customer.metafields.customer_fields.date_de_naissance_du_parti_2 | metafield_text }}"
+                  data-category="{{customer.metafields.customer_fields.catgorie_du_participant_2 | metafield_text }}"
+                  data-position="{{customer.metafields.customer_fields.position_du_partcipant_2 | metafield_text }}"
+                >{{ customer.metafields.customer_fields.nom_complet_du_participant_2 | metafield_text }}</option>
               {%- endif -%}
               {%- if customer.metafields.customer_fields.nom_complet_du_participant_3 -%}
-                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_3 | metafield_text }}">{{ customer.metafields.customer_fields.nom_complet_du_participant_3 | metafield_text }}</option>
+                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_3 | metafield_text }}"
+                  data-birthday="{{customer.metafields.customer_fields.date_de_naissance_du_parti_3 | metafield_text}}"
+                  data-category="{{customer.metafields.customer_fields.catgorie_du_participant_3 | metafield_text}}"
+                  data-position="{{customer.metafields.customer_fields.position_du_partcipant_3 | metafield_text}}"
+                >{{ customer.metafields.customer_fields.nom_complet_du_participant_3 | metafield_text }}</option>
               {%- endif -%}
               {%- if customer.metafields.customer_fields.nom_complet_du_participant_4 -%}
-                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_4 | metafield_text }}">{{ customer.metafields.customer_fields.nom_complet_du_participant_4 | metafield_text }}</option>
+                <option value="{{ customer.metafields.customer_fields.nom_complet_du_participant_4 | metafield_text }}"
+                  data-birthday="{{customer.metafields.customer_fields.date_de_naissance_du_parti_4 | metafield_text }}"
+                  data-category="{{customer.metafields.customer_fields.catgorie_du_participant_4 | metafield_text }}"
+                  data-position="{{customer.metafields.customer_fields.position_du_partcipant_4 | metafield_text }}"
+                >{{ customer.metafields.customer_fields.nom_complet_du_participant_4 | metafield_text }}</option>
               {%- endif -%}
             </select>
             <div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
           </div>
+          <input type="hidden" name="properties[Participant Birthday]" value="" form="{{ product_form_id }}"  data-participant-birthday>
+          <input type="hidden" name="properties[Participant Category]" value="" form="{{ product_form_id }}" data-participant-category>
+          <input type="hidden" name="properties[Participant Position]" value="" form="{{ product_form_id }}" data-participant-position>
         </fieldset>
+
+        <script>
+          const ParticipantSelector = document.querySelector("[data-participant-selector]");
+          const ParticipantBirthdayInput = document.querySelector("[data-participant-birthday]");
+          const ParticipantCategoryInput = document.querySelector("[data-participant-category]");
+          const ParticipantPositionInput = document.querySelector("[data-participant-position]");
+          if(ParticipantSelector){
+            ParticipantSelector.addEventListener('change', ()=>{
+              let selectedOption = ParticipantSelector.options[ParticipantSelector.selectedIndex];
+              console.log(selectedOption.dataset.birthday);
+              if(ParticipantBirthdayInput){
+                ParticipantBirthdayInput.value = selectedOption.dataset.birthday;
+              }
+              if(ParticipantCategoryInput){
+                ParticipantCategoryInput.value = selectedOption.dataset.category;
+              }
+              if(ParticipantPositionInput){
+                ParticipantPositionInput.value = selectedOption.dataset.position;
+              }
+            })
+          }
+        </script>
       {% endif %}
     {%- when 'sku' -%}
       <div class="product-sku product--text {{ block.settings.sku_style }}" id="sku-{{ section.id }}">{{ product.selected_or_first_available_variant.sku }}</div>
